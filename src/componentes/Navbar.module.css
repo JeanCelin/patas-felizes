@@ -1,0 +1,34 @@
+.navbar {
+  font-family: var(--font-unkempt);
+  background-color: var(--light-blue);
+
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 20px;
+
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1em;
+  padding: 0.5em;
+}
+
+.navbar__link a {
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 390px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}
