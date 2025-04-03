@@ -37,6 +37,10 @@
   font-size: 18px;
   text-align: center;
 }
+.home__main__buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .home__main a {
   text-decoration: none;
 }
@@ -48,6 +52,8 @@
   padding: 15px 15px;
   border-radius: 10px;
   border: none;
+
+  width: 110px;
 
   font-size: larger;
   text-transform: uppercase;

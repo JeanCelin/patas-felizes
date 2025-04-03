@@ -16,11 +16,15 @@ export default function Home() {
         <p className={styles.home__main__text}>
           Faça a diferença: adote um animal carente ou faça uma doação
         </p>
-        <Link href="/adocao">
-          <button className={styles.home__main__button}>
-            Quero ajudar!
-          </button>
-        </Link>
+        <div className={styles.home__main__buttons}>
+          <Link href="/doar">
+            <button className={styles.home__main__button}>doar!</button>
+          </Link>
+
+          <Link href="/adotar">
+            <button className={styles.home__main__button}>adotar!</button>
+          </Link>
+        </div>
 
         <div style={{ position: "relative", width: "400px", height: "400px" }}>
           <Image
