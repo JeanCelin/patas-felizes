@@ -1,11 +1,14 @@
 :root {
   --color1: #0EA5E9;
-  --color2: #77b8d5;
-  --color3: #004879;
+  --color2: #F0F9FF;
+  --color3: #E0F2FE;
+  --color4: #075985;
   --color-black: #000000;
   --color-white: #ffffff;
+  --color-text: #4b5563;
 
   --border: 214.3 31.8% 91.4%;
+
 }
 
 html,

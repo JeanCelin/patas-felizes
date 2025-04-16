@@ -1,3 +1,45 @@
-.home{
-  
+.home {
+  font-family: var(--font-inter);
+}
+.section_animalCare {
+  background-color: var(--color2);
+  padding: 16px;
+}
+.title_targe {
+  background-color: var(--color3);
+  color: var(--color4);
+  border-radius: 5px;
+  width: 200px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title_call {
+  margin-top: 16px;
+  font-size: 30px;
+  color: var(--color4);
+}
+
+.animalCare_text {
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-top: 16px;
+  line-height: 1.4rem;
+}
+.buttons__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.image__container{
+
+  border-radius: 5px;
+  overflow: hidden;
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
 }
