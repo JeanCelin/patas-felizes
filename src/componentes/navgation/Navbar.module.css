@@ -1,0 +1,27 @@
+.navbar {
+  font-family: var(--font-unkempt);
+  background-color: var(--light-blue);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 20px;
+
+  border: 1px solid hsl(var(--border));
+  padding: 0 16px;
+  height: 65px;
+}
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar__title {
+  font-family: var(--font-inter);
+  font-weight: bold;
+  font-size: 1.25rem; /* equivalente a 20px */
+  line-height: 1.75rem; /* equivalente a 28px */
+}

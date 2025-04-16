@@ -1,0 +1,19 @@
+.buttonPrimary {
+  background-color: var(--color1);
+  color: var(--color-white);
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  height: 2.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.buttonPrimary:hover {
+  background-color: var(--color-primary-dark);
+}

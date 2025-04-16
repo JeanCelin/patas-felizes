@@ -1,6 +1,6 @@
-import { Geist, Geist_Mono, Unkempt, Quicksand } from "next/font/google";
+import { Geist, Geist_Mono, Unkempt, Quicksand, Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/componentes/Navbar";
+import Navbar from "@/componentes/navgation/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,6 +11,11 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"]
+})
 
 const unkempt = Unkempt({
   variable: "--font-unkempt",
@@ -34,8 +39,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${unkempt.variable} ${quicksand.variable}`}>
-        {/* <Navbar /> */}
+        className={`${geistSans.variable} ${geistMono.variable} ${unkempt.variable} ${quicksand.variable} ${inter.variable}`}>
+        <Navbar />
         {children}
       </body>
     </html>

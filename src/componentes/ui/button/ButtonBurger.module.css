@@ -1,0 +1,11 @@
+.burger{
+  border: 1px solid hsl(var(--border));
+  border-radius: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}

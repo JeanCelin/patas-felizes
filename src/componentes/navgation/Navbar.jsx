@@ -1,14 +1,21 @@
 import Link from "next/link";
 import Image from "next/image";
-
+import icon from "../../../public/android-chrome-192x192.png";
 import styles from "./Navbar.module.css";
+import ButtonPrimary from "../ui/button/ButtonPrimary";
+import ButtonBurger from "../ui/button/ButtonBurger";
 
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
-        <Image src="/logo2.png" alt="Logo" width={50} height={50} priority/>
+      <div className={styles.navbar__logo}>
+        <Image src={icon} alt="Logo" width={25} height={25} priority />
+        <p className={styles.navbar__title}>Patas Carentes</p>
+      </div>
+      <ButtonPrimary children={"Doar Agora"} />
+      <ButtonBurger />
 
-      <ul className={styles.navbar__list}>
+      {/* <ul className={styles.navbar__list}>
         <li className={styles.navbar__link}>
           <Link href="#">Sobre</Link>
         </li>
@@ -21,7 +28,7 @@ export default function Navbar() {
         <li className={styles.navbar__link}>
           <Link href="#">Contato</Link>
         </li>
-      </ul>
+      </ul> */}
     </nav>
   );
 }
