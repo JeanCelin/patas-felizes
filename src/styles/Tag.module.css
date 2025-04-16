@@ -1,0 +1,13 @@
+.tag {
+  background-color: var(--color3);
+  color: var(--color4);
+  border-radius: 5px;
+  width: 200px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

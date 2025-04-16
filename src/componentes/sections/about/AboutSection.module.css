@@ -1,0 +1,15 @@
+.about {
+  padding: 48px 16px;
+}
+
+.about__image {
+  position: relative; /* necessário para Image com fill */
+  width: 100%;
+  margin: 2rem auto 0;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.image {
+  object-fit: cover;
+}
