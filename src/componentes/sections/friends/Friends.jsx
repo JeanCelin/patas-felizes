@@ -1,8 +1,8 @@
-import Card from "@/componentes/ui/cards/PetCard";
+import PetCard from "@/componentes/ui/cards/PetCard";
 import styles from "./Friends.module.css";
 import tag from "@/styles/Tag.module.css";
 import description from "@/styles/Description.module.css";
-import HeartIcon from "@/componentes/icons/HearthIcon";
+import HeartIcon from "@/componentes/icons/HeartIcon";
 import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
 
 export default function Friends() {
@@ -22,60 +22,63 @@ export default function Friends() {
         </p>
       </div>
       <div className={styles.friends__cards}>
-        <Card
+        <PetCard
           name="Max"
           breed="Gold Retriever"
           age="3"
           sex="Macho"
           children="Amigável e brincalhão, Max adora longas caminhadas e brincar de buscar."
- 
-          alt ="Foto do Max, um golden retriever"
+          alt="Foto do Max, um golden retriever"
+          src="null"
         />
-        <Card
+        <PetCard
           name="Luna"
           breed="Labrador"
           age="2"
           sex="Fêmea"
           children="Luna é uma companheira leal e muito carinhosa. Ama nadar e brincar com outros cães."
-  
           alt="Foto da Luna, um labrador dourado"
+          src="null"
         />
 
-        <Card
+        <PetCard
           name="Thor"
           breed="Husky Siberiano"
           age="4"
           sex="Macho"
           children="Thor é cheio de energia e adora correr. Seu olhar marcante conquista todos à sua volta."
-        
           alt="Foto do Thor, um husky siberiano"
+          src="null"
         />
 
-        <Card
+        <PetCard
           name="Mel"
           breed="Shih Tzu"
           age="1"
           sex="Fêmea"
           children="Pequena, esperta e cheia de charme, Mel gosta de colo e é ótima com crianças."
           alt="Foto da Mel, uma shih tzu"
+          src="null"
         />
 
-        <Card
+        <PetCard
           name="Bob"
           breed="Vira-lata"
           age="5"
           sex="Macho"
           children="Bob é um verdadeiro guerreiro, resgatado das ruas e agora só quer dar amor."
           alt="Foto do Bob, um cão vira-lata"
+          src="null"
         />
 
-        <Card
+        <PetCard
           name="Nina"
           breed="Poodle"
           age="6"
           sex="Fêmea"
           children="Inteligente e muito obediente, Nina é ideal para quem busca uma companheira tranquila."
           alt="Foto da Nina, uma poodle branca"
+          src="null"
         />
       </div>
       <div className={styles.friends__buttonMore}>

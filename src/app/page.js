@@ -3,6 +3,7 @@ import AboutSection from "@/componentes/sections/about/AboutSection";
 import Friends from "@/componentes/sections/friends/Friends";
 import styles from "./page.module.css";
 import ToHelp from "@/componentes/sections/tohelp/ToHelp";
+import Feedback from "@/componentes/sections/feedback/Feedback";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <AboutSection />
         <Friends />
         <ToHelp />
+        <Feedback />
 
     </main>
   );
