@@ -22,8 +22,8 @@ export default function HeroSection() {
         </p>
       </div>
       <div className={styles.hero__buttons}>
-        <ButtonPrimary children={"Adote um Pet"} width={"100%"} />
-        <ButtonSecondary children={"Faça uma doação"} />
+        <ButtonPrimary children={"Adote um Pet"} />
+        <ButtonSecondary children={"Faça uma Doação"} />
       </div>
       <div className={styles.hero__image}>
         <Image

@@ -1,0 +1,57 @@
+.card {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* 🎨 sombra suave */
+  background-color: white;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.card__image {
+  position: relative; /* necessário para Image com fill */
+  width: 100%;
+  aspect-ratio: 1/1;
+
+  max-width: 500px;
+  max-height: 375px;
+
+  margin: auto;
+  margin-inline: auto;
+  overflow: hidden;
+  min-height: auto;
+  margin-top: 16px;
+}
+.image {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  color: transparent;
+  border-radius: 8px;
+}
+
+.card__friend{
+  background-color: white;
+  padding: 16px;
+
+}
+.card__name{
+  color: var(--color4);
+  font-size: 20px;
+}
+.card__info {
+  color: var(--color-text-light);
+  font-size: 14px;
+}
+.card__text {
+  line-height: 25px;
+  margin: 8px 0 0;
+  color: var(--color-text); 
+}
+
+.card__button {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
