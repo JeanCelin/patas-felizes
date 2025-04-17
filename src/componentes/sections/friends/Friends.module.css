@@ -1,0 +1,14 @@
+.friends {
+  background-color: var(--color2);
+  padding: 48px 16px
+}
+.friends__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.friends__text_center {
+  text-align: center;
+}

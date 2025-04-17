@@ -5,13 +5,14 @@
 }
 
 .subtitle {
+  margin-top: 25px;
   font-size: 20px;
   color: var(--color4);
 }
 
 .text {
+  margin-top: 8px;
   font-size: 1rem;
   color: var(--color-text);
-  margin-top: 16px;
   line-height: 1.4rem;
 }

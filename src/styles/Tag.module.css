@@ -1,7 +1,7 @@
 .tag {
   background-color: var(--color3);
   color: var(--color4);
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 4px 12px;
   width: fit-content;
   display: flex;
