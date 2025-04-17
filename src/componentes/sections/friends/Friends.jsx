@@ -1,4 +1,4 @@
-import Card from "@/componentes/ui/card/Card";
+import Card from "@/componentes/ui/cards/PetCard";
 import styles from "./Friends.module.css";
 import tag from "@/styles/Tag.module.css";
 import description from "@/styles/Description.module.css";

@@ -1,4 +1,4 @@
-.card {
+.petCard {
   width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* 🎨 sombra suave */
@@ -7,7 +7,7 @@
   transition: box-shadow 0.3s ease;
 }
 
-.card__image {
+.petCard__image {
   position: relative; /* necessário para Image com fill */
   width: 100%;
   aspect-ratio: 1/1;
@@ -21,6 +21,7 @@
   min-height: auto;
   margin-top: 16px;
 }
+
 .image {
   position: absolute;
   inset: 0;
@@ -29,26 +30,28 @@
   border-radius: 8px;
 }
 
-.card__friend{
+.petCard__friend {
   background-color: white;
   padding: 16px;
-
 }
-.card__name{
+
+.petCard__name {
   color: var(--color4);
   font-size: 20px;
 }
-.card__info {
+
+.petCard__info {
   color: var(--color-text-light);
   font-size: 14px;
 }
-.card__text {
+
+.petCard__text {
   line-height: 25px;
   margin: 8px 0 0;
-  color: var(--color-text); 
+  color: var(--color-text);
 }
 
-.card__button {
+.petCard__button {
   margin-top: 16px;
   display: flex;
   justify-content: center;
