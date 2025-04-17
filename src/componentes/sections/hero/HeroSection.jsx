@@ -12,9 +12,9 @@ export default function HeroSection() {
   return (
     <section className={styles.hero}>
       <div className={styles.hero__text}>
-        <h1 className={tag.tag}>
-          Resgate e Cuidado Animal
-        </h1>
+        <div className={tag.tag}>
+          <h1>Resgate e Cuidado Animal</h1>
+        </div>
         <h2 className={description.title}>Ajude a Dar Uma Segunda Chance</h2>
         <p className={description.text}>
           Patas Carentes é dedicada ao resgate, reabilitação e adoção de animais

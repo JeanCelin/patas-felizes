@@ -1,5 +1,9 @@
 .about {
   padding: 48px 16px;
+
+  display: grid;
+
+  
 }
 
 .about__image {
@@ -10,6 +14,12 @@
   border-radius: 5px;
   overflow: hidden;
 }
+
+.about__center {
+  justify-self: center;
+  align-self: center;
+}
+
 .image {
   object-fit: cover;
 }
