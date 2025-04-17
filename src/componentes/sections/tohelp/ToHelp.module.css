@@ -1,0 +1,14 @@
+.toHelp{
+  padding: 48px 16px;
+}
+
+.toHelp__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.toHelp__center {
+  text-align: center;
+}
+
