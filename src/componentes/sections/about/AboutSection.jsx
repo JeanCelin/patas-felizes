@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PawIcon from "/public/paw-icon.png";
 
 import styles from "./AboutSection.module.css";
 import tag from "@/styles/Tag.module.css";
@@ -8,7 +9,16 @@ import placeholder from "/public/placeholder.svg";
 export default function AboutSection() {
   return (
     <section className={styles.about}>
-      <h1 className={tag.tag}>Nossa História</h1>
+      <div className={tag.tag}>
+        <h1>Nossa História</h1>
+        <Image
+          src={PawIcon}
+          alt="Ícone de pata"
+          width={40}
+          height={40}
+          style={{ backgroundColor: "transparent" }}
+        />
+      </div>
       <h2 className={description.title} style={{ textAlign: "center" }}>
         Sobre a Patas Carentes
       </h2>
