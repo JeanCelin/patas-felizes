@@ -1,0 +1,45 @@
+/* .secondaryInput {
+  width: 100%;
+  grid-column: span 3;
+  padding: 8px 16px;
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: var(--color1);
+
+  border: 1px solid hsl(var(--border));
+  background-color: transparent;
+  
+} */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #0288d1;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  width: 100%; /* IMPORTANTE para ocupar o grid inteiro */
+  box-sizing: border-box;
+  grid-column: span 3;
+}
+
+.prefix {
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 8px;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.secondaryInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+
+}
+
+.secondaryInput::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
