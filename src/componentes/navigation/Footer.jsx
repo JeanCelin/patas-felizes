@@ -5,8 +5,8 @@ import PawIcon from "../icons/PawIcon";
 import MapPinIcon from "../icons/MapPinIcon";
 import PhoneIcon from "../icons/PhoneIcon";
 import MailIcon from "../icons/MailIcon";
-import { AlignStartHorizontal } from "lucide-react";
-import SecondaryInput from "../ui/inputs/PrimaryInput";
+import NewsletterInput from "../ui/inputs/NewsletterInput";
+import ButtonPrimary from "../ui/button/ButtonPrimary";
 
 export default function Footer() {
   return (
@@ -82,11 +82,15 @@ export default function Footer() {
           Inscreva-se em nossa newsletter para atualizações sobre pets para
           adoção, eventos e mais.
         </p>
-        <form action="">
-          <SecondaryInput placeholder="teste" />
-          <button type="submit">Inscrever-se</button>
+        <form action="" className={styles.footer__newsletter__form}>
+          <NewsletterInput
+            placeholder="Seu email"
+    
+          />
+
+          <ButtonPrimary children="Inscrever-se"/>
         </form>
-        <p>© 2023 Patas Carentes. Todos os direitos reservados.</p>
+        <p className={styles.footer__copyrights}>© 2025 Patas Carentes. Todos os direitos reservados.</p>
       </section>
     </footer>
   );

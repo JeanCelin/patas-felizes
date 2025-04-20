@@ -1,0 +1,23 @@
+.newsletterInput {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.5rem;
+  background-color: white;
+  color: #111827; /* cor escura para o texto */
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+.newsletterInput::placeholder {
+  color: #6b7280; /* cinza bonito */
+  font-size: 14px;
+}
+
+.newsletterInput:focus {
+  border-color: var(--color1);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color1) 20%, transparent);
+}
