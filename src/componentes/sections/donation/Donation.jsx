@@ -2,7 +2,7 @@
 import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
 import styles from "./Donation.module.css";
 import description from "@/styles/Description.module.css";
-import SecondaryInput from "@/componentes/ui/inputs/SecondaryInput";
+import PrimaryInput from "@/componentes/ui/inputs/PrimaryInput";
 import { useState } from "react";
 
 export default function Donation() {
@@ -27,7 +27,7 @@ export default function Donation() {
           <ButtonSecondary children={"R$ 25"} />
           <ButtonSecondary children={"R$ 50"} />
           <ButtonSecondary children={"R$ 100"} />
-          <SecondaryInput
+          <PrimaryInput
             placeholder={"Outro Valor"}
             type="number"
             value={value}
@@ -35,12 +35,15 @@ export default function Donation() {
             prefix="R$"
           />
         </div>
-        <div style={{width:"100%"}}>
+        <div style={{ width: "100%" }}>
           <ButtonSecondary
             children={"Doar Agora"}
             className={styles.donation__button}
           />
-          <p className={styles.donation__note}>Sua doação é dedutível de impostos. Patas Carentes é uma organização sem fins lucrativos registrada.</p>
+          <p className={styles.donation__note}>
+            Sua doação é dedutível de impostos. Patas Carentes é uma organização
+            sem fins lucrativos registrada.
+          </p>
         </div>
       </div>
     </section>

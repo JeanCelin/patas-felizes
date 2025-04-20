@@ -1,11 +1,17 @@
-import styles from './SecondaryInput.module.css';
+import styles from "./PrimaryInput.module.css";
 
-export default function SecondaryInput({ type, placeholder, value, onChange, prefix }) {
+export default function PrimaryInput({
+  type,
+  placeholder,
+  value,
+  onChange,
+  prefix,
+}) {
   return (
     <div className={styles.wrapper}>
       {prefix && <span className={styles.prefix}>{prefix}</span>}
       <input
-        className={styles.secondaryInput}
+        className={styles.PrimaryInput}
         type={type}
         placeholder={placeholder}
         value={value}
