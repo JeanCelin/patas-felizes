@@ -10,7 +10,7 @@ export default function ButtonBurger() {
   };
   return (
     <button className={styles.burger} onClick={handleClick}>
-      <Image src={burgerIcon} alt="Menu" width={20} height={20} priority />
+      <Image src={burgerIcon} alt="Menu" width={20} height={20} priority className={styles.buttonBurger} />
     </button>
   )
 }
