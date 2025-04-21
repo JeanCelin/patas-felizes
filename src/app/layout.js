@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 const inter = Inter({
   variable: "--font-inter",
-  subsets: ["latin"]
-})
+  subsets: ["latin"],
+});
 
 const unkempt = Unkempt({
   variable: "--font-unkempt",
@@ -35,13 +35,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="pt-BR">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${unkempt.variable} ${quicksand.variable} ${inter.variable}`}>
         <Navbar />
-        {children}
+        <div style={{ paddingTop: "65px" }}>{children}</div>
       </body>
     </html>
   );

@@ -1,15 +1,28 @@
 :root {
-  --color1: #0EA5E9;
-  --color2: #F0F9FF;
-  --color3: #E0F2FE;
+  /* Colores */
+  --color1: #0ea5e9;
+  --color2: #f0f9ff;
+  --color3: #e0f2fe;
   --color4: #075985;
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-text: #4b5563;
-  --color-text-light: #6B7280;
 
+  /* Text Colors */
+  --color-text: #4b5563;
+  --color-text-light: #6b7280;
+
+  /* Border Colors */
   --border: 214.3 31.8% 91.4%;
 
+  /*     Breakpoints      */
+  --breakpoint-xxs: 400px; /* Extra extra small devices */
+  --breakpoint-xs: 480px; /* Extra small devices */
+  --breakpoint-sm: 640px; /* Small devices */
+  --breakpoint-md: 768px; /* Medium devices */
+  --breakpoint-md2: 834px; /* Tablets devices */
+  --breakpoint-lg: 1024px; /* Large devices */
+  --breakpoint-xl: 1280px; /* Extra large devices */
+  --breakpoint-2xl: 1536px; /* 2X large devices */
 }
 
 html,

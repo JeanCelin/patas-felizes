@@ -1,6 +1,6 @@
 .navbar {
   font-family: var(--font-unkempt);
-  background-color: var(--light-blue);
+  background-color: white;
 
   display: flex;
   justify-content: space-between;
@@ -11,6 +11,9 @@
   border: 1px solid hsl(var(--border));
   padding: 0 16px;
   height: 65px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
 }
 .navbar__logo {
   display: flex;
