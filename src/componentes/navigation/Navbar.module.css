@@ -2,23 +2,24 @@
   font-family: var(--font-inter);
   background-color: white;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-
-  padding: 0.5rem;
-  gap: 20px;
-
+  
   border: 1px solid hsl(var(--border));
-  padding: 0 16px;
+  padding: 8px 16px;
+
   height: 65px;
   width: 100%;
-  max-width: 1352px;
-  margin-inline: auto;
   position: fixed;
   z-index: 1000;
 }
+.navbar__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1352px;
+  margin-inline: auto;
+  gap: 20px;
+}
+
 .navbar__logo {
   display: flex;
   align-items: center;
@@ -30,7 +31,7 @@
 }
 .navbar__list {
   list-style: none;
-  
+
   padding: 0;
   margin: 0;
   display: flex;
@@ -45,8 +46,7 @@
 
 .navbar__title {
   font-weight: bold;
-  font-size: 1.25rem; /* equivalente a 20px */
-  line-height: 1.75rem; /* equivalente a 28px */
+  font-size: 20px;
 }
 .navbar__btn__burger {
   display: block;
