@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -14,23 +14,33 @@ export default function Navbar() {
         <Image src={icon} alt="Logo" width={25} height={25} priority />
         <p className={styles.navbar__title}>Patas Carentes</p>
       </div>
-      <ButtonPrimary children={"Doar Agora"} maxWidth="fit-content"/>
-      <ButtonBurger />
+      <div className={styles.navbar__links__list}>
+        <ul className={styles.navbar__list}>
+        <li className={styles.navbar__link}>
+            <Link href="#">Inicio</Link>
+          </li>
+          <li className={styles.navbar__link}>
+            <Link href="#">Sobre</Link>
+          </li>
+          <li className={styles.navbar__link}>
+            <Link href="#">Adoções</Link>
+          </li>
+          <li className={styles.navbar__link}>
+            <Link href="#">Doar</Link>
+          </li>
+          <li className={styles.navbar__link}>
+            <Link href="#">Voluntariado</Link>
+          </li>
+          <li className={styles.navbar__link}>
+            <Link href="#">Contato</Link>
+          </li>
+        </ul>
+      </div>
 
-      {/* <ul className={styles.navbar__list}>
-        <li className={styles.navbar__link}>
-          <Link href="#">Sobre</Link>
-        </li>
-        <li className={styles.navbar__link}>
-          <Link href="#">Animais</Link>
-        </li>
-        <li className={styles.navbar__link}>
-          <Link href="#">Doação</Link>
-        </li>
-        <li className={styles.navbar__link}>
-          <Link href="#">Contato</Link>
-        </li>
-      </ul> */}
+      <ButtonPrimary children={"Doar Agora"} maxWidth="fit-content" />
+      <div className={styles.navbar__btn__burger}>
+        <ButtonBurger />
+      </div>
     </nav>
   );
 }

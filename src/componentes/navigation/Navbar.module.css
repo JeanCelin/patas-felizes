@@ -1,10 +1,12 @@
 .navbar {
-  font-family: var(--font-unkempt);
+  font-family: var(--font-inter);
   background-color: white;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+
   padding: 0.5rem;
   gap: 20px;
 
@@ -21,10 +23,45 @@
   gap: 0.5rem;
   cursor: pointer;
 }
+.navbar__links__list {
+  display: none;
+}
+.navbar__list {
+  list-style: none;
+  
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+.navbar__link a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
 
+}
 .navbar__title {
-  font-family: var(--font-inter);
   font-weight: bold;
   font-size: 1.25rem; /* equivalente a 20px */
   line-height: 1.75rem; /* equivalente a 28px */
+}
+.navbar__btn__burger {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__links__list {
+    display: flex;
+    gap: 1rem;
+  }
+  .navbar__btn__burger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .navbar {
+    justify-content: space-around;
+  }
+
 }
