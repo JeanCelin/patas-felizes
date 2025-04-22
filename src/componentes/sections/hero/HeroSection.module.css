@@ -18,19 +18,29 @@
   gap: 0.5rem;
   margin: 1rem 0;
 }
+.hero__title {
+  margin-top: 16px;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--color4);
+}
+.hero__text {
+  margin-top: 8px;
+  font-size: 16px;
+  color: var(--color-text);
+  line-height: 24px;
+}
 
 .hero__image {
   position: relative; /* necessário para Image com fill */
   width: 100%;
   aspect-ratio: 4/3;
-
-  max-width: 500px;
-  max-height: 375px;
+  
+  min-height: auto;
 
   margin: auto;
   margin-inline: auto;
   overflow: hidden;
-  min-height: auto;
   margin-top: 16px;
 }
 .image {
@@ -41,9 +51,7 @@
   border-radius: 8px;
 }
 
-.hero__title__size {
-  font-size: 30px;
-}
+
 
 @media screen and (min-width: 480px) {
   .hero__buttons {
@@ -56,23 +64,26 @@
 }
 
 @media screen and (min-width: 640px) {
-  .hero__title__size {
+  .hero__title {
     font-size: 36px;
   }
 }
+
 
 @media screen and (min-width: 768px) {
   .hero {
     background-color: var(--color2);
     padding: 96px 24px;
   }
-  .hero__title__size {
+  .hero__title {
     font-size: 48px;
+    line-height: 56px;
   }
-  .hero__text__size {
+  .hero__text {
     font-size: 20px;
     line-height: 36px;
   }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -83,14 +94,14 @@
   .hero__wrapper {
     grid-template-columns: 1fr 1fr;
   }
-  .hero__text__size {
+  .hero__text {
     font-size: 16px;
     line-height: 28px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .hero__text__size {
+  .hero__text {
     font-size: 20px;
     line-height: 36px;
   }
