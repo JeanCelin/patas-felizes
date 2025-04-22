@@ -1,22 +1,24 @@
 import PetCard from "@/componentes/ui/cards/PetCard";
 import styles from "./Friends.module.css";
 import tag from "@/styles/Tag.module.css";
-import description from "@/styles/Description.module.css";
+
 import HeartIcon from "@/componentes/icons/HeartIcon";
 import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
 
 export default function Friends() {
   return (
     <section className={styles.friends}>
+      <div className={styles.friends__wrapper}>
+
       <div className={styles.friends__container}>
         <div className={tag.tag}>
           <HeartIcon />
           <h1>Encontre um Amigo</h1>
         </div>
-        <h2 className={`${description.title} ${styles.friends__text_center}`}>
+        <h2 className={styles.friends__title}>
           Conheça Nossos Pets para Adoção
         </h2>
-        <p className={`${description.text} ${styles.friends__text_center}`}>
+        <p className={styles.friends__text}>
           Estes animais amorosos estão esperando por seus lares definitivos.
           Você poderia ser a combinação perfeita?
         </p>
@@ -30,7 +32,7 @@ export default function Friends() {
           children="Amigável e brincalhão, Max adora longas caminhadas e brincar de buscar."
           alt="Foto do Max, um golden retriever"
           src="null"
-        />
+          />
         <PetCard
           name="Luna"
           breed="Labrador"
@@ -39,7 +41,7 @@ export default function Friends() {
           children="Luna é uma companheira leal e muito carinhosa. Ama nadar e brincar com outros cães."
           alt="Foto da Luna, um labrador dourado"
           src="null"
-        />
+          />
 
         <PetCard
           name="Thor"
@@ -49,7 +51,7 @@ export default function Friends() {
           children="Thor é cheio de energia e adora correr. Seu olhar marcante conquista todos à sua volta."
           alt="Foto do Thor, um husky siberiano"
           src="null"
-        />
+          />
 
         <PetCard
           name="Mel"
@@ -59,7 +61,7 @@ export default function Friends() {
           children="Pequena, esperta e cheia de charme, Mel gosta de colo e é ótima com crianças."
           alt="Foto da Mel, uma shih tzu"
           src="null"
-        />
+          />
 
         <PetCard
           name="Bob"
@@ -69,7 +71,7 @@ export default function Friends() {
           children="Bob é um verdadeiro guerreiro, resgatado das ruas e agora só quer dar amor."
           alt="Foto do Bob, um cão vira-lata"
           src="null"
-        />
+          />
 
         <PetCard
           name="Nina"
@@ -79,11 +81,12 @@ export default function Friends() {
           children="Inteligente e muito obediente, Nina é ideal para quem busca uma companheira tranquila."
           alt="Foto da Nina, uma poodle branca"
           src="null"
-        />
+          />
       </div>
       <div className={styles.friends__buttonMore}>
         <ButtonSecondary children="Ver Todos os Pets Disponíveis" />
       </div>
+          </div>
     </section>
   );
 }
