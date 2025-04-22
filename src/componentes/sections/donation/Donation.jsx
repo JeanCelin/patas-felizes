@@ -1,7 +1,8 @@
 "use client";
 import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
 import styles from "./Donation.module.css";
-import description from "@/styles/Description.module.css";
+
+
 import PrimaryInput from "@/componentes/ui/inputs/PrimaryInput";
 import { useState } from "react";
 
@@ -17,7 +18,7 @@ export default function Donation() {
     <section className={styles.donation}>
       <div className={styles.donation__container}>
         <div className={styles.donation__text_container}>
-          <h1 className={description.secondary_title}>Faça a Diferença Hoje</h1>
+          <h1 className={styles.donation__title}>Faça a Diferença Hoje</h1>
           <p className={styles.donation__text}>
             Sua doação nos ajuda a resgatar mais animais e fornecer os cuidados
             que eles precisam.
