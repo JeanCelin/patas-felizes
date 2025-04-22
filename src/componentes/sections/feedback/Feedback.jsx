@@ -1,6 +1,6 @@
 import styles from "./Feedback.module.css";
 import tag from "@/styles/tag.module.css";
-import description from "@/styles/description.module.css";
+
 import HeartIcon from "@/componentes/icons/HeartIcon";
 import FeedbackCard from "@/componentes/ui/cards/FeedbackCard";
 

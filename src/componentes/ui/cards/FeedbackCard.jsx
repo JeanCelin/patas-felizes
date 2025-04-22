@@ -1,4 +1,4 @@
-import styles from "./FeedBackCard.module.css";
+import styles from "./FeedbackCard.module.css";
 import Image from "next/image";
 import PropTypes from "prop-types";
 

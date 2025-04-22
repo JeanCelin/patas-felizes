@@ -2,9 +2,16 @@
   padding: 24px;
   background-color: white;
   border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  max-width: 325px;
+  max-height: 260px;
+  overflow: hidden;
 }
+
+
 .feedbackCard__user_container {
   display: flex;
+
   justify-content: flex-start;
   gap: 16px;
 
