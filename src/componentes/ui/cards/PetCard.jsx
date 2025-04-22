@@ -3,7 +3,15 @@ import PropTypes from "prop-types";
 import styles from "./PetCard.module.css";
 import ButtonPrimary from "../button/ButtonPrimary";
 
-export default function PetCard({ name, breed, age, sex, children, image, alt }) {
+export default function PetCard({
+  name,
+  breed,
+  age,
+  sex,
+  children,
+  image,
+  alt,
+}) {
   return (
     <div className={styles.petCard}>
       <div className={styles.petCard__image}>
@@ -19,7 +27,9 @@ export default function PetCard({ name, breed, age, sex, children, image, alt })
         <p className={styles.petCard__info}>
           {breed} • {age} {age == 1 ? "ano" : "anos"} • {sex}
         </p>
-        <p className={styles.petCard__text}>{children}</p>
+        <div className={styles.petCard__text__container}> 
+          <p className={styles.petCard__text}>{children}</p>
+        </div>
         <div className={styles.petCard__button}>
           <ButtonPrimary>Adote-me</ButtonPrimary>
         </div>

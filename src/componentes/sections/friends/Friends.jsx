@@ -78,7 +78,7 @@ export default function Friends() {
           breed="Poodle"
           age="6"
           sex="Fêmea"
-          children="Inteligente e muito obediente, Nina é ideal para quem busca uma companheira tranquila."
+          children="Inteligente e muito obediente, Nina é ideal para quem busca uma companheira tranquila. "
           alt="Foto da Nina, uma poodle branca"
           src="null"
           />

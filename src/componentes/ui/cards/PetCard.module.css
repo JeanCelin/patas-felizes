@@ -12,12 +12,7 @@
   position: relative; /* necessário para Image com fill */
   width: 100%;
   aspect-ratio: 1/1;
-
-  max-width: 500px;
-  max-height: 375px;
-
   margin: auto;
-  margin-inline: auto;
   overflow: hidden;
   min-height: auto;
 }
@@ -27,12 +22,13 @@
   inset: 0;
   object-fit: cover;
   color: transparent;
-  border-radius: 8px;
+  border-radius: 8px´8px 0 0;
 }
 
 .petCard__friend {
   background-color: white;
   padding: 16px;
+  min-height: 100%;
 }
 
 .petCard__name {
@@ -43,11 +39,16 @@
 .petCard__info {
   color: var(--color-text-light);
   font-size: 14px;
+  padding-top: 8px;
+}
+.petCard__text__container{
+  height: 80px;
+  overflow:hidden;
+  padding-top: 8px;
 }
 
-.petCard__text {
+.petCard__text { 
   line-height: 25px;
-  margin: 8px 0 0;
   color: var(--color-text);
 }
 
