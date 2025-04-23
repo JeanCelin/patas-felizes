@@ -1,6 +1,6 @@
 import styles from "./ToHelp.module.css";
 
-import tag from "@/styles/tag.module.css";
+import tag from "@/styles/Tag.module.css";
 
 import HandHeartIcon from "@/componentes/icons/HandHeartIcon";
 import HelpCard from "@/componentes/ui/cards/HelpCard";
