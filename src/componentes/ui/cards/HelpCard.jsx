@@ -1,5 +1,4 @@
 import styles from "./HelpCard.module.css";
-import description from "@/styles/Description.module.css"
 
 export default function HelpCard({ icon, title, text }) {
   return (
