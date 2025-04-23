@@ -2,6 +2,14 @@
   background-color: var(--color1);
   padding: 48px 16px;
 }
+.donation__wrapper{
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
 .donation__container {
   display: flex;
   flex-direction: column;
@@ -26,15 +34,53 @@
 .donation__text {
   color: var(--color3);
 }
-.donation__button_container {
+.donation__button__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   gap: 8px;
+  max-width: 384px;
+  margin-inline: auto;
 }
+.donation__input {
+  grid-column: span 3;
+}
+.donation__button {
+  grid-column: span 3;
+}
+
 .donation__note {
+  grid-column: span 3;
   margin-top: 8px;
   color: var(--color3);
   font-size: 12px;
   text-align: center;
+}
 
+@media screen and (min-width: 640px) {
+  .donation__title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .donation {
+    padding: 96px 24px
+  }
+  .donation__text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .donation__text {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  .donation__text {
+    font-size: 20px;
+  }
 }
