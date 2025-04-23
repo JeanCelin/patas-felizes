@@ -30,12 +30,15 @@ export default function AboutSection() {
         <div className={styles.about__content}>
           <div className={styles.about__image}>
             <Image
-              src={placeholder}
-              alt="Animal resgatado"
+              src="/voluntarios.jpg"
+              alt="Uma foto dos voluntários da Patas Carentes"
               fill
+              quality={100}
               priority={false}
               loading="lazy"
               className={styles.image}
+              // sizes="(min-width: 1024px) 480px, 100vw"
+
             />
           </div>
           <div>

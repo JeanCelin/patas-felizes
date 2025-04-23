@@ -44,6 +44,10 @@
   text-decoration: none;
 }
 
+.navbar__link a:hover {
+  color: var(--color1);
+}
+
 .navbar__title {
   font-weight: bold;
   font-size: 20px;

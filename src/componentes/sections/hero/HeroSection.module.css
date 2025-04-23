@@ -35,7 +35,7 @@
   position: relative; /* necessário para Image com fill */
   width: 100%;
   aspect-ratio: 4/3;
-  
+
   min-height: auto;
 
   margin: auto;
@@ -50,8 +50,6 @@
   color: transparent;
   border-radius: 8px;
 }
-
-
 
 @media screen and (min-width: 480px) {
   .hero__buttons {
@@ -69,7 +67,6 @@
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .hero {
     background-color: var(--color2);
@@ -83,20 +80,31 @@
     font-size: 20px;
     line-height: 36px;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
   .hero {
     padding: 128px 16px;
     gap: 36px;
+    background-image: url("/hero-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hero__image {
+    display: none;
   }
   .hero__wrapper {
     grid-template-columns: 1fr 1fr;
+    gap: 16px;
   }
+  .hero__title {
+    color: var(--color1);
+  }
+
   .hero__text {
     font-size: 16px;
     line-height: 28px;
+    color: white;
   }
 }
 
@@ -110,5 +118,24 @@
 @media screen and (min-width: 1420px) {
   .hero {
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 1530px ) {
+  .hero {
+    background-image: none;
+
+  }
+  .hero__image {
+    display: block;
+  }
+  .hero__title {
+    color: var(--color4);
+  }
+
+  .hero__text {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--color--text);
   }
 }

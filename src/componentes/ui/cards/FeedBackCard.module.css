@@ -6,6 +6,7 @@
   max-width: 325px;
   max-height: 260px;
   overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
 
 
