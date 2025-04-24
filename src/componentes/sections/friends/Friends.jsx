@@ -5,6 +5,7 @@ import tag from "@/styles/Tag.module.css";
 import HeartIcon from "@/componentes/icons/HeartIcon";
 import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
 
+
 export default function Friends() {
   return (
     <section className={styles.friends}>

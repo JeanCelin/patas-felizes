@@ -6,8 +6,16 @@ export default function FeedbackCard({ name, profile, feedback, photo, alt }) {
   return (
     <div className={styles.feedbackCard}>
       <div className={styles.feedbackCard__user_container}>
-        <div className={styles.feedbackCard_img}>
-          <Image src={photo || "/placeholder.svg"} alt={alt} fill className={styles.image} />
+        <div className={styles.feedbackCard__img}>
+          <Image
+            src={photo || "/placeholder.svg"}
+            alt={alt}
+            loading="lazy"
+            fill
+            className={styles.image}
+            sizes="50px"
+ 
+          />
         </div>
         <div className={styles.feedbackCard__user}>
           <h3 className={styles.feedbackCard__userName}>{name}</h3>

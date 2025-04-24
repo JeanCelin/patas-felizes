@@ -9,17 +9,15 @@
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 .feedbackCard__user_container {
   display: flex;
 
   justify-content: flex-start;
   gap: 16px;
-
 }
 
-.feedbackCard_img {
-  position: relative; /* necessário para Image com fill */
+.feedbackCard__img {
+  position: relative;
   width: 100%;
   aspect-ratio: 1/1;
 
@@ -38,16 +36,16 @@
   border-radius: 50%;
 }
 
-.feedbackCard__userName{
+.feedbackCard__userName {
   color: var(--color4);
   font-size: 16px;
 }
-.feedbackCard__userProfile{
+.feedbackCard__userProfile {
   margin-top: 8px;
   color: var(--color-text-light);
   font-size: 14px;
-} 
-.feedbackCard__feedback{
+}
+.feedbackCard__feedback {
   color: var(--color-text);
   line-height: 24px;
   margin-top: 16px;

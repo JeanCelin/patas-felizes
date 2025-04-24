@@ -3,7 +3,7 @@ import PawIcon from "@/componentes/icons/PawIcon";
 
 import styles from "./AboutSection.module.css";
 import tag from "@/styles/Tag.module.css";
-import placeholder from "/public/placeholder.svg";
+import voluntarios from "/public/voluntarios.jpg";
 
 export default function AboutSection() {
   return (
@@ -30,14 +30,13 @@ export default function AboutSection() {
         <div className={styles.about__content}>
           <div className={styles.about__image}>
             <Image
-              src="/voluntarios.jpg"
+              src={voluntarios}
               alt="Uma foto dos voluntários da Patas Carentes"
               fill
-              quality={100}
-              priority={false}
               loading="lazy"
               className={styles.image}
-              // sizes="(min-width: 1024px) 480px, 100vw"
+              sizes="(min-width: 1024px) 480px, 100vw"
+              placeholder="blur"
 
             />
           </div>

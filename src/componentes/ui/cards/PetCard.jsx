@@ -19,7 +19,9 @@ export default function PetCard({
           src={image || "/placeholder.svg"} // fallback se não vier imagem
           fill
           alt={alt}
+          loading="lazy"
           className={styles.image}
+            sizes="(min-width: 1024px) 33.33vw, (min-width: 768px) 50vw, 100vw"
         />
       </div>
       <section className={styles.petCard__friend}>

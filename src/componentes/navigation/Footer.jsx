@@ -26,16 +26,23 @@ export default function Footer() {
               src="/icons/facebook.svg"
               width={20}
               height={20}
-              alt="Facebook"
-              style={{}}
+              alt="Facebook icon"
+              loading="lazy"
             />
             <Image
               src="/icons/instagram.svg"
               width={20}
               height={20}
-              alt="Instagram"
+              alt="Instagram icon"
+              loading="lazy"
             />
-            <Image src="/icons/x.svg" width={20} height={20} alt="x" />
+            <Image
+              src="/icons/x.svg"
+              width={20}
+              height={20}
+              alt="x icon"
+              loading="lazy"
+            />
           </div>
         </section>
         <section className={styles.footer__fastlinks}>

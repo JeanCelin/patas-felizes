@@ -2,7 +2,7 @@ import Image from "next/image";
 import ButtonPrimary from "@/componentes/ui/button/ButtonPrimary";
 import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
 
-import placeholder from "/public/hero-img.png";
+import heroImage from "/public/hero-img.png";
 
 import styles from "./HeroSection.module.css";
 import tag from "@/styles/Tag.module.css";
@@ -32,12 +32,12 @@ export default function HeroSection() {
         </div>
         <div className={styles.hero__image}>
           <Image
-            src={placeholder}
+            src={heroImage}
             alt="Animal resgatado"
             fill
             className={styles.image}
-            loading="lazy"
-            // sizes="(max-width: 976px) 100vw, (min-width: 1530px) 692px"
+            priority
+            sizes="(max-width: 976px) 100vw, (min-width: 1530px) 692px"
 
           />
         </div>
