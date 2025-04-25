@@ -72,6 +72,17 @@
   color: var(--color4);
   margin: 16px 0;
 }
+.footer__fastlinks__link a {
+  text-decoration: none;
+  color: var(--color-text-light);
+  /* font-size: 14px;
+  line-height: 24px;
+  transition: all 0.3s ease-in-out; */
+}
+.footer__fastlinks__link a:hover {
+  color: var(--color4);
+  text-decoration: underline;
+}
 
 @media screen and (min-width: 768px) {
   .footer__sections {
@@ -82,7 +93,6 @@
     align-items: start;
     gap: 32px;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -93,7 +103,5 @@
     margin-inline: auto;
     display: grid;
     align-items: start;
-
   }
-
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "./Footer.module.css";
 import PawIcon from "../icons/PawIcon";
@@ -48,11 +49,21 @@ export default function Footer() {
         <section className={styles.footer__fastlinks}>
           <h3 className={styles.footer__title}>Links Rápidos</h3>
           <ul className={styles.footer__fastlinks__list}>
-            <li>Início</li>
-            <li>Sobre nós</li>
-            <li>Pets para Adoção</li>
-            <li>Doar</li>
-            <li>Voluntariado</li>
+            <li className={styles.footer__fastlinks__link}>
+              <Link href="/">Início</Link>
+            </li>
+            <li className={styles.footer__fastlinks__link}>
+              <Link href="/">Sobre nós</Link>
+            </li>
+            <li className={styles.footer__fastlinks__link}>
+              <Link href="/">Pets para Adoção</Link>
+            </li>
+            <li className={styles.footer__fastlinks__link}>
+              <Link href="/">Doar</Link>
+            </li>
+            <li className={styles.footer__fastlinks__link}>
+              <Link href="/">Voluntariado</Link>
+            </li>
           </ul>
         </section>
         <section className={styles.footer__contact}>
