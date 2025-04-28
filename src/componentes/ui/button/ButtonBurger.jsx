@@ -8,8 +8,9 @@ export default function ButtonBurger({ isOpen }) {
   const handleClick = () => {
     console.log("Button clicked");
   };
+  
   return (
-    <button className={styles.burger} onClick={handleClick}>
+    <button className={ isOpen === true ? styles.buttonBurger__clicked : styles.burger} onClick={handleClick}>
       {isOpen ? (
         <CloseIcon width={20} height={20} />
       ) : (

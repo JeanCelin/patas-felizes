@@ -26,12 +26,12 @@
   text-decoration: none;
 }
 
-/* .navbar__link a {
+.navbar__link a {
   color: var(--color-dark);
-  font-size: 14px;
   text-decoration: none;
-} */
+}
 
 .navbar__link a:hover {
+  cursor: pointer;
   color: var(--color1);
 }
