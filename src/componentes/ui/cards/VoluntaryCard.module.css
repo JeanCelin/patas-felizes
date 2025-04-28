@@ -1,0 +1,40 @@
+.voluntaryCard {
+  margin-top: 48px;
+  width: 100%;
+
+}
+.voluntaryCard__image__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.voluntaryCard__image {
+  border-radius: 50%;
+}
+
+
+.voluntaryCard__content{
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  
+}
+.voluntaryCard__name {
+  font-size: 20px;
+  color: var(--color4);
+  text-align: center;
+}
+.voluntaryCard__profile {
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+.voluntaryCard__description {
+  margin-top: 8px;
+  font-size: 16px;
+  text-align: center;
+  color: var(--color-text);
+  line-height: 24px;
+}
