@@ -112,7 +112,7 @@ export default function Footer() {
         </section>
       </div>
       <div className={styles.footer__copyrights}>
-        <copy>© 2025 Patas Carentes. Todos os direitos reservados.</copy>
+        <p>&copy; 2025 Patas Carentes. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
