@@ -9,6 +9,7 @@
   /* Sombra suave na borda */
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1); /* sombra suave */
   border-radius: 12px; /* Adicionando borda arredondada, se necessário */
+
 }
 
 .helpCard__icon {
@@ -34,4 +35,3 @@
   line-height: 24px;
   text-align: center;
 }
-

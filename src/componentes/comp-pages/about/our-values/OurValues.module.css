@@ -1,0 +1,38 @@
+.ourValues {
+  background-color: var(--color2);
+  padding: 48px 16px;
+}
+/* .ourValues__wrapper {
+  
+} */
+
+.ourValues__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-inter);
+}
+.ourValues__header__title {
+  margin-top: 16px;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--color4);
+}
+.ourValues__header__text {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 16px;
+  color: var(--color-text);
+  line-height: 24px;
+  
+}
+.ourValues__cards {
+
+  font-family: var(--font-inter);
+  margin: 48px 0;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 24px;
+}
