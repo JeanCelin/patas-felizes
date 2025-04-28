@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .about__content {
   display: grid;
   grid-template-columns: 1fr;
@@ -36,20 +37,18 @@
   object-fit: cover;
   color: transparent;
   border-radius: 8px;
-
 }
 
 .about__title {
   margin-top: 16px;
   font-size: 30px;
   color: var(--color4);
+  text-align: center;
 }
 .about__subtitle {
-
-    margin-top: 25px;
-    font-size: 20px;
-    color: var(--color4);
-  
+  margin-top: 25px;
+  font-size: 20px;
+  color: var(--color4);
 }
 
 .about__header__text {
@@ -74,13 +73,12 @@
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .about {
     padding: 96px 24px;
   }
   .about__title {
-    font-size: 48px
+    font-size: 48px;
   }
   .about__header__text {
     font-size: 20px;
@@ -99,5 +97,4 @@
   .about__image {
     margin: 0 auto;
   }
-
 }

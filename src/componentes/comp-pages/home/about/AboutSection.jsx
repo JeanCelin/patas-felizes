@@ -16,7 +16,7 @@ export default function AboutSection() {
               Nossa História
             </h1>
           </div>
-          <h2 className={styles.about__title} style={{ textAlign: "center" }}>
+          <h2 className={styles.about__title}>
             Sobre a Patas Carentes
           </h2>
           <p className={styles.about__header__text}>
