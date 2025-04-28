@@ -11,7 +11,7 @@ export default function OurValues() {
       <div className={styles.ourValues__wrapper}>
         <div className={styles.ourValues__header}>
           <div className={tag.tag}>
-            <HeartIcon>Nossa História</HeartIcon>
+            <HeartIcon />
             <h1>Nossa História</h1>
           </div>
           <h2 className={styles.ourValues__header__title}>O Que Nos Guia</h2>

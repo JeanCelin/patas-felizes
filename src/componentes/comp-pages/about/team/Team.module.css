@@ -1,0 +1,35 @@
+.team {
+  padding: 48px 16px;
+  font-family: var(--font-inter);
+}
+
+.team__wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin-inline: auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.team__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+.team__header__title {
+  margin-top: 16px;
+  font-size: 30px;
+  color: var(--color4);
+  text-align: center;
+}
+
+.team__header__description {
+  margin-top: 8px;
+  font-size: 16px;
+  text-align: center;
+  color: var(--color-text);
+  line-height: 24px;
+}
