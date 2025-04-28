@@ -7,7 +7,7 @@ export default function OurNumbers() {
         <header className={styles.ourNumbers__header}>
           <h1 className={styles.ourNumbers__header__title}> Nossos Números</h1>
           <p className={styles.ourNumbers__header__description}>
-            Conheça os números que refletem o nosso trabalho e dedicação.
+            O impacto do nosso trabalho ao longo dos anos.
           </p>
         </header>
         <div className={styles.ourNumbers__content}>

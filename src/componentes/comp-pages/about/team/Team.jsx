@@ -3,7 +3,12 @@ import tag from "@/styles/Tag.module.css";
 import UsersIcon from "@/componentes/icons/UsersIcon";
 import VoluntaryCard from "@/componentes/ui/cards/VoluntaryCard";
 import womanPhoto from "/public/perfil/perfil-woman.jpeg";
-import manPhoto from "/public/perfil/perfil-man.jpeg";
+import womanPhoto2 from "/public/perfil/perfil-woman2.png";
+import womanPhoto3 from "/public/perfil/perfil-woman3.png";
+import manPhoto from "/public/perfil/perfil-man.png";
+import manPhoto2 from "/public/perfil/perfil-man2.png";
+import manPhoto3 from "/public/perfil/perfil-man3.png";
+
 
 export default function Team() {
   return (
@@ -34,26 +39,26 @@ export default function Team() {
             description="Ex-bombeiro, Carlos coordena todas as operações de resgate, especialmente em situações de emergência e difícil acesso."
           />
           <VoluntaryCard
-            photo={null}
+            photo={womanPhoto2}
             name="Mariana Costa"
             profile="Veterinária Chefe"
             description="Especialista em medicina de animais resgatados, Mariana supervisiona todos os cuidados médicos e tratamentos dos nossos animais."
           />
           <VoluntaryCard
-            photo={null}
+            photo={manPhoto2}
             name="Pedro Almeida"
             profile="Coordenador de Adoções"
             description="Com formação em psicologia, Pedro avalia potenciais adotantes e faz o acompanhamento pós-adoção para garantir o bem-estar dos animais."
           />
           <VoluntaryCard
-            photo={null}
+            photo={womanPhoto3}
             name="Juliana Ferreira"
             profile="Coordenadora de Voluntários"
             description="Juliana organiza nossa rede de mais de 100 voluntários, coordenando escalas, treinamentos e atividades."
           />
           <VoluntaryCard
-            photo={null}
-            name="Roberto Mendes"
+            photo={manPhoto3}
+            name="Roberto Santos"
             profile="Diretor Financeiro"
             description="Contador com experiência em ONGs, Roberto gerencia os recursos financeiros e garante a transparência nas prestações de contas."
           />

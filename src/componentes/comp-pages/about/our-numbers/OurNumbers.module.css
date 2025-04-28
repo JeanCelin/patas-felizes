@@ -63,3 +63,45 @@
   font-size: 16px;
   text-align: center;
 }
+
+@media screen and (min-width: 640px) {
+  .ourNumbers__header__title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ourNumbers__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ourNumbers {
+    padding: 96px 24px;
+  }
+
+  .ourNumbers__header__description {
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .ourNumbers {
+    padding: 128px 24px;
+    width: 100%;
+  }
+  .ourNumbers__content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .ourNumbers__header__description {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+  .ourNumbers__header__description {
+    font-size: 20px;
+  }
+}
