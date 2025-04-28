@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 import ToHelp from "@/componentes/comp-pages/home/tohelp/ToHelp";
 import Feedback from "@/componentes/comp-pages/home/feedback/Feedback";
 import Donation from "@/componentes/comp-pages/home/donation/Donation";
-import Footer from "@/componentes/navigation/Footer";
+
 
 export default function Home() {
   return (
@@ -16,7 +16,6 @@ export default function Home() {
       <ToHelp />
       <Feedback />
       <Donation />
-      <Footer />
     </main>
   );
 }

@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Unkempt, Quicksand, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/componentes/navigation/Navbar";
+import Footer from "@/componentes/navigation/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${unkempt.variable} ${quicksand.variable} ${inter.variable}`}>
         <Navbar />
         <div style={{ paddingTop: "65px" }}>{children}</div>
+        <Footer />
       </body>
     </html>
   );
