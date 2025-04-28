@@ -1,0 +1,65 @@
+.ourNumbers {
+  background-color: var(--color2);
+  font-family: var(--font-inter);
+  padding: 48px 16px;
+  width: 100%;
+}
+
+.ourNumbers__wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin-inline: auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.ourNumbers__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+.ourNumbers__header__title {
+  margin-top: 16px;
+  font-size: 30px;
+  color: var(--color4);
+  text-align: center;
+}
+
+.ourNumbers__header__description {
+  margin-top: 8px;
+  font-size: 16px;
+  text-align: center;
+  color: var(--color-text);
+  line-height: 24px;
+}
+
+.ourNumbers__content {
+  margin: 48px 0;
+  display: grid;
+  gap: 24px;
+  width: 100%;
+}
+.ourNumbers__item {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.ourNumbers__title {
+  color: var(--color4);
+  font-size: 36px;
+}
+.ourNumbers__text {
+  color: var(--color-text);
+  font-size: 16px;
+  text-align: center;
+}
