@@ -33,7 +33,7 @@ export default function Navbar() {
         <div
           className={styles.navbar__btn__burger}
           onClick={() => setIsOpen(!isOpen)}>
-          <ButtonBurger />
+          <ButtonBurger isOpen={isOpen}/>
         </div>
       </div>
 
