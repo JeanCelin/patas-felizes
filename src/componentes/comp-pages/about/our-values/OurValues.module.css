@@ -2,9 +2,11 @@
   background-color: var(--color2);
   padding: 48px 16px;
 }
-/* .ourValues__wrapper {
-  
-} */
+.ourValues__wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+}
 
 .ourValues__header {
   display: flex;
@@ -29,10 +31,55 @@
   
 }
 .ourValues__cards {
-
   font-family: var(--font-inter);
-  margin: 48px 0;
+  margin: 48px auto;
   display: grid;
   grid-template-columns: repeat(1fr);
   gap: 24px;
+}
+
+@media screen and (min-width: 640px) {
+  .ourValues__header__title {
+    
+    font-size: 36px;
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ourValues {
+    padding: 96px 24px
+  }
+  .ourValues__header__text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .ourValues__cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ourValues{
+    padding: 128px 24px;
+  }
+  .ourValues__header__title {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .ourValues__header__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .ourValues__cards {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ourValues__header__text {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }

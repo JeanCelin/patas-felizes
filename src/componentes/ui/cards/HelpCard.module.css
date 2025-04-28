@@ -1,14 +1,17 @@
 .helpCard {
-  display: grid;
-  grid-template-columns: auto;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
 
   border: 1px solid hsl(var(--border));
   padding: 24px;
 
-  /* Sombra suave na borda */
+
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1); /* sombra suave */
   border-radius: 12px; /* Adicionando borda arredondada, se necessário */
+  
 
 }
 
@@ -22,6 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 .helpCard__title {
   margin-top: 25px;
