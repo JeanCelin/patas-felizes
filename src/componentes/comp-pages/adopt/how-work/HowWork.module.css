@@ -1,0 +1,111 @@
+.howWork {
+  padding: 48px 16px;
+  width: 100%;
+  color: var(--color-text);
+}
+.howWork__wrapper{
+  width: 100%;
+  max-width: 1024px;
+  margin-inline: auto;
+}
+.howWork__header {
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.howWork__title {
+  margin-top: 16px;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--color4);
+  text-align: center;
+}
+.howWork__text {
+  max-width: 900px;
+  margin-top: 8px;
+  font-size: 16px;
+  color: var(--color-text);
+  line-height: 24px;
+  text-align: center;
+}
+.howWork__steps {
+  display: grid;
+  gap: 24px;
+}
+.howWork__step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.howWork__stepNumber__container {
+  width: 48px;
+  aspect-ratio: 1/1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e0f2fe;
+  border-radius: 50%;
+
+}
+
+.howWork__stepNumber {
+  color: var(--color4);
+  font-weight: bold;
+  font-size: 20px;
+}
+.howWork__stepTitle {
+  font-size: 20px;
+  color: var(--color4);
+  text-align: center;
+}
+.howWork__stepText{
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 400px;
+}
+
+@media screen and (min-width: 640px) {
+  .howWork__title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .howWork {
+    padding: 96px 24px;
+  }
+  .howWork__steps{
+    grid-template-columns: repeat(2, minmax(0, 420px));
+    justify-content: center;
+    align-items: start;
+  }
+  .howWork__text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .howWork {
+    padding: 128px 24px;
+  }
+  .howWork__steps{
+    grid-template-columns: repeat(4, minmax(0, 420px));
+    justify-content: center;
+    align-items: start;
+  }
+  .howWork__text {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .howWork__text {
+    font-size: 20px;
+  }
+}

@@ -3,23 +3,23 @@ import tag from "@/styles/Tag.module.css";
 import HeartIcon from "@/componentes/icons/HeartIcon";
 import AwardIcon from "@/componentes/icons/AwardIcon";
 import UsersIcon from "@/componentes/icons/UsersIcon";
-import Card from "@/componentes/ui/cards/HelpCard";
+import Card from "@/componentes/ui/cards/Card";
 
 export default function OurValues() {
   return (
     <section className={styles.ourValues}>
       <div className={styles.ourValues__wrapper}>
-        <div className={styles.ourValues__header}>
+        <header className={styles.ourValues__header}>
           <div className={tag.tag}>
             <HeartIcon />
-            <h1>Nossa História</h1>
+            <span>Nossos Valores</span>
           </div>
           <h2 className={styles.ourValues__header__title}>O Que Nos Guia</h2>
           <p className={styles.ourValues__header__text}>
             Nossos valores fundamentais orientam todas as nossas ações e
             decisões.
           </p>
-        </div>
+        </header>
         <div className={styles.ourValues__cards}>
           <Card
             icon={<HeartIcon size={24} />}

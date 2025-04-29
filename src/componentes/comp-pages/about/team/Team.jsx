@@ -9,7 +9,6 @@ import manPhoto from "/public/perfil/perfil-man.png";
 import manPhoto2 from "/public/perfil/perfil-man2.png";
 import manPhoto3 from "/public/perfil/perfil-man3.png";
 
-
 export default function Team() {
   return (
     <section className={styles.team}>
@@ -17,7 +16,7 @@ export default function Team() {
         <header className={styles.team__header}>
           <div className={tag.tag}>
             <UsersIcon />
-            <h1>Nossa Equipe</h1>
+            <span>Nossa Equipe</span>
           </div>
           <h2 className={styles.team__header__title}>Quem Faz Acontecer</h2>
           <p className={styles.team__header__description}>
@@ -25,44 +24,48 @@ export default function Team() {
             dos nossos animais.
           </p>
         </header>
-        <div className={styles.team__members}>
-          <VoluntaryCard
-            photo={womanPhoto}
-            name="Ana Oliveira"
-            profile="Fundadora e Diretora"
-            description="Veterinária com mais de 15 anos de experiência, Ana fundou a Patas Carentes após anos trabalhando com animais de rua."
-          />
-          <VoluntaryCard
-            photo={manPhoto}
-            name="Carlos Santos"
-            profile="Coordenador de Resgates"
-            description="Ex-bombeiro, Carlos coordena todas as operações de resgate, especialmente em situações de emergência e difícil acesso."
-          />
-          <VoluntaryCard
-            photo={womanPhoto2}
-            name="Mariana Costa"
-            profile="Veterinária Chefe"
-            description="Especialista em medicina de animais resgatados, Mariana supervisiona todos os cuidados médicos e tratamentos dos nossos animais."
-          />
-          <VoluntaryCard
-            photo={manPhoto2}
-            name="Pedro Almeida"
-            profile="Coordenador de Adoções"
-            description="Com formação em psicologia, Pedro avalia potenciais adotantes e faz o acompanhamento pós-adoção para garantir o bem-estar dos animais."
-          />
-          <VoluntaryCard
-            photo={womanPhoto3}
-            name="Juliana Ferreira"
-            profile="Coordenadora de Voluntários"
-            description="Juliana organiza nossa rede de mais de 100 voluntários, coordenando escalas, treinamentos e atividades."
-          />
-          <VoluntaryCard
-            photo={manPhoto3}
-            name="Roberto Santos"
-            profile="Diretor Financeiro"
-            description="Contador com experiência em ONGs, Roberto gerencia os recursos financeiros e garante a transparência nas prestações de contas."
-          />
-        </div>
+        <ul className={styles.team__members}>
+          <li>
+            <VoluntaryCard
+              photo={womanPhoto}
+              name="Ana Oliveira"
+              profile="Fundadora e Diretora"
+              description="Veterinária com mais de 15 anos de experiência, Ana fundou a Patas Carentes após anos trabalhando com animais de rua."
+            />
+          </li>
+          <li>
+            <VoluntaryCard
+              photo={manPhoto}
+              name="Carlos Santos"
+              profile="Coordenador de Resgates"
+              description="Ex-bombeiro, Carlos coordena todas as operações de resgate, especialmente em situações de emergência e difícil acesso."
+            />
+          </li>
+          <li>
+            <VoluntaryCard
+              photo={manPhoto2}
+              name="Pedro Almeida"
+              profile="Coordenador de Adoções"
+              description="Com formação em psicologia, Pedro avalia potenciais adotantes e faz o acompanhamento pós-adoção para garantir o bem-estar dos animais."
+            />
+          </li>
+          <li>
+            <VoluntaryCard
+              photo={womanPhoto3}
+              name="Juliana Ferreira"
+              profile="Coordenadora de Voluntários"
+              description="Juliana organiza nossa rede de mais de 100 voluntários, coordenando escalas, treinamentos e atividades."
+            />
+          </li>
+          <li>
+            <VoluntaryCard
+              photo={manPhoto3}
+              name="Roberto Santos"
+              profile="Diretor Financeiro"
+              description="Contador com experiência em ONGs, Roberto gerencia os recursos financeiros e garante a transparência nas prestações de contas."
+            />
+          </li>
+        </ul>
       </div>
     </section>
   );

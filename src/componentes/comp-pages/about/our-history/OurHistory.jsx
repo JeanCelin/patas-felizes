@@ -13,12 +13,12 @@ export default function OurHistory() {
           <header className={styles.ourHistory__header}>
             <div className={tag.tag}>
               <PawIcon />
-              <h1>Nossa História</h1>
+              <span>Nossa História</span>
             </div>
             <div>
-              <h2 className={styles.ourHistory__header__title}>
+              <h1 className={styles.ourHistory__header__title}>
                 Sobre a Patas Carentes
-              </h2>
+              </h1>
               <p className={styles.ourHistory__header__description}>
                 Conheça nossa jornada, nossa equipe e o impacto que estamos
                 fazendo na vida dos animais abandonados.
@@ -29,11 +29,11 @@ export default function OurHistory() {
       </section>
       <section className={styles.ourHistory__history}>
         <div className={styles.ourHistory__wrapper}>
-          <article className={styles.ourHistory__content}>
+          <div className={styles.ourHistory__content}>
             <div className={styles.ourHistory__content__image}>
               <Image src={placeholder} fill alt="placeholder" />
             </div>
-            <div>
+            <article>
               <h3 className={styles.ourHistory__content__title}>
                 Nossa História
               </h3>
@@ -58,8 +58,8 @@ export default function OurHistory() {
                 incansavelmente para dar uma segunda chance aos animais
                 abandonados e maltratados.
               </p>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </section>
     </div>

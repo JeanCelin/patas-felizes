@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export default function FeedbackCard({ name, profile, feedback, photo, alt }) {
   return (
-    <div className={styles.feedbackCard}>
+    <article className={styles.feedbackCard}>
       <div className={styles.feedbackCard__user_container}>
         <div className={styles.feedbackCard__img}>
           <Image
@@ -25,7 +25,7 @@ export default function FeedbackCard({ name, profile, feedback, photo, alt }) {
       <div className={styles.feedbackCard__card_text}>
         <p className={styles.feedbackCard__feedback}>{feedback}</p>
       </div>
-    </div>
+    </article>
   );
 }
 

@@ -8,17 +8,17 @@ export default function Feedback() {
   return (
     <section className={styles.feedback}>
       <div className={styles.feedback__wrapper}>
-        <div className={styles.feedback__container}>
+        <header className={styles.feedback__container}>
           <div className={tag.tag}>
             <HeartIcon />
-            <h1>Histórias de Sucesso</h1>
+            <span>Histórias de Sucesso</span>
           </div>
           <h2 className={styles.feedback__title}>O Que Dizem Sobre Nós</h2>
           <p className={styles.feedback__text}>
             Ouça de quem adotou, voluntariou ou apoiou nossa causa.
           </p>
-        </div>
-        <div className={styles.feedback__cards}>
+        </header>
+        <section className={styles.feedback__cards}>
           <FeedbackCard
             name="Maria Silva"
             profile="Adotante"
@@ -40,7 +40,7 @@ export default function Feedback() {
             photo="/perfil/perfil-woman.jpeg"
             alt="Foto de Ana Santos"
           />
-        </div>
+        </section>
       </div>
     </section>
   );

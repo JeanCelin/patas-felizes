@@ -25,7 +25,7 @@ export default function PetCard({
         />
       </div>
       <section className={styles.petCard__friend}>
-        <h1 className={styles.petCard__name}>{name}</h1>
+        <h3 className={styles.petCard__name}>{name}</h3>
         <p className={styles.petCard__info}>
           {breed} • {age} {age == 1 ? "ano" : "anos"} • {sex}
         </p>

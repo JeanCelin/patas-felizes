@@ -5,7 +5,7 @@ export default function OurNumbers() {
     <section className={styles.ourNumbers}>
       <div className={styles.ourNumbers__wrapper}>
         <header className={styles.ourNumbers__header}>
-          <h1 className={styles.ourNumbers__header__title}> Nossos Números</h1>
+          <h2 className={styles.ourNumbers__header__title}> Nossos Números</h2>
           <p className={styles.ourNumbers__header__description}>
             O impacto do nosso trabalho ao longo dos anos.
           </p>

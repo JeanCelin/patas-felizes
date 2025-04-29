@@ -10,10 +10,10 @@ export default function Friends() {
   return (
     <section className={styles.friends}>
       <div className={styles.friends__wrapper}>
-        <div className={styles.friends__container}>
+        <header className={styles.friends__container}>
           <div className={tag.tag}>
             <HeartIcon />
-            <h1>Encontre um Amigo</h1>
+            <span>Encontre um Amigo</span>
           </div>
           <h2 className={styles.friends__title}>
             Conheça Nossos Pets para Adoção
@@ -22,7 +22,7 @@ export default function Friends() {
             Estes animais amorosos estão esperando por seus lares definitivos.
             Você poderia ser a combinação perfeita?
           </p>
-        </div>
+        </header>
         <div className={styles.friends__cards}>
           <PetCard
             name="Bob"

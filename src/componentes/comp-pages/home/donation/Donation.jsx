@@ -17,13 +17,13 @@ export default function Donation() {
     <section className={styles.donation}>
       <div className={styles.donation__wrapper}>
         <div className={styles.donation__container}>
-          <div className={styles.donation__text_container}>
-            <h1 className={styles.donation__title}>Faça a Diferença Hoje</h1>
+          <header className={styles.donation__text_container}>
+            <h2 className={styles.donation__title}>Faça a Diferença Hoje</h2>
             <p className={styles.donation__text}>
               Sua doação nos ajuda a resgatar mais animais e fornecer os
               cuidados que eles precisam.
             </p>
-          </div>
+          </header>
           <div className={styles.donation__button__container}>
             <ButtonSecondary children={"R$ 25"} />
             <ButtonSecondary children={"R$ 50"} />

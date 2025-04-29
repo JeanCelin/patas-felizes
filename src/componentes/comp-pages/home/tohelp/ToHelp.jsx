@@ -3,7 +3,7 @@ import styles from "./ToHelp.module.css";
 import tag from "@/styles/Tag.module.css";
 
 import HandHeartIcon from "@/componentes/icons/HandHeartIcon";
-import HelpCard from "@/componentes/ui/cards/HelpCard";
+import Card from "@/componentes/ui/cards/Card";
 import DollarSignIcon from "@/componentes/icons/DollarSignIcon";
 import UsersIcon from "@/componentes/icons/UsersIcon";
 import HomeIcon from "@/componentes/icons/HomeIcon";
@@ -13,39 +13,39 @@ export default function ToHelp() {
   return (
     <section className={styles.toHelp}>
       <div className={styles.toHelp__wrapper}>
-        <div className={styles.toHelp__container}>
+        <header className={styles.toHelp__container}>
           <div className={tag.tag}>
             <HandHeartIcon />
-            <h1>Participe</h1>
+            <span>Participe</span>
           </div>
           <h2 className={styles.toHelp__title}>Como Você Pode Ajudar</h2>
           <p className={styles.toHelp__text}>
             Existem muitas maneiras de apoiar nossa missão e fazer a diferença
             na vida dos animais necessitados.
           </p>
-        </div>
-        <div className={styles.toHelp__cards}>
-          <HelpCard
+        </header>
+        <section className={styles.toHelp__cards}>
+          <Card
             icon={<DollarSignIcon size="24" />}
             title="Doar"
             text="Seu apoio financeiro nos ajuda a fornecer alimentos, abrigo e cuidados médicos aos animais necessitados."
           />
-          <HelpCard
+          <Card
             icon={<UsersIcon size="24" />}
             title="Voluntariar"
             text="Doe seu tempo e habilidades para ajudar com o cuidado dos animais, eventos ou tarefas administrativas."
           />
-          <HelpCard
+          <Card
             icon={<HomeIcon size="24" />}
             title="Acolher"
             text="Forneça um lar temporário para animais que aguardam adoção, dando-lhes amor e socialização."
           />
-          <HelpCard
+          <Card
             icon={<HeartIcon size="24" />}
             title="Apadrinhar"
             text="Apadrinhe os cuidados de um animal específico ou apoie nossos programas educacionais e comunitários."
           />
-        </div>
+        </section>
       </div>
     </section>
   );

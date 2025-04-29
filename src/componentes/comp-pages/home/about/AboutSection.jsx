@@ -9,12 +9,12 @@ export default function AboutSection() {
   return (
     <section className={styles.about}>
       <div className={styles.about__wrapper}>
-        <div className={styles.about__header}>
+        <header className={styles.about__header}>
           <div className={tag.tag}>
             <PawIcon />
-            <h1>
+            <span>
               Nossa História
-            </h1>
+            </span>
           </div>
           <h2 className={styles.about__title}>
             Sobre a Patas Carentes
@@ -26,8 +26,8 @@ export default function AboutSection() {
             temporários cresceu e se tornou uma organização de resgate
             abrangente.
           </p>
-        </div>
-        <div className={styles.about__content}>
+        </header>
+        <section className={styles.about__content}>
           <div className={styles.about__image}>
             <Image
               src={voluntarios}
@@ -40,7 +40,7 @@ export default function AboutSection() {
 
             />
           </div>
-          <div>
+          <article>
             <h3 className={styles.about__subtitle}>Nossa Missão</h3>
             <p className={styles.about__text}>
               Resgatar, reabilitar e encontrar lares para animais abandonados e
@@ -58,8 +58,8 @@ export default function AboutSection() {
               Uma comunidade onde nenhum animal é abandonado ou maltratado, e
               cada pet tem um lar amoroso.
             </p>
-          </div>
-        </div>
+          </article>
+        </section>
       </div>
     </section>
   );

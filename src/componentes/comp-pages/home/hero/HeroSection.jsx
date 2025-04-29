@@ -11,14 +11,14 @@ export default function HeroSection() {
   return (
     <section className={styles.hero}>
       <div className={styles.hero__wrapper}>
-        <div>
+        <section>
           <div className={styles.hero__text}>
             <div className={tag.tag}>
-              <h1>Resgate e Cuidado Animal</h1>
+              <span>Resgate e Cuidado Animal</span>
             </div>
-            <h2 className={styles.hero__title}>
+            <h1 className={styles.hero__title}>
               Ajude a Dar Uma Segunda Chance
-            </h2>
+            </h1>
             <p className={styles.hero__text}>
               Patas Carentes é dedicada ao resgate, reabilitação e adoção de
               animais abandonados. Todo animal merece amor, cuidado e um lar
@@ -29,8 +29,8 @@ export default function HeroSection() {
             <ButtonPrimary children={"Adote um Pet"} />
             <ButtonSecondary children={"Faça uma Doação"} />
           </div>
-        </div>
-        <div className={styles.hero__image}>
+        </section>
+        <section className={styles.hero__image}>
           <Image
             src={heroImage}
             alt="Animal resgatado"
@@ -38,9 +38,8 @@ export default function HeroSection() {
             className={styles.image}
             priority
             sizes="(max-width: 976px) 100vw, (min-width: 1530px) 692px"
-
           />
-        </div>
+        </section>
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ import styles from "./VoluntaryCard.module.css";
 
 export default function VoluntaryCard({ photo, name, profile, description }) {
   return (
-    <div className={styles.voluntaryCard}>
+    <article className={styles.voluntaryCard}>
       <div className={styles.voluntaryCard__image__container}>
         <Image
           src={photo || placeholder}
@@ -20,6 +20,6 @@ export default function VoluntaryCard({ photo, name, profile, description }) {
         <h4 className={styles.voluntaryCard__profile}>{profile}</h4>
         <p className={styles.voluntaryCard__description}>{description}</p>
       </div>
-    </div>
+    </article>
   );
 }

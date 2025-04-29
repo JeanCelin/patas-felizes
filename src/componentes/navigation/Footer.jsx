@@ -16,7 +16,7 @@ export default function Footer() {
         <section className={styles.footer__social}>
           <div className={styles.footer__social__logo}>
             <PawIcon size="24" color="var(--color1)" />
-            <h3 className={styles.footer__logoName}>Patas Carentes</h3>
+            <span className={styles.footer__logoName}>Patas Carentes</span>
           </div>
           <p className={styles.footer__text}>
             Dedicada ao resgate, reabilitação e adoção de animais abandonados
