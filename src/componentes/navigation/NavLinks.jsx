@@ -12,7 +12,7 @@ export default function Navlinks({direction}) {
         <Link href="/about">Sobre</Link>
       </li>
       <li className={styles.navbar__link}>
-        <Link href="#">Adoções</Link>
+        <Link href="/adopt">Adoções</Link>
       </li>
       <li className={styles.navbar__link}>
         <Link href="#">Doar</Link>
