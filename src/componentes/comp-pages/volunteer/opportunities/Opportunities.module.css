@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-family: var(--font-inter);
+
 }
 .opportunities__header__title {
   margin-top: 16px;
@@ -32,7 +32,7 @@
   
 }
 .opportunities__cards {
-  font-family: var(--font-inter);
+  
   margin: 48px auto;
   display: grid;
   grid-template-columns: repeat(1fr);
