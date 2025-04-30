@@ -3,7 +3,6 @@
   background-color: var(--color2);
   padding: 48px 16px;
   width: 100%;
-
 }
 .makeDifference__wrapper {
   width: 100%;
@@ -28,44 +27,11 @@
   margin-top: 16px;
   max-width: 900px;
 }
-.makeDifference__history {
-  padding: 48px 16px;
-  max-width: 1024px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.makeDifference__content {
-  display: grid;
-  background-color: white;
-}
-.makeDifference__content__image {
-  position: relative; /* necessário para Image com fill */
+.makeDifference__button {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 5px;
-  overflow: hidden;
+  max-width: 200px;
+  margin: 24px auto;
 }
-.makeDifference__content__image img {
-  border-radius: 8px;
-  object-fit: cover;
-}
-.makeDifference__content__title {
-  padding-top: 16px;
-  font-size: 24px;
-  line-height: 40px;
-  color: var(--color4);
-}
-.makeDifference__content__description {
-  margin-top: 16px;
-  font-size: 16px;
-  color: var(--color-text);
-  line-height: 24px;
-}
-
 @media screen and (min-width: 640px) {
   .makeDifference__header__title {
     font-size: 36px;
@@ -82,30 +48,14 @@
   .makeDifference__header__description {
     font-size: 20px;
   }
-  .makeDifference__history {
-    padding: 96px 24px;
-  
-  }
-  
 }
 
 @media screen and (min-width: 1024px) {
-  .makeDifference{
-    padding: 128px 24px
+  .makeDifference {
+    padding: 128px 24px;
   }
   .makeDifference__header__description {
     font-size: 16px;
-  }
-  .makeDifference__content{
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
-    padding: 48px 0;
-  }
-  .makeDifference__history {
-    padding: 128px 24px;
-  
   }
 }
 

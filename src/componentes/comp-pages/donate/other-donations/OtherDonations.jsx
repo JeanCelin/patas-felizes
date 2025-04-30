@@ -3,19 +3,19 @@ import styles from "./OtherDonations.module.css";
 
 export default function OtherDonations() {
   return (
-    <section className={styles.OtherDonations}>
-      <div className={styles.OtherDonations__wrapper}>
+    <section className={styles.otherDonations}>
+      <div className={styles.otherDonations__wrapper}>
 
-      <header className={styles.OtherDonations__header}>
-        <h2 className={styles.OtherDonations__header__title}>
+      <header className={styles.otherDonations__header}>
+        <h2 className={styles.otherDonations__header__title}>
           Outras Formas de Doar
         </h2>
-        <p className={styles.OtherDonations__header__text}>
+        <p className={styles.otherDonations__header__text}>
           Além das doações financeiras, existem outras maneiras de apoiar nosso
           trabalho.
         </p>
       </header>
-      <section className={styles.OtherDonations__cards}>
+      <section className={styles.otherDonations__cards}>
         <TextCard
           title="Doação Mensal"
           text="Torne-se um doador recorrente e ajude-nos a planejar melhor nossos recursos. Doações mensais, mesmo pequenas, fazem uma grande diferença."

@@ -57,10 +57,6 @@
   .donationHelp__cards{
     grid-template-columns: repeat(2, 1fr)
   }
-  .donationHelp__title {
-    font-size: 48px
-  }
-
 }
 
 @media screen and (min-width: 1024px) {
