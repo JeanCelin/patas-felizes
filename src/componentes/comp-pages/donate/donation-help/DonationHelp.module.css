@@ -1,0 +1,77 @@
+.donationHelp{
+  padding: 48px 16px;
+}
+.donationHelp__wrapper {
+
+    width: 100%;
+    max-width: 1024px;
+    margin-inline: auto;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  
+}
+.donationHelp__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.donationHelp__title {
+  margin-top: 16px;
+  font-size: 30px;
+  color: var(--color4);
+  text-align: center;
+
+}
+
+.donationHelp__text{
+  margin-top: 8px;
+  font-size: 16px;
+  color: var(--color-text);
+  line-height: 24px;
+  text-align: center;
+}
+
+.donationHelp__cards{
+  padding: 48px 0;
+
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 24px;
+
+}
+
+@media screen and (min-width: 640px) {
+  .donationHelp__title {
+    font-size: 36px;
+  }
+}
+
+
+@media screen and (min-width: 768px ){
+  .donationHelp{
+    padding: 96px 24px;
+  }
+  .donationHelp__cards{
+    grid-template-columns: repeat(2, 1fr)
+  }
+  .donationHelp__title {
+    font-size: 48px
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .donationHelp__cards{
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .donationHelp__text{
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
