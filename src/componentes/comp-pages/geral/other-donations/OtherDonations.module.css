@@ -3,6 +3,11 @@
   width: 100%;
   color: var(--color-text);
 }
+.OtherDonations__wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin-inline: auto;
+}
 
 .OtherDonations__header {
   margin-bottom: 16px;
