@@ -10,8 +10,7 @@
 
 }
 
-.tag p,
-.tag h1 {
+.tag span {
   font-size: 14px;
   font-weight: 400;
 }
