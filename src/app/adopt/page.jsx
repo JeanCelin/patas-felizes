@@ -13,8 +13,10 @@ export default function doar() {
       <HowWork />
       <Friends />
       <section className={styles.adopt__form}>
-        <AdoptReq />
-        <AdoptForm />
+        <div className={styles.adopt__form__wrapper}>
+          <AdoptReq />
+          <AdoptForm />
+        </div>
       </section>
     </section>
   );
