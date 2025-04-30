@@ -18,7 +18,7 @@ export default function Navlinks({direction}) {
         <Link href="/donate">Doar</Link>
       </li>
       <li className={styles.navbar__link}>
-        <Link href="#">Voluntariado</Link>
+        <Link href="/volunteer">Voluntariado</Link>
       </li>
       <li className={styles.navbar__link}>
         <Link href="#">Contato</Link>

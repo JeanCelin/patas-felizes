@@ -31,6 +31,7 @@
   margin-top: 25px;
   font-size: 20px;
   color: var(--color4);
+  text-align: center;
 }
 .helpCard__text {
   margin-top: 8px;
