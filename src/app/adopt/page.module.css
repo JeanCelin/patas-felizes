@@ -1,4 +1,24 @@
 .adopt__form {
   padding: 48px 16px;
   color: var(--color-text);
+
+  display: grid;
+  gap: 48px;
+  border-bottom: 1px solid hsl(var(--border));
+  max-width: 1024px;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .adopt__form {
+    padding: 96px 24px;
+
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .adopt__form {
+    padding: 128px 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

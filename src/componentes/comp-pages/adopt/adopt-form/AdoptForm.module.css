@@ -1,21 +1,21 @@
-.AdoptForm {
+.adoptForm {
   width: 100%;
   max-width: 1400px;
   margin-inline: auto;
 }
-.AdoptForm__header {
+.adoptForm__header {
   max-width: 900px;
 }
-.AdoptForm__header__title {
+.adoptForm__header__title {
   font-size: 30px;
   line-height: 40px;
   color: var(--color4);
 }
-.AdoptForm__header__text {
+.adoptForm__header__text {
   margin-top: 16px;
 }
 
-.AdoptForm__form {
+.adoptForm__form {
   margin-top: 24px;
   display: flex;
   flex-direction: column;
@@ -44,4 +44,10 @@
   border-radius: 4px;
   border: 1px solid hsl(var(--border));
   padding: 8px 12px;
+}
+
+@media screen and (min-width: 640px) {
+  .adoptForm__header__title {
+    font-size: 36px;
+  }
 }

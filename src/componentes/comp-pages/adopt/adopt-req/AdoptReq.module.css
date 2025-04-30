@@ -52,3 +52,10 @@
 .adoptReq__aside__content p {
   margin-top: 4px;
 }
+
+@media screen and (min-width: 640px) {
+  .adoptReq__header__title {
+    font-size: 36px;
+
+  }
+}

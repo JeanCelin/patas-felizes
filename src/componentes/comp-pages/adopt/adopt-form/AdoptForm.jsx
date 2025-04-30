@@ -3,18 +3,18 @@ import styles from "./AdoptForm.module.css";
 
 export default function AdoptForm() {
   return (
-    <section className={styles.AdoptForm}>
-      <header className={styles.AdoptForm__header}>
-        <h2 className={styles.AdoptForm__header__title}>
+    <section className={styles.adoptForm}>
+      <header className={styles.adoptForm__header}>
+        <h2 className={styles.adoptForm__header__title}>
           Formulário de Adoção
         </h2>
-        <p className={styles.AdoptForm__header__text}>
+        <p className={styles.adoptForm__header__text}>
           Preencha o formulário abaixo para iniciar o processo de adoção.
           Entraremos em contato em até 48 horas.
         </p>
       </header>
 
-      <form className={styles.AdoptForm__form}>
+      <form className={styles.adoptForm__form}>
         <div className={styles.form__group}>
           <label className={styles.form__group__label} htmlFor="name">
             Nome Completo
