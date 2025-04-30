@@ -1,0 +1,92 @@
+import ButtonPrimary from "@/componentes/ui/button/ButtonPrimary";
+import styles from "./AdoptForm.module.css";
+
+export default function AdoptForm() {
+  return (
+    <section className={styles.AdoptForm}>
+      <header className={styles.AdoptForm__header}>
+        <h2 className={styles.AdoptForm__header__title}>
+          Formulário de Adoção
+        </h2>
+        <p className={styles.AdoptForm__header__text}>
+          Preencha o formulário abaixo para iniciar o processo de adoção.
+          Entraremos em contato em até 48 horas.
+        </p>
+      </header>
+
+      <form className={styles.AdoptForm__form}>
+        <div className={styles.form__group}>
+          <label className={styles.form__group__label} htmlFor="name">
+            Nome Completo
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Digite seu nome completo"
+            className={styles.form__group__input}
+          />
+        </div>
+
+        <div className={styles.form__group}>
+          <label className={styles.form__group__label} htmlFor="email">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="seuemail@exemplo.com"
+            className={styles.form__group__input}
+          />
+        </div>
+
+        <div className={styles.form__group}>
+          <label className={styles.form__group__label} htmlFor="phone">
+            Telefone
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="\(\d{2}\) \d{5}-\d{4}"
+            required
+            placeholder="(00) 00000-0000"
+            className={styles.form__group__input}
+          />
+        </div>
+
+        <div className={styles.form__group}>
+          <label className={styles.form__group__label} htmlFor="pet">
+            Pet de Interesse
+          </label>
+          <input
+            type="text"
+            id="pet"
+            name="pet"
+            required
+            placeholder="Nome do pet que deseja adotar"
+            className={styles.form__group__input}
+          />
+        </div>
+
+        <div className={styles.form__group}>
+          <label className={styles.form__group__label} htmlFor="reason">
+            Por que você quer adotar esse pet?
+          </label>
+          <textarea
+            id="reason"
+            name="reason"
+            rows="4"
+            required
+            placeholder="Conte-nos um pouco sobre você e por que deseja adotar esse animal"
+            className={styles.form__group__textarea}></textarea>
+        </div>
+
+        <ButtonPrimary children="Enviar Formulário" />
+      </form>
+    </section>
+  );
+}
