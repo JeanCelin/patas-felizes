@@ -1,0 +1,23 @@
+.volunteer__form {
+  padding: 48px 16px;
+  background-color: var(--color2);
+}
+.volunteer__form__wrapper {
+  display: grid;
+  gap: 36px;
+  width: 100%;
+  max-width: 1024px;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .volunteer__form {
+    padding: 96px 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .volunteer__form__wrapper {
+    padding: 128px 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

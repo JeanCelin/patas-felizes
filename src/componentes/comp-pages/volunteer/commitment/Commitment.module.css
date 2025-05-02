@@ -58,7 +58,19 @@
 }
 
 @media screen and (min-width: 768px){
+  .commitment {
+    padding: 96px 24px;
+    color: var(--color-text);
+  } 
   .commitment__sections {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media screen and (min-width: 1024px){
+  .commitment {
+    padding: 128px 24px;
+    color: var(--color-text);
+  } 
+
 }

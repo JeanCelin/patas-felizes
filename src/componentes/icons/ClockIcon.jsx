@@ -1,8 +1,8 @@
-import { Heart } from "lucide-react";
+import { Clock } from "lucide-react";
 
-export default function HeartIcon({ size = 16, color = "currentColor" }) {
+export default function ClockIcon ({ size = 16, color = "currentColor" }) {
   return (
-    <Heart
+    <Clock
       size={size}
       color={color}
       strokeWidth={2}
@@ -10,7 +10,7 @@ export default function HeartIcon({ size = 16, color = "currentColor" }) {
         backgroundColor: "transparent",
         fill: "none",
         flexShrink: "0",
-        marginTop: "2px",
+        marginTop: "2px"
       }}
     />
   );

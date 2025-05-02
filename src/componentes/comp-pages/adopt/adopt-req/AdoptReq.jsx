@@ -45,7 +45,7 @@ export default function AdoptReq() {
       <aside className={styles.adoptReq__aside}>
           <AlertCircleIcon  color="#d97706"/>
         <div className={styles.adoptReq__aside__content}>
-          <span className={styles.adoptReq__aside__content}>Importante</span>
+          <span>Importante</span>
           <p>
             A adoção é um compromisso para toda a vida do animal. Antes de
             adotar, certifique-se de que está preparado para esta

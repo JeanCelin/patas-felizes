@@ -29,19 +29,8 @@ export default function AdoptForm() {
           />
         </div>
 
-        <div className={styles.form__group}>
-          <label className={styles.form__group__label} htmlFor="email">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="seuemail@exemplo.com"
-            className={styles.form__group__input}
-          />
-        </div>
+      
+      
 
         <div className={styles.form__group}>
           <label className={styles.form__group__label} htmlFor="phone">

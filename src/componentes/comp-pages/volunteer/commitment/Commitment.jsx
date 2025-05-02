@@ -5,6 +5,7 @@ import UsersIcon from "@/componentes/icons/UsersIcon";
 import HeartIcon from "@/componentes/icons/HeartIcon";
 import GraduationCapIcon from "@/componentes/icons/GraduationCapIcon";
 import CircleCheckBigIcon from "@/componentes/icons/CircleCheckBigIcon";
+import ClockIcon from "@/componentes/icons/ClockIcon";
 
 export default function Commitment() {
   return (
@@ -22,7 +23,7 @@ export default function Commitment() {
         <section className={styles.commitment__sections}>
           <section className={styles.commitment__item}>
             <div className={styles.commitment__item__icon}>
-              <PawIcon color="var(--color4)" />
+              <ClockIcon color="var(--color4)" />
             </div>
             <div className={styles.commitment__item__content}>
               <h3 className={styles.commitment__title}>Compromisso de Tempo</h3>
