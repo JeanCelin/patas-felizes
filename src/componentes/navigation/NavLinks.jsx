@@ -21,7 +21,7 @@ export default function Navlinks({direction}) {
         <Link href="/volunteer">Voluntariado</Link>
       </li>
       <li className={styles.navbar__link}>
-        <Link href="#">Contato</Link>
+        <Link href="/contact">Contato</Link>
       </li>
     </ul>
   );
