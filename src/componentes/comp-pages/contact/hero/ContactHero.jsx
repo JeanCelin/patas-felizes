@@ -2,8 +2,7 @@ import Image from "next/image";
 
 import tag from "@/styles/Tag.module.css";
 import styles from "./ContactHero.module.css";
-import placeholder from "/public/placeholder.svg";
-import HeartIcon from "@/componentes/icons/HeartIcon";
+import MessageSquareIcon from "@/componentes/icons/MessageSquare";
 
 export default function ContactHero() {
   return (
@@ -12,7 +11,7 @@ export default function ContactHero() {
         <div className={styles.contactHero__wrapper}>
           <header className={styles.contactHero__header}>
             <div className={tag.tag}>
-              <HeartIcon />
+              <MessageSquareIcon />
               <span>Fale Conosco</span>
             </div>
             <div>
