@@ -80,8 +80,8 @@ export default function ContactInfo() {
           <div className={styles.contactInfo__socials__icon}>
             <Image
               src="/icons/facebook.svg"
-              width={20}
-              height={20}
+              width={24}
+              height={24}
               alt="Facebook icon"
               loading="lazy"
             />
@@ -89,8 +89,8 @@ export default function ContactInfo() {
           <div className={styles.contactInfo__socials__icon}>
             <Image
               src="/icons/instagram.svg"
-              width={20}
-              height={20}
+              width={24}
+              height={24}
               alt="Instagram icon"
               loading="lazy"
             />
@@ -98,8 +98,8 @@ export default function ContactInfo() {
           <div className={styles.contactInfo__socials__icon}>
             <Image
               src="/icons/x.svg"
-              width={20}
-              height={20}
+              width={24}
+              height={24}
               alt="x icon"
               loading="lazy"
             />

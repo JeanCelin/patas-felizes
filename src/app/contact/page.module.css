@@ -1,0 +1,16 @@
+.contact__form {
+  padding: 48px 16px;
+}
+.contact__wrapper {
+  display: grid;
+  gap: 36px;
+  max-width: 1024px;
+  margin: auto;
+
+}
+
+@media screen and (min-width: 1024px){
+  .contact__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

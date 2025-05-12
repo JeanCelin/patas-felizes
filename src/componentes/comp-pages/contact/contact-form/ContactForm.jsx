@@ -81,7 +81,7 @@ export default function ContactForm() {
             <label
               htmlFor="message"
               className={styles.contactForm__form__label}>
-              mensagem
+              Mensagem
             </label>
             <textarea
               id="message"
@@ -91,7 +91,7 @@ export default function ContactForm() {
               className={styles.contactForm__form__textarea}
             />
           </div>
-          <ButtonPrimary children="Enviar Formulário" />
+          <ButtonPrimary children="Enviar Mensagem" />
         </form>
     </section>
   );
