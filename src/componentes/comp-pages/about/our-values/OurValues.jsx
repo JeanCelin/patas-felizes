@@ -3,7 +3,7 @@ import tag from "@/styles/Tag.module.css";
 import HeartIcon from "@/componentes/icons/HeartIcon";
 import AwardIcon from "@/componentes/icons/AwardIcon";
 import UsersIcon from "@/componentes/icons/UsersIcon";
-import Card from "@/componentes/ui/cards/Card";
+import Card from "@/componentes/ui/cards/HelpCard";
 
 export default function OurValues() {
   return (

@@ -1,7 +1,6 @@
 import styles from "./DonationHelp.module.css";
 
-import Card from "@/componentes/ui/cards/Card";
-
+import Card from "@/componentes/ui/cards/HelpCard";
 
 import HeartIcon from "@/componentes/icons/HeartIcon";
 import ShoppingBagIcon from "@/componentes/icons/ShoppingBagIcon";

@@ -3,7 +3,7 @@ import tag from "@/styles/Tag.module.css";
 import HeartIcon from "@/componentes/icons/HeartIcon";
 import AwardIcon from "@/componentes/icons/AwardIcon";
 import UsersIcon from "@/componentes/icons/UsersIcon";
-import Card from "@/componentes/ui/cards/Card";
+import Card from "@/componentes/ui/cards/HelpCard";
 import PawIcon from "@/componentes/icons/PawIcon";
 import HomeIcon from "@/componentes/icons/HomeIcon";
 import BriefcaseIcon from "@/componentes/icons/Briefcase";
@@ -59,7 +59,7 @@ export default function Opportunities() {
             text="Participe de programas educacionais em escolas e comunidades sobre posse responsável de animais."
             backgroundColor="white"
           />
-               <Card
+          <Card
             icon={<CalendarIcon size={24} />}
             title="Eventos"
             text="Ajude a organizar e participar de eventos de adoção, arrecadação de fundos e conscientização."

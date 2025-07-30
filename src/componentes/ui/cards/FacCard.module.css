@@ -1,0 +1,19 @@
+.facCard{
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 16px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.facCard__title {
+  font-size: 16px;
+  color: var(--color1);
+  font-weight: 500;
+}
+
+.facCard__text {
+  font-size: 16px;
+  color: var(--color-text);
+  line-height: 1.5;
+  margin-top: 4px;
+}

@@ -3,7 +3,7 @@ import styles from "./ToHelp.module.css";
 import tag from "@/styles/Tag.module.css";
 
 import HandHeartIcon from "@/componentes/icons/HandHeartIcon";
-import Card from "@/componentes/ui/cards/Card";
+import Card from "@/componentes/ui/cards/HelpCard";
 import DollarSignIcon from "@/componentes/icons/DollarSignIcon";
 import UsersIcon from "@/componentes/icons/UsersIcon";
 import HomeIcon from "@/componentes/icons/HomeIcon";

@@ -3,6 +3,7 @@ import ContactForm from "@/componentes/comp-pages/contact/contact-form/ContactFo
 import ContactInfo from "@/componentes/comp-pages/contact/contact-info/ContactInfo";
 
 import styles from "./page.module.css";
+import Fac from "@/componentes/comp-pages/contact/fac/Fac";
 
 export default function contact() {
   return (
@@ -14,6 +15,7 @@ export default function contact() {
           <ContactInfo />
         </div>
       </div>
+      <Fac />
     </>
   );
 }
