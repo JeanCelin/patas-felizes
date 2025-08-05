@@ -4,6 +4,7 @@ import ContactInfo from "@/componentes/comp-pages/contact/contact-info/ContactIn
 
 import styles from "./page.module.css";
 import Fac from "@/componentes/comp-pages/contact/fac/Fac";
+import ContactLocation from "@/componentes/comp-pages/contact/contact-location/ContactLocation";
 
 export default function contact() {
   return (
@@ -16,6 +17,7 @@ export default function contact() {
         </div>
       </div>
       <Fac />
+      <ContactLocation />
     </>
   );
 }
