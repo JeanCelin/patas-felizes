@@ -6,6 +6,7 @@ import heroImage from "/public/hero-img.png";
 
 import styles from "./HeroSection.module.css";
 import tag from "@/styles/Tag.module.css";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -26,8 +27,12 @@ export default function HeroSection() {
             </p>
           </div>
           <div className={styles.hero__buttons}>
-            <ButtonPrimary children={"Adote um Pet"} />
-            <ButtonSecondary children={"Faça uma Doação"} />
+            <Link href="/adopt" style={{ textDecoration: "none" }}>
+              <ButtonPrimary children={"Adote um Pet"} />
+            </Link>
+            <Link href="#donation" style={{ textDecoration: "none" }}>
+              <ButtonSecondary children={"Faça uma Doação"} />
+            </Link>
           </div>
         </section>
         <section className={styles.hero__image}>

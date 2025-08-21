@@ -2,6 +2,7 @@ import HeartIcon from "@/componentes/icons/HeartIcon";
 import styles from "./MakeDifferrence.module.css";
 import tag from "@/styles/Tag.module.css";
 import ButtonPrimary from "@/componentes/ui/button/ButtonPrimary";
+import Link from "next/link";
 
 export default function MakeDifference() {
   return (
@@ -21,7 +22,9 @@ export default function MakeDifference() {
               aos animais resgatados.
             </p>
             <div className={styles.makeDifference__button}>
-              <ButtonPrimary children="Doar Agora" />
+              <Link href="#donation" style={{ textDecoration: "none" }}>
+                <ButtonPrimary children="Doar Agora" />
+              </Link>
             </div>
           </div>
         </header>

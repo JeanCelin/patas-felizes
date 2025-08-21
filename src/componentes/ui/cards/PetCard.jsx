@@ -2,8 +2,12 @@ import Image from "next/image";
 import PropTypes from "prop-types";
 import styles from "./PetCard.module.css";
 import ButtonPrimary from "../button/ButtonPrimary";
+import Link from "next/link";
+import animals from "@/data/animals";
 
 export default function PetCard({
+  id,
+  category,
   name,
   breed,
   age,
@@ -12,6 +16,11 @@ export default function PetCard({
   image,
   alt,
 }) {
+
+
+
+
+  
   return (
     <div className={styles.petCard}>
       <div className={styles.petCard__image}>
@@ -21,7 +30,7 @@ export default function PetCard({
           alt={alt}
           loading="lazy"
           className={styles.image}
-            sizes="(min-width: 1024px) 33.33vw, (min-width: 768px) 50vw, 100vw"
+          sizes="(min-width: 1024px) 33.33vw, (min-width: 768px) 50vw, 100vw"
         />
       </div>
       <section className={styles.petCard__friend}>
@@ -29,11 +38,13 @@ export default function PetCard({
         <p className={styles.petCard__info}>
           {breed} • {age} {age == 1 ? "ano" : "anos"} • {sex}
         </p>
-        <div className={styles.petCard__text__container}> 
+        <div className={styles.petCard__text__container}>
           <p className={styles.petCard__text}>{children}</p>
         </div>
         <div className={styles.petCard__button}>
-          <ButtonPrimary>Adote-me</ButtonPrimary>
+          <Link href={`/adopt/${category}/${id}`}>
+            <ButtonPrimary>Adote-me</ButtonPrimary>
+          </Link>
         </div>
       </section>
     </div>

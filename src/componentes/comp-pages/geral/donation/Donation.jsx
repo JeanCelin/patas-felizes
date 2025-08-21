@@ -14,7 +14,7 @@ export default function Donation() {
   };
 
   return (
-    <section className={styles.donation}>
+    <section id="donation" className={styles.donation}>
       <div className={styles.donation__wrapper}>
         <div className={styles.donation__container}>
           <header className={styles.donation__text_container}>

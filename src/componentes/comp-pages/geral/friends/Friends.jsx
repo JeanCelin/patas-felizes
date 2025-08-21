@@ -1,10 +1,9 @@
+import animals from "@/data/animals";
 import PetCard from "@/componentes/ui/cards/PetCard";
 import styles from "./Friends.module.css";
 import tag from "@/styles/Tag.module.css";
-
 import HeartIcon from "@/componentes/icons/HeartIcon";
 import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
-
 
 export default function Friends() {
   return (
@@ -34,6 +33,8 @@ export default function Friends() {
             image="/dogs/bob.jpeg"
           />
           <PetCard
+            id={animals.dogs[0].id}
+            category={animals.dogs[0].category}
             name="Max"
             breed="Gold Retriever"
             age="3"
