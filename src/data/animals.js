@@ -1,62 +1,233 @@
-// data/animals.js
-
-const animals = {
-  dogs: [
-    {
-      id: "max",
-      category: "dogs",
-      name: "Max",
-      breed: "Golden Retriever",
-      age: "3 anos",
-      weight: "28 kg",
-      size: "Grande",
-      location: "Abrigo Principal",
-      status: "Disponível",
-      adoptionFee: 150,
-
-      // Images
-      images: [{
+const animals = [
+  {
+    id: "max",
+    category: "dogs",
+    name: "Max",
+    sex: "Macho",
+    breed: "Golden Retriever",
+    age: "3 anos",
+    weight: "28 kg",
+    size: "Grande",
+    location: "Abrigo Principal",
+    status: "Disponível",
+    adoptionFee: 150,
+    images: [
+      {
         id: "01imgmax",
-       src : "/dogs/max.jpeg",
-       alt: "Max, um golden retriever brincalhão",
-      }],
-
-      // Health status
-      health: {
-        vaccinated: true,
-        microchipped: true,
-        neutered: true,
-        healthy: true,
+        src: "/dogs/max.jpeg",
+        alt: "Max, um golden retriever brincalhão",
       },
-
-      // Compatibility
-      compatibility: {
-        children: true,
-        otherDogs: true,
-        cats: false,
+    ],
+    health: {
+      vaccinated: true,
+      microchipped: true,
+      neutered: true,
+      healthy: true,
+    },
+    compatibility: {
+      children: true,
+      otherDogs: true,
+      cats: false,
+    },
+    smallDescription:
+      "Amigável e brincalhão, Max adora longas caminhadas e brincar de buscar.",
+    story: `Max chegou até nós em janeiro de 2024...`,
+    personality: `Max é um cão extremamente amoroso e leal...`,
+    idealHome: `Max precisa de uma família que tenha tempo...`,
+    specialNeeds: `Max não tem necessidades especiais...`,
+    medicalHistory: `Max chegou com sarna, que foi tratada...`,
+  },
+  {
+    id: "bob",
+    category: "dogs",
+    name: "Bob",
+    sex: "Macho",
+    breed: "Vira-lata",
+    age: "5 anos",
+    weight: "13 kg",
+    size: "Pequeno",
+    location: "Abrigo Principal",
+    status: "Disponível",
+    adoptionFee: 100,
+    images: [
+      {
+        id: "01imgbob",
+        src: "/dogs/bob.jpeg",
+        alt: "Bob, um vira-lata brincalhão",
       },
-
-      // Detailed story
-      story: `Max chegou até nós em janeiro de 2024, após ser encontrado vagando pelas ruas em condições precárias. Estava desnutrido e com medo de pessoas, mas com muito amor e cuidado, ele se transformou no cão amoroso e brincalhão que é hoje. Max teve que passar por um tratamento para sarna e foi castrado durante sua recuperação.`,
-
-      personality: `Max é um cão extremamente amoroso e leal. Ele adora brincar de buscar a bolinha e é muito inteligente, aprendendo comandos rapidamente. É um companheiro perfeito para famílias ativas que gostam de caminhadas e atividades ao ar livre. Max também é muito protetor com sua família, mas nunca agressivo.`,
-
-      idealHome: `Max precisa de uma família que tenha tempo para exercitá-lo diariamente. Uma casa com quintal seria ideal, mas não é obrigatório desde que ele tenha caminhadas regulares. Ele se daria bem com crianças de todas as idades e outros cães, mas não recomendamos para casas com gatos.`,
-
-      specialNeeds: `Max não tem necessidades especiais, mas precisa de exercícios regulares para manter sua saúde física e mental. Ele também se beneficia de atividades que estimulem sua inteligência, como brinquedos interativos.`,
-
-      medicalHistory: `Max chegou com sarna, que foi completamente tratada. Ele foi castrado, vacinado e microchipado. Atualmente está em perfeita saúde e em dia com todos os cuidados veterinários.`,
+    ],
+    health: {
+      vaccinated: true,
+      microchipped: false,
+      neutered: true,
+      healthy: true,
     },
-  ],
-  cats: [
-    {
-      id: "mia",
-      name: "Mia",
-      breed: "Siamês",
-      description: "Gata muito tranquila e afetuosa.",
-      image: "/cats/mia.jpeg",
+    compatibility: {
+      children: true,
+      otherDogs: true,
+      cats: true,
     },
-  ],
-};
+    smallDescription:
+      "Bob é um cão amoroso e brincalhão, perfeito para famílias que buscam um companheiro leal.",
+    story: `Bob chegou até nós em fevereiro de 2024...`,
+    personality: `Bob é muito dócil e adora companhia...`,
+    idealHome: `Ideal para famílias que procuram um cão companheiro...`,
+    specialNeeds: `Nenhuma necessidade especial.`,
+    medicalHistory: `Castrado e vacinado.`,
+  },
+
+  {
+    id: "mel",
+    category: "dogs",
+    name: "Mel",
+    sex: "Fêmea",
+    breed: "Vira-lata",
+    age: "1 ano",
+    weight: "8 kg",
+    size: "Pequeno",
+    location: "Abrigo Secundário",
+    status: "Disponível",
+    adoptionFee: 120,
+    images: [
+      {
+        id: "01imgmel",
+        src: "/dogs/mel.jpeg",
+        alt: "Mel, uma vira-lata esperta e charmosa",
+      },
+    ],
+    health: {
+      vaccinated: true,
+      microchipped: true,
+      neutered: false,
+      healthy: true,
+    },
+    compatibility: {
+      children: true,
+      otherDogs: true,
+      cats: true,
+    },
+    smallDescription:
+      "Pequena, esperta e cheia de charme, Mel gosta de colo e é ótima com crianças.",
+    story: `Mel foi resgatada ainda filhote em 2024. Sempre curiosa e carinhosa, conquistou todos no abrigo.`,
+    personality: `Mel é muito dócil, carinhosa e cheia de energia.`,
+    idealHome: `Ótima para famílias com crianças pequenas.`,
+    specialNeeds: `Nenhuma necessidade especial.`,
+    medicalHistory: `Caderneta de vacinação em dia.`,
+  },
+  {
+    id: "luna",
+    category: "dogs",
+    name: "Luna",
+    sex: "Fêmea",
+    breed: "Labrador",
+    age: "2 anos",
+    weight: "25 kg",
+    size: "Médio",
+    location: "Abrigo Principal",
+    status: "Disponível",
+    adoptionFee: 180,
+    images: [
+      {
+        id: "01imgluna",
+        src: "/dogs/luna.jpeg",
+        alt: "Luna, uma labradora carinhosa",
+      },
+    ],
+    health: {
+      vaccinated: true,
+      microchipped: true,
+      neutered: true,
+      healthy: true,
+    },
+    compatibility: {
+      children: true,
+      otherDogs: true,
+      cats: true,
+    },
+    smallDescription:
+      "Luna é uma companheira leal e muito carinhosa. Ama nadar e brincar com outros cães.",
+    story: `Resgatada em 2023, Luna sempre foi sociável e cheia de energia.`,
+    personality: `Extremamente carinhosa, adora pessoas e cães.`,
+    idealHome: `Famílias ativas, que façam passeios frequentes.`,
+    specialNeeds: `Precisa de muito exercício físico.`,
+    medicalHistory: `Vacinada, castrada e microchipada.`,
+  },
+  {
+    id: "thor",
+    category: "dogs",
+    name: "Thor",
+    sex: "Macho",
+    breed: "Husky Siberiano",
+    age: "4 anos",
+    weight: "30 kg",
+    size: "Grande",
+    location: "Abrigo Principal",
+    status: "Disponível",
+    adoptionFee: 200,
+    images: [
+      {
+        id: "01imgthor",
+        src: "/dogs/thor.jpeg",
+        alt: "Thor, um husky siberiano cheio de energia",
+      },
+    ],
+    health: {
+      vaccinated: true,
+      microchipped: true,
+      neutered: false,
+      healthy: true,
+    },
+    compatibility: {
+      children: true,
+      otherDogs: true,
+      cats: false,
+    },
+    smallDescription:
+      "Thor é cheio de energia e adora correr. Seu olhar marcante conquista todos à sua volta.",
+    story: `Thor foi entregue ao abrigo por uma família que não conseguia acompanhar sua energia.`,
+    personality: `Muito brincalhão, inteligente e ativo.`,
+    idealHome: `Família com espaço amplo, preferencialmente quintal.`,
+    specialNeeds: `Precisa de bastante atividade física.`,
+    medicalHistory: `Vacinas em dia, não castrado.`,
+  },
+  {
+    id: "duck",
+    category: "dogs",
+    name: "Duck",
+    sex: "Fêmea",
+    breed: "Vira-lata",
+    age: "6 anos",
+    weight: "15 kg",
+    size: "Médio",
+    location: "Abrigo Secundário",
+    status: "Disponível",
+    adoptionFee: 90,
+    images: [
+      {
+        id: "01imgduck",
+        src: "/dogs/duck.jpeg",
+        alt: "Duck, uma vira-lata tranquila",
+      },
+    ],
+    health: {
+      vaccinated: true,
+      microchipped: false,
+      neutered: true,
+      healthy: true,
+    },
+    compatibility: {
+      children: true,
+      otherDogs: true,
+      cats: true,
+    },
+    smallDescription:
+      "Inteligente e muito obediente, Duck é ideal para quem busca uma companheira tranquila.",
+    story: `Duck foi resgatada em 2022 e desde então encanta pela sua calma e obediência.`,
+    personality: `Tranquila, afetuosa e obediente.`,
+    idealHome: `Boa para pessoas mais calmas ou idosos.`,
+    specialNeeds: `Nenhuma.`,
+    medicalHistory: `Castrada e vacinada.`,
+  },
+];
 
 export default animals;
