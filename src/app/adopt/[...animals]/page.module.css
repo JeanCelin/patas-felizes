@@ -1,0 +1,36 @@
+.animalProfile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16px;
+}
+
+.photosContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 8px;
+  width: 100%;
+  max-width: 640px;
+}
+.photoMain {
+  position: relative;
+  grid-area: 1 / 1 / 2 / 4;
+  aspect-ratio: 4/3;
+
+}
+.photoSecondary {
+  position: relative;
+  aspect-ratio: 1/1;
+}
+
+.photoMain img,
+.photoSecondary img {
+  border-radius: 8px 8px 0 0;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
