@@ -24,11 +24,11 @@ export default function Friends() {
         </header>
         <div className={styles.friends__cards}>
           <PetCard id="max" />
-          <PetCard id="bob" />
+          {/* <PetCard id="bob" />
           <PetCard id="mel" />
           <PetCard id="luna" />
           <PetCard id="thor" />
-          <PetCard id="duck" />
+          <PetCard id="duck" /> */}
         </div>
         <div className={styles.friends__buttonMore}>
           <ButtonSecondary children="Ver Todos os Pets Disponíveis" />

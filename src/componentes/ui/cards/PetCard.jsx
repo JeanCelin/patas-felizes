@@ -1,5 +1,4 @@
 import Image from "next/image";
-import PropTypes from "prop-types";
 import styles from "./PetCard.module.css";
 import ButtonPrimary from "../button/ButtonPrimary";
 import Link from "next/link";
@@ -11,7 +10,7 @@ export default function PetCard({
 
   console.log(id);
 
-let pet = animalsData.find((animal) => animal.id === id);
+ let pet =  animalsData.find((animal) => animal.id === id);
 console.log(pet);
 
 
@@ -20,7 +19,7 @@ console.log(pet);
     <div className={styles.petCard}>
       <div className={styles.petCard__image}>
         <Image
-          src={pet.images[0].src|| "/placeholder.svg"} // fallback se não vier imagem
+          src={pet.images[0].src|| "/placeholder.svg"} 
           fill
           alt={pet.images[0].alt}
           loading="lazy"
