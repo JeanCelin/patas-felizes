@@ -28,16 +28,16 @@ export default async function AnimalProfile({ params }) {
       <section className={styles.profileContainer}>
         <section className={styles.profileHeader}>
           <div className={styles.profileHeader__info}>
-            <div>
-              <h1>{animalData.name}</h1>
-              <span>
+            <div className={styles.profileHeader__name__container}>
+              <h1 className={styles.profileHeader__name}>{animalData.name}</h1>
+              <span className={styles.status}>
                 {animalData.status === true ? "Disponível" : "Indisponível"}
               </span>
             </div>
-            <p>{animalData.breed}</p>
+            <p className={styles.profileHeader__breed}>{animalData.breed}</p>
           </div>
-          <div>
-            <div>
+          <div className={styles.profileHeader__info__container}>
+            <div className={styles.profileHeader__info__item}>
               <HeartIcon />
               <p>
                 {animalData.age > 1
@@ -45,15 +45,15 @@ export default async function AnimalProfile({ params }) {
                   : `${animalData.age} ano`}
               </p>
             </div>
-            <div>
+            <div className={styles.profileHeader__info__item}>
               <HeartIcon />
               <p>{`Porte ${animalData.size}`}</p>
             </div>
-            <div>
+            <div className={styles.profileHeader__info__item}>
               <HeartIcon />
               <p>{` ${animalData.weight} kg`}</p>
             </div>
-            <div>
+            <div className={styles.profileHeader__info__item}>
               <HeartIcon />
               <p>{` ${animalData.location}`}</p>
             </div>
