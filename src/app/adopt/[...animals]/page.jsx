@@ -36,8 +36,9 @@ export default async function AnimalProfile({ params }) {
             </div>
             <p className={styles.profileHeader__breed}>{animalData.breed}</p>
           </div>
-          <div className={styles.profileHeader__info__container}>
-            <div className={styles.profileHeader__info__item}>
+
+          <div className={styles.profile__info__container}>
+            <div className={styles.profile__info__item}>
               <HeartIcon />
               <p>
                 {animalData.age > 1
@@ -45,15 +46,61 @@ export default async function AnimalProfile({ params }) {
                   : `${animalData.age} ano`}
               </p>
             </div>
-            <div className={styles.profileHeader__info__item}>
+            <div className={styles.profile__info__item}>
               <HeartIcon />
               <p>{`Porte ${animalData.size}`}</p>
             </div>
-            <div className={styles.profileHeader__info__item}>
+            <div className={styles.profile__info__item}>
               <HeartIcon />
               <p>{` ${animalData.weight} kg`}</p>
             </div>
-            <div className={styles.profileHeader__info__item}>
+            <div className={styles.profile__info__item}>
+              <HeartIcon />
+              <p>{` ${animalData.location}`}</p>
+            </div>
+          </div>
+        </section>
+        <section className={styles.profileHealth}>
+          <h2>Status de Saúde</h2>
+          <div className={styles.profile__info__container}>
+            <div className={styles.profile__info__item}>
+              <HeartIcon />
+              <p>
+                {animalData.age > 1
+                  ? `${animalData.age} anos`
+                  : `${animalData.age} ano`}
+              </p>
+            </div>
+            <div className={styles.profile__info__item}>
+              <HeartIcon />
+              <p>{`Porte ${animalData.size}`}</p>
+            </div>
+            <div className={styles.profile__info__item}>
+              <HeartIcon />
+              <p>{` ${animalData.weight} kg`}</p>
+            </div>
+            <div className={styles.profile__info__item}>
+              <HeartIcon />
+              <p>{` ${animalData.location}`}</p>
+            </div>
+          </div>
+        </section>
+        <section className={styles.profileCompatibility}>
+          <h2 className={styles.profileCompatibility__title}>Compatibilidade</h2>
+          <div className={styles.profileCompatibility__container}>
+            <div className={styles.profileCompatibility__item}>
+              <HeartIcon />
+              <p>Bom com crianças</p>
+            </div>
+            <div className={styles.profileCompatibility__item}>
+              <HeartIcon />
+              <p>{`Porte ${animalData.size}`}</p>
+            </div>
+            <div className={styles.profileCompatibility__item}>
+              <HeartIcon />
+              <p>{` ${animalData.weight} kg`}</p>
+            </div>
+            <div className={styles.profileCompatibility__item}>
               <HeartIcon />
               <p>{` ${animalData.location}`}</p>
             </div>

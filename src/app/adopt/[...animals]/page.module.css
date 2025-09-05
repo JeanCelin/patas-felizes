@@ -1,4 +1,4 @@
-.animalProfile{
+.animalProfile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,6 @@
   padding: 16px;
   gap: 16px;
   color: var(--color-text);
- 
 }
 
 .photosContainer {
@@ -22,7 +21,6 @@
   position: relative;
   grid-area: 1 / 1 / 2 / 4;
   aspect-ratio: 4/3;
-
 }
 .photoSecondary {
   position: relative;
@@ -37,8 +35,11 @@
   object-fit: cover;
 }
 
-.profileContainer{
+.profileContainer {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .profileHeader__name__container {
@@ -46,37 +47,58 @@
   align-items: center;
   gap: 10px;
 }
- .profileHeader__name {
+.profileHeader__name {
   font-size: 30px;
   color: var(--color4);
- }
- .profileHeader__breed {
+}
+.profileHeader__breed {
   display: flex;
   font-size: 20px;
-  margin-top: 8px
- }
+  margin-top: 8px;
+}
 
- .status {
+.status {
   font-size: 12px;
   color: var(--color4);
   background-color: var(--color3);
   font-weight: 500;
   padding: 2px 10px;
   border-radius: 20px;
-  
- }
+}
 
- .profileHeader__info__container {
+.profile__info__container {
   margin-top: 16px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
- }
+}
 
- .profileHeader__info__item {
+.profile__info__item {
   display: flex;
+
   align-items: center;
   gap: 6px;
 
-  font-size: 16px;
- }
+  font-size: 14px;
+}
+.profileHealth h2 {
+  color: var(--color1);
+  font-size: 18px;
+}
+
+.profileCompatibility__title {
+  color: var(--color1);
+  font-size: 18px;
+}
+
+.profileCompatibility__container {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+.profileCompatibility__item {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+}
