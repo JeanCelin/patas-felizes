@@ -1,9 +1,8 @@
-// componentes/icons/IconePata.jsx
-import { Phone } from "lucide-react";
+import { Share2 } from "lucide-react";
 
-export default function PhoneIcon({ size = 16, color = "currentColor" }) {
+export default function ShareIcon({ size = 16, color = "currentColor" }) {
   return (
-    <Phone
+    <Share2
       size={size}
       color={color}
       strokeWidth={2}

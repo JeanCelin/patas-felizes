@@ -1,0 +1,21 @@
+
+.profileHealth h2 {
+  color: var(--color1);
+  font-size: 18px;}
+
+.profile__info__container {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.profile__info__item {
+  display: flex;
+
+  align-items: center;
+  gap: 6px;
+
+  font-size: 14px;
+}
+

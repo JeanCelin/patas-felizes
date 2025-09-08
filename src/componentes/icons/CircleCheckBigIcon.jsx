@@ -7,10 +7,10 @@ export default function CircleCheckBigIcon ({ size = 16, color = "currentColor" 
       color={color}
       strokeWidth={2}
       style={{
-        backgroundColor: "transparent",
+         backgroundColor: "transparent",
         fill: "none",
         flexShrink: "0",
-        marginTop: "4px"
+        marginTop: "2px"
       }}
     />
   );

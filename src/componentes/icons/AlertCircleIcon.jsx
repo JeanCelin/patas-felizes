@@ -1,6 +1,6 @@
 import { AlertCircle } from "lucide-react";
 
-export default function AlertCircleIcon ({ size = 16, color = "currentColor" }) {
+export default function AlertCircleIcon({ size = 16, color = "currentColor" }) {
   return (
     <AlertCircle
       size={size}
@@ -10,7 +10,7 @@ export default function AlertCircleIcon ({ size = 16, color = "currentColor" }) 
         backgroundColor: "transparent",
         fill: "none",
         flexShrink: "0",
-        marginTop: "2px"
+        marginTop: "2px",
       }}
     />
   );

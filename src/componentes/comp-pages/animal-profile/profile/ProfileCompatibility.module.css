@@ -1,0 +1,16 @@
+.profileCompatibility__title {
+  color: var(--color1);
+  font-size: 18px;
+}
+
+.profileCompatibility__container {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+.profileCompatibility__item {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+}

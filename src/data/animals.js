@@ -13,7 +13,22 @@ const animals = [
     adoptionFee: 150,
     images: [
       {
-        id: "01imgmax",
+        id: "i01",
+        src: "/dogs/max.jpeg",
+        alt: "Max, um golden retriever brincalhão",
+      },
+      {
+        id: "i02",
+        src: "/dogs/max.jpeg",
+        alt: "Max, um golden retriever brincalhão",
+      },
+      {
+        id: "i03",
+        src: "/dogs/max.jpeg",
+        alt: "Max, um golden retriever brincalhão",
+      },
+      {
+        id: "i04",
         src: "/dogs/max.jpeg",
         alt: "Max, um golden retriever brincalhão",
       },

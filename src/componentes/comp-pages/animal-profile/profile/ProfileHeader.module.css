@@ -1,0 +1,38 @@
+.profileHeader__name__container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profileHeader__name {
+  font-size: 30px;
+  color: var(--color1);
+}
+.profileHeader__breed {
+  display: flex;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.status {
+  font-size: 12px;
+  color: var(--color4);
+  background-color: var(--color3);
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+.profile__info__container {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.profile__info__item {
+  display: flex;
+
+  align-items: center;
+  gap: 6px;
+
+  font-size: 14px;
+}

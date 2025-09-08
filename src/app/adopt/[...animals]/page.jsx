@@ -1,7 +1,10 @@
 import animalsData from "@/data/animals";
 import styles from "./page.module.css";
-import Image from "next/image";
-import HeartIcon from "@/componentes/icons/HeartIcon";
+import AnimalPhotos from "@/componentes/comp-pages/animal-profile/photos/AnimalPhotos";
+import ProfileHeader from "@/componentes/comp-pages/animal-profile/profile/ProfileHeader";
+import ProfileHealth from "@/componentes/comp-pages/animal-profile/profile/ProfileHealth";
+import ProfileCompatibility from "@/componentes/comp-pages/animal-profile/profile/ProfileCompatibility";
+import ProfileButtons from "@/componentes/comp-pages/animal-profile/profile/ProfileButtons";
 
 export default async function AnimalProfile({ params }) {
   const { animals } = await params;
@@ -11,101 +14,35 @@ export default async function AnimalProfile({ params }) {
   console.log(animalData);
   return (
     <section className={styles.animalProfile}>
-      <section className={styles.photosContainer}>
-        <div className={`${styles.photoMain}`}>
-          <Image src={"/placeholder.svg"} alt="Foto principal do animal" fill />
-        </div>
-        <div className={`${styles.photoSecondary}`}>
-          <Image src={"/placeholder.svg"} alt="Foto principal do animal" fill />
-        </div>
-        <div className={`${styles.photoSecondary}`}>
-          <Image src={"/placeholder.svg"} alt="Foto principal do animal" fill />
-        </div>
-        <div className={`${styles.photoSecondary}`}>
-          <Image src={"/placeholder.svg"} alt="Foto principal do animal" fill />
-        </div>
-      </section>
+      <AnimalPhotos images={animalData.images} />
       <section className={styles.profileContainer}>
-        <section className={styles.profileHeader}>
-          <div className={styles.profileHeader__info}>
-            <div className={styles.profileHeader__name__container}>
-              <h1 className={styles.profileHeader__name}>{animalData.name}</h1>
-              <span className={styles.status}>
-                {animalData.status === true ? "Disponível" : "Indisponível"}
-              </span>
-            </div>
-            <p className={styles.profileHeader__breed}>{animalData.breed}</p>
-          </div>
+        <ProfileHeader
+          name={animalData.name}
+          breed={animalData.breed}
+          status={animalData.status}
+          age={animalData.age}
+          size={animalData.size}
+          weight={animalData.weight}
+          location={animalData.location}
+        />
+        <ProfileHealth health={animalData.health} />
 
-          <div className={styles.profile__info__container}>
-            <div className={styles.profile__info__item}>
-              <HeartIcon />
-              <p>
-                {animalData.age > 1
-                  ? `${animalData.age} anos`
-                  : `${animalData.age} ano`}
-              </p>
+        <ProfileCompatibility compatibility={animalData.compatibility} />
+        <div>
+          <ProfileButtons name={animalData.name} />
+          <section className={styles.adoptionFee__container}>
+            <div className={styles.adoptionFee__content}>
+              <span className={styles.adoptionFee__title}>Taxa de Adoção:</span>
+              <span
+                className={
+                  styles.adoptionFee__value
+                }>{`R$ ${animalData.adoptionFee}`}</span>
             </div>
-            <div className={styles.profile__info__item}>
-              <HeartIcon />
-              <p>{`Porte ${animalData.size}`}</p>
-            </div>
-            <div className={styles.profile__info__item}>
-              <HeartIcon />
-              <p>{` ${animalData.weight} kg`}</p>
-            </div>
-            <div className={styles.profile__info__item}>
-              <HeartIcon />
-              <p>{` ${animalData.location}`}</p>
-            </div>
-          </div>
-        </section>
-        <section className={styles.profileHealth}>
-          <h2>Status de Saúde</h2>
-          <div className={styles.profile__info__container}>
-            <div className={styles.profile__info__item}>
-              <HeartIcon />
-              <p>
-                {animalData.age > 1
-                  ? `${animalData.age} anos`
-                  : `${animalData.age} ano`}
-              </p>
-            </div>
-            <div className={styles.profile__info__item}>
-              <HeartIcon />
-              <p>{`Porte ${animalData.size}`}</p>
-            </div>
-            <div className={styles.profile__info__item}>
-              <HeartIcon />
-              <p>{` ${animalData.weight} kg`}</p>
-            </div>
-            <div className={styles.profile__info__item}>
-              <HeartIcon />
-              <p>{` ${animalData.location}`}</p>
-            </div>
-          </div>
-        </section>
-        <section className={styles.profileCompatibility}>
-          <h2 className={styles.profileCompatibility__title}>Compatibilidade</h2>
-          <div className={styles.profileCompatibility__container}>
-            <div className={styles.profileCompatibility__item}>
-              <HeartIcon />
-              <p>Bom com crianças</p>
-            </div>
-            <div className={styles.profileCompatibility__item}>
-              <HeartIcon />
-              <p>{`Porte ${animalData.size}`}</p>
-            </div>
-            <div className={styles.profileCompatibility__item}>
-              <HeartIcon />
-              <p>{` ${animalData.weight} kg`}</p>
-            </div>
-            <div className={styles.profileCompatibility__item}>
-              <HeartIcon />
-              <p>{` ${animalData.location}`}</p>
-            </div>
-          </div>
-        </section>
+            <p className={styles.adoptionFee__note}>
+              Inclui vacinação, castração e microchip
+            </p>
+          </section>
+        </div>
       </section>
     </section>
   );

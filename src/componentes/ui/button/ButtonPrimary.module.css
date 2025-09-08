@@ -16,17 +16,21 @@
   font-size: 14px;
   font-weight: 500;
 
-
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
 
-
   transition: all 0.2s ease-in-out;
+
+  text-align: center;
 }
 
 .buttonPrimary:hover {
-
   transform: translateY(-2px);
 
-
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.buttonPrimary__content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
