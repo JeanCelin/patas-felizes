@@ -5,6 +5,11 @@ import ProfileHeader from "@/componentes/comp-pages/animal-profile/profile/Profi
 import ProfileHealth from "@/componentes/comp-pages/animal-profile/profile/ProfileHealth";
 import ProfileCompatibility from "@/componentes/comp-pages/animal-profile/profile/ProfileCompatibility";
 import ProfileButtons from "@/componentes/comp-pages/animal-profile/profile/ProfileButtons";
+import ProfileAbout from "@/componentes/comp-pages/animal-profile/about/ProfileAbout";
+import AdoptForm from "@/componentes/comp-pages/adopt/adopt-form/AdoptForm";
+import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
+import Link from "next/link";
+import ArrowLeftIcon from "@/componentes/icons/ArrowLeftIcon";
 
 export default async function AnimalProfile({ params }) {
   const { animals } = await params;
@@ -13,37 +18,55 @@ export default async function AnimalProfile({ params }) {
   let animalData = animalsData.find((animal) => animal.id === animalId);
   console.log(animalData);
   return (
-    <section className={styles.animalProfile}>
-      <AnimalPhotos images={animalData.images} />
-      <section className={styles.profileContainer}>
-        <ProfileHeader
-          name={animalData.name}
-          breed={animalData.breed}
-          status={animalData.status}
-          age={animalData.age}
-          size={animalData.size}
-          weight={animalData.weight}
-          location={animalData.location}
-        />
-        <ProfileHealth health={animalData.health} />
+    <>
+      <section className={styles.animalProfile}>
+        <AnimalPhotos images={animalData.images} />
+        <section className={styles.profileContainer}>
+          <ProfileHeader
+            name={animalData.name}
+            breed={animalData.breed}
+            status={animalData.status}
+            age={animalData.age}
+            size={animalData.size}
+            weight={animalData.weight}
+            location={animalData.location}
+          />
+          <ProfileHealth health={animalData.health} />
 
-        <ProfileCompatibility compatibility={animalData.compatibility} />
-        <div>
-          <ProfileButtons name={animalData.name} />
-          <section className={styles.adoptionFee__container}>
-            <div className={styles.adoptionFee__content}>
-              <span className={styles.adoptionFee__title}>Taxa de Adoção:</span>
-              <span
-                className={
-                  styles.adoptionFee__value
-                }>{`R$ ${animalData.adoptionFee}`}</span>
-            </div>
-            <p className={styles.adoptionFee__note}>
-              Inclui vacinação, castração e microchip
-            </p>
-          </section>
-        </div>
+          <ProfileCompatibility compatibility={animalData.compatibility} />
+          <div>
+            <ProfileButtons name={animalData.name} />
+            <section className={styles.adoptionFee__container}>
+              <div className={styles.adoptionFee__content}>
+                <span className={styles.adoptionFee__title}>
+                  Taxa de Adoção:
+                </span>
+                <span
+                  className={
+                    styles.adoptionFee__value
+                  }>{`R$ ${animalData.adoptionFee}`}</span>
+              </div>
+              <p className={styles.adoptionFee__note}>
+                Inclui vacinação, castração e microchip
+              </p>
+            </section>
+          </div>
+        </section>
       </section>
-    </section>
+      <section className={styles.profileAbout}>
+        <ProfileAbout about={animalData.about} name={animalData.name} />
+      </section>
+      <section className={styles.profileAdoptForm}>
+        <AdoptForm align={"center"} textAlign={"center"} />
+      </section>
+      <div className={styles.buttonBack__container}>
+        <Link href={"/adopt"}>
+          <ButtonSecondary
+            children={"Voltar para Adoções"}
+            icon={<ArrowLeftIcon />}
+          />
+        </Link>
+      </div>
+    </>
   );
 }

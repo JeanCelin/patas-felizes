@@ -13,7 +13,6 @@
   gap: 24px;
 }
 
-
 .adoptionFee__container {
   width: 100%;
   background-color: var(--color3);
@@ -30,17 +29,34 @@
 }
 .adoptionFee__title {
   font-size: 16px;
-  color: var(--color4)
-
+  color: var(--color4);
 }
-.adoptionFee__value{
+.adoptionFee__value {
   font-size: 24px;
   font-weight: bold;
-  color: var(--color4)
+  color: var(--color4);
 }
 
 .adoptionFee__note {
   margin-top: 4px;
   color: var(--color4);
   font-size: 12px;
+}
+
+.profileAbout {
+  background-color: var(--color2);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileAdoptForm {
+  padding: 16px;
+}
+.buttonBack__container {
+  max-width: 230px;
+  padding: 16px;
+}
+.buttonBack__container a {
+  text-decoration: none;
 }

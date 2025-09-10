@@ -1,0 +1,23 @@
+.profileAbout__container {
+  padding: 48px 16px;
+  max-width: 1400px;
+  width: 100%;
+  color: var(--color-text);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 32px;
+}
+.profileAbout__content {
+  max-width: 56rem;
+}
+
+.profileAbout__content h2 {
+  color: var(--color4);
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+.profileAbout__content p {
+  font-size: 16px;
+  margin-top: 16px 0px 0px;
+}
