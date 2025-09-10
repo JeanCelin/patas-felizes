@@ -1,12 +1,12 @@
 .animalProfile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 100%;
+
   width: 100%;
   padding: 16px;
   gap: 16px;
   color: var(--color-text);
+  max-width: 1200px;
 }
 .profileContainer {
   display: grid;
@@ -59,4 +59,28 @@
 }
 .buttonBack__container a {
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .adoptionFee__title {
+    font-size: 16px;
+  }
+
+  .adoptionFee__note {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .animalProfile {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-self: center;
+    padding: 96px 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+    .animalProfile {
+    gap: 26px;
+  }
 }

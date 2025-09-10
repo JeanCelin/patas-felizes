@@ -36,3 +36,17 @@
 
   font-size: 14px;
 }
+@media screen and (min-width: 1024px) {
+  .profileHeader__name {
+    font-size: 36px;
+  }
+  .profileHeader__breed {
+    font-size: 24px;
+  }
+  .status {
+    font-size: 14px;
+  }
+  .profile__info__item {
+    font-size: 16px;
+  }
+}

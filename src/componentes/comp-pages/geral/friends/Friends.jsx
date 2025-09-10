@@ -6,6 +6,13 @@ import HeartIcon from "@/componentes/icons/HeartIcon";
 import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
 
 export default function Friends() {
+
+  function getFirstAnimalSlugs(limit = 6) {
+    return animals.slice(0, limit).map((animal) => animal.slug);
+  }
+  
+  const slugs = getFirstAnimalSlugs();
+
   return (
     <section className={styles.friends}>
       <div className={styles.friends__wrapper}>
@@ -22,16 +29,17 @@ export default function Friends() {
             Você poderia ser a combinação perfeita?
           </p>
         </header>
+
         <div className={styles.friends__cards}>
-          <PetCard id="max" />
-          {/* <PetCard id="bob" />
-          <PetCard id="mel" />
-          <PetCard id="luna" />
-          <PetCard id="thor" />
-          <PetCard id="duck" /> */}
+          {slugs.length > 0 ? (
+            slugs.map((slug) => <PetCard key={slug} slug={slug} />)
+          ) : (
+            <p>Nenhum animal disponível no momento.</p>
+          )}
         </div>
+
         <div className={styles.friends__buttonMore}>
-          <ButtonSecondary children="Ver Todos os Pets Disponíveis" />
+          <ButtonSecondary>Ver Todos os Pets Disponíveis</ButtonSecondary>
         </div>
       </div>
     </section>

@@ -5,12 +5,12 @@ import Link from "next/link";
 import animalsData from "@/data/animals";
 
 export default function PetCard({
-  id
+  slug
 }) {
 
-  console.log(id);
+  console.log(slug);
 
- let pet =  animalsData.find((animal) => animal.id === id);
+ let pet =  animalsData.find((animal) => animal.slug === slug);
 console.log(pet);
 
 
@@ -33,7 +33,7 @@ console.log(pet);
           {pet.breed} • {pet.age} {pet.age == 1 ? "ano" : "anos"} • {pet.sex}
         </p>
         <div className={styles.petCard__text__container}>
-          <p className={styles.petCard__text}>{pet.smallDescription}</p>
+          <p className={styles.petCard__text}>{pet.about.smallDescription}</p>
         </div>
         <div className={styles.petCard__button}>
           <Link href={`/adopt/${pet.category}/${pet.id}`}>
