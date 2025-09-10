@@ -47,15 +47,15 @@
   background-color: var(--color2);
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .profileAdoptForm {
   padding: 16px;
+  max-width: 768px;
+  margin: auto;
 }
 .buttonBack__container {
-  max-width: 230px;
-  padding: 16px;
+  max-width: 250px;
+  margin-top: 24px;
 }
 .buttonBack__container a {
   text-decoration: none;
@@ -78,9 +78,27 @@
     justify-self: center;
     padding: 96px 24px;
   }
+  .profileAbout {
+    padding: 36px 24px;
+  }
+  .profileAdoptForm {
+    padding: 36px 24px;
+  }
 }
 @media screen and (min-width: 1024px) {
-    .animalProfile {
+  .animalProfile {
     gap: 26px;
+  }
+  .profileAbout {
+    padding: 48px 96px;
+    justify-content: center;
+
+
+  }
+}
+@media screen and (min-width: 1280px) {
+  .profileAbout {
+    padding: 48px 96px;
+ 
   }
 }

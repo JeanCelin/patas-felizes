@@ -14,8 +14,9 @@ import ArrowLeftIcon from "@/componentes/icons/ArrowLeftIcon";
 export default async function AnimalProfile({ params }) {
   const { animals } = await params;
   console.log(animals);
-  let animalId = animals[1];
-  let animalData = animalsData.find((animal) => animal.id === animalId);
+  let slug = animals[1];
+  console.log(slug);
+  let animalData = animalsData.find((animal) => animal.slug === slug);
   console.log(animalData);
   return (
     <>
@@ -58,15 +59,15 @@ export default async function AnimalProfile({ params }) {
       </section>
       <section className={styles.profileAdoptForm}>
         <AdoptForm align={"center"} textAlign={"center"} />
+        <div className={styles.buttonBack__container}>
+          <Link href={"/adopt"}>
+            <ButtonSecondary
+              children={"Voltar para Adoções"}
+              icon={<ArrowLeftIcon />}
+            />
+          </Link>
+        </div>
       </section>
-      <div className={styles.buttonBack__container}>
-        <Link href={"/adopt"}>
-          <ButtonSecondary
-            children={"Voltar para Adoções"}
-            icon={<ArrowLeftIcon />}
-          />
-        </Link>
-      </div>
     </>
   );
 }

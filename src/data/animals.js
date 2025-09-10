@@ -13,10 +13,26 @@ const animals = [
     status: true,
     adoptionFee: 150,
     images: [
-      { id: "i01", src: "/dogs/max.jpeg", alt: "Max, um golden retriever brincalhão" },
-      { id: "i02", src: "/dogs/max.jpeg", alt: "Max, um golden retriever brincalhão" },
-      { id: "i03", src: "/dogs/max.jpeg", alt: "Max, um golden retriever brincalhão" },
-      { id: "i04", src: "/dogs/max.jpeg", alt: "Max, um golden retriever brincalhão" },
+      {
+        id: "i01",
+        src: "/dogs/max.jpeg",
+        alt: "Max, um golden retriever brincalhão",
+      },
+      {
+        id: "i02",
+        src: "/dogs/max.jpeg",
+        alt: "Max, um golden retriever brincalhão",
+      },
+      {
+        id: "i03",
+        src: "/dogs/max.jpeg",
+        alt: "Max, um golden retriever brincalhão",
+      },
+      {
+        id: "i04",
+        src: "/dogs/max.jpeg",
+        alt: "Max, um golden retriever brincalhão",
+      },
     ],
     health: {
       vaccinated: true,
@@ -32,11 +48,11 @@ const animals = [
     about: {
       smallDescription:
         "Amigável e brincalhão, Max adora longas caminhadas e brincar de buscar.",
-      story: `Max chegou até nós em janeiro de 2024, após ser encontrado vagando pelas ruas em condições precárias. Estava desnutrido e com medo de pessoas, mas com muito amor e cuidado, ele se transformou no cão amoroso e brincalhão que é hoje.`,
-      personality: `Max é um cão extremamente amoroso e leal. Ele adora brincar de buscar a bolinha e é muito inteligente, aprendendo comandos rapidamente.`,
-      idealHome: `Max precisa de uma família que tenha tempo para exercitá-lo diariamente.`,
-      specialNeeds: `Max não tem necessidades especiais, apenas exercícios regulares.`,
-      medicalHistory: `Max chegou com sarna, que foi tratada. Está vacinado, microchipado e castrado.`,
+      story: `Max chegou até nós em janeiro de 2024, após ser encontrado vagando pelas ruas em condições precárias. Estava desnutrido, com sarna e bastante assustado. No início, tinha medo até de receber carinho, mas com paciência, cuidados veterinários e muito amor da equipe do abrigo, Max foi se recuperando. Aos poucos, sua confiança foi sendo restaurada, e hoje ele é um cachorro alegre, saudável e cheio de energia.`,
+      personality: `Max é extremamente amoroso e leal. Inteligente, aprende comandos rapidamente e adora brincar de buscar a bolinha. É um companheiro ideal para famílias ativas que gostam de caminhadas, trilhas ou atividades ao ar livre. Além disso, é muito protetor, sempre atento ao que acontece ao redor, mas nunca agressivo.`,
+      idealHome: `Max precisa de uma família que tenha tempo para dedicar a caminhadas e brincadeiras. Uma casa com quintal seria excelente, mas não é obrigatória, desde que ele tenha atividades regulares. Ele se dá muito bem com crianças e outros cães, mas não é recomendado para lares com gatos.`,
+      specialNeeds: `Max não tem necessidades especiais, apenas precisa de bastante exercício físico e mental para se manter equilibrado.`,
+      medicalHistory: `Recebeu tratamento completo contra sarna e foi castrado, vacinado e microchipado. Atualmente está com a saúde perfeita e todos os cuidados veterinários em dia.`,
     },
   },
   {
@@ -53,10 +69,26 @@ const animals = [
     status: true,
     adoptionFee: 180,
     images: [
-      { id: "i05", src: "/dogs/bob.jpeg", alt: "Bob, um labrador cheio de energia" },
-      { id: "i06", src: "/dogs/bob.jpeg", alt: "Bob, um labrador cheio de energia" },
-      { id: "i07", src: "/dogs/bob.jpeg", alt: "Bob, um labrador cheio de energia" },
-      { id: "i08", src: "/dogs/bob.jpeg", alt: "Bob, um labrador cheio de energia" },
+      {
+        id: "i05",
+        src: "/dogs/bob.jpeg",
+        alt: "Bob, um labrador cheio de energia",
+      },
+      {
+        id: "i06",
+        src: "/dogs/bob.jpeg",
+        alt: "Bob, um labrador cheio de energia",
+      },
+      {
+        id: "i07",
+        src: "/dogs/bob.jpeg",
+        alt: "Bob, um labrador cheio de energia",
+      },
+      {
+        id: "i08",
+        src: "/dogs/bob.jpeg",
+        alt: "Bob, um labrador cheio de energia",
+      },
     ],
     health: {
       vaccinated: true,
@@ -70,12 +102,13 @@ const animals = [
       cats: true,
     },
     about: {
-      smallDescription: "Bob é leal e cheio de energia, adora correr em espaços abertos.",
-      story: `Bob foi resgatado em 2022 após ter sido abandonado em uma rodovia. Com paciência e carinho, recuperou sua confiança em humanos.`,
-      personality: `É brincalhão, cheio de energia e adora água. Ideal para famílias que praticam atividades ao ar livre.`,
-      idealHome: `Precisa de espaço para correr e brincar. Uma família ativa seria perfeita.`,
-      specialNeeds: `Nenhuma especial, mas precisa gastar energia diariamente.`,
-      medicalHistory: `Bob está vacinado, castrado e nunca teve doenças graves.`,
+      smallDescription:
+        "Bob é leal e cheio de energia, adora correr em espaços abertos.",
+      story: `Bob foi resgatado em 2022 após ser encontrado sozinho em uma rodovia movimentada, bastante magro e desidratado. No começo estava arisco, mas logo demonstrou ser um cachorro extremamente dócil e sociável. Hoje, Bob é um exemplo de superação: recuperou peso, confiança e se tornou um cão cheio de vitalidade.`,
+      personality: `É brincalhão, cheio de energia e um verdadeiro apaixonado por água. Adora correr em parques, brincar de buscar e nadar. É obediente quando tem estímulos e rotinas, mas pode ficar entediado se passar muito tempo sem atividade.`,
+      idealHome: `O ideal é que Bob viva em uma casa com quintal ou com acesso frequente a áreas abertas. Famílias ativas, que gostem de praticar esportes ou caminhadas, serão perfeitas para ele.`,
+      specialNeeds: `Não possui necessidades especiais, mas precisa de bastante atividade física para se manter feliz e saudável.`,
+      medicalHistory: `Está vacinado, castrado e nunca apresentou problemas graves de saúde.`,
     },
   },
   {
@@ -109,12 +142,13 @@ const animals = [
       cats: false,
     },
     about: {
-      smallDescription: "Curioso e cheio de energia, Duck ama explorar novos lugares.",
-      story: `Resgatado ainda filhote, Duck foi encontrado em uma feira. Sempre muito ativo e curioso.`,
-      personality: `É inteligente, mas teimoso. Adora brincar com crianças.`,
-      idealHome: `Família que ofereça caminhadas e brincadeiras diárias.`,
-      specialNeeds: `Precisa de estímulos para não ficar entediado.`,
-      medicalHistory: `Sem histórico de doenças. Está vacinado e saudável.`,
+      smallDescription:
+        "Curioso e cheio de energia, Duck ama explorar novos lugares.",
+      story: `Duck foi resgatado ainda filhote em uma feira de rua, onde corria de barraca em barraca em busca de comida. Desde pequeno mostrou ser curioso e cheio de energia. Cresceu cercado de cuidados, mas sempre manteve sua personalidade ativa e exploradora.`,
+      personality: `Inteligente e esperto, Duck é daqueles que aprende truques rapidamente, mas pode ser um pouco teimoso. Ele adora interagir com crianças e participar de brincadeiras, mas precisa de estímulos para gastar energia. Se entediado, pode aprontar travessuras típicas de sua raça.`,
+      idealHome: `Duck se adapta bem em casas com famílias que gostem de passear e brincar com frequência. Precisa de caminhadas diárias e jogos que desafiem sua inteligência.`,
+      specialNeeds: `Necessita de estímulos mentais e físicos constantes para não ficar entediado.`,
+      medicalHistory: `Está vacinado e saudável, sem histórico de doenças. Ainda não foi castrado nem microchipado.`,
     },
   },
   {
@@ -148,12 +182,13 @@ const animals = [
       cats: true,
     },
     about: {
-      smallDescription: "Linda e energética, Luna adora correr e brincar na neve.",
-      story: `Luna foi resgatada de uma família que não podia mais cuidar dela. É doce e muito sociável.`,
-      personality: `Carismática e brincalhona, adora companhia.`,
-      idealHome: `Família ativa com espaço para corridas.`,
-      specialNeeds: `Precisa de caminhadas longas e brincadeiras.`,
-      medicalHistory: `Está saudável, vacinada e castrada.`,
+      smallDescription:
+        "Linda e energética, Luna adora correr e brincar na neve.",
+      story: `Luna foi entregue ao abrigo por uma família que não podia mais cuidar dela. Apesar disso, chegou já socializada e muito bem tratada. Sua energia é contagiante, e rapidamente conquistou voluntários e outros cães no abrigo.`,
+      personality: `Luna é brincalhona, carismática e cheia de vida. Ama correr, brincar de puxar corda e se dá muito bem com outros cães. Por ser da raça Husky, é independente e precisa de atividades intensas para gastar energia.`,
+      idealHome: `O ideal é que viva com uma família ativa, que goste de caminhadas longas, corridas ou trilhas. Uma casa com quintal é recomendada para que ela possa gastar energia.`,
+      specialNeeds: `Precisa de bastante exercício físico e mental, além de atenção para evitar fugas, já que é muito curiosa.`,
+      medicalHistory: `Está vacinada, castrada e microchipada, sem problemas de saúde.`,
     },
   },
   {
@@ -188,11 +223,11 @@ const animals = [
     },
     about: {
       smallDescription: "Pequena e doce, Mel adora colo e carinho.",
-      story: `Mel foi encontrada abandonada em uma praça. Hoje é dócil e adora companhia.`,
-      personality: `Muito carinhosa, adora estar perto de pessoas.`,
-      idealHome: `Família tranquila que goste de animais de colo.`,
-      specialNeeds: `Precisa de companhia, não gosta de ficar sozinha.`,
-      medicalHistory: `Está vacinada e saudável.`,
+      story: `Mel foi encontrada ainda jovem, abandonada em uma praça. Apesar disso, sempre foi dócil e receptiva ao carinho humano. Depois de resgatada, rapidamente se adaptou ao abrigo, onde adora ficar no colo dos voluntários.`,
+      personality: `É muito carinhosa, apegada e gosta de estar próxima às pessoas. Se dá bem com outros animais e adora receber atenção.`,
+      idealHome: `Família tranquila que goste de animais de colo e que possa oferecer companhia constante, já que Mel não gosta de ficar sozinha por muito tempo.`,
+      specialNeeds: `Precisa de companhia frequente, pois tende a ficar ansiosa quando deixada sozinha.`,
+      medicalHistory: `Está vacinada e saudável, mas ainda não foi castrada.`,
     },
   },
   {
@@ -209,10 +244,26 @@ const animals = [
     status: true,
     adoptionFee: 170,
     images: [
-      { id: "i21", src: "/dogs/thor.jpeg", alt: "Thor, um pastor alemão protetor" },
-      { id: "i22", src: "/dogs/thor.jpeg", alt: "Thor, um pastor alemão protetor" },
-      { id: "i23", src: "/dogs/thor.jpeg", alt: "Thor, um pastor alemão protetor" },
-      { id: "i24", src: "/dogs/thor.jpeg", alt: "Thor, um pastor alemão protetor" },
+      {
+        id: "i21",
+        src: "/dogs/thor.jpeg",
+        alt: "Thor, um pastor alemão protetor",
+      },
+      {
+        id: "i22",
+        src: "/dogs/thor.jpeg",
+        alt: "Thor, um pastor alemão protetor",
+      },
+      {
+        id: "i23",
+        src: "/dogs/thor.jpeg",
+        alt: "Thor, um pastor alemão protetor",
+      },
+      {
+        id: "i24",
+        src: "/dogs/thor.jpeg",
+        alt: "Thor, um pastor alemão protetor",
+      },
     ],
     health: {
       vaccinated: true,
@@ -227,11 +278,11 @@ const animals = [
     },
     about: {
       smallDescription: "Forte e protetor, Thor é um excelente cão de guarda.",
-      story: `Thor foi doado por uma família que se mudou. É leal e gosta de proteger quem ama.`,
-      personality: `Calmo, observador e muito protetor.`,
-      idealHome: `Casa com quintal grande e espaço para vigiar.`,
-      specialNeeds: `Nenhuma, apenas atenção e exercícios regulares.`,
-      medicalHistory: `Thor está castrado, vacinado e em excelente forma.`,
+      story: `Thor foi doado ao abrigo por uma família que precisou se mudar e não pôde levá-lo. Chegou bem cuidado, mas sentiu muito a mudança no começo. Com o tempo, se adaptou ao abrigo, onde mostrou ser um cão calmo, confiável e com forte instinto protetor.`,
+      personality: `Thor é leal, tranquilo e bastante observador. É ótimo para quem busca um cão companheiro e também um guardião confiável. Apesar de seu tamanho, é dócil com pessoas da sua confiança.`,
+      idealHome: `Uma casa com quintal amplo é o cenário perfeito para Thor. Ele se adapta bem em famílias que apreciam cães protetores e sabem lidar com raças de grande porte.`,
+      specialNeeds: `Nenhuma especial, apenas exercícios regulares para manter a saúde física.`,
+      medicalHistory: `Está castrado, vacinado e em excelente forma física.`,
     },
   },
 ];

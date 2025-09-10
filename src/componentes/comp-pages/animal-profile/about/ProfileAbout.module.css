@@ -1,15 +1,11 @@
 .profileAbout__container {
-  padding: 48px 16px;
-  max-width: 1400px;
+  max-width: 968px;
   width: 100%;
   color: var(--color-text);
   display: grid;
-  justify-content: center;
-  align-content: center;
+
   gap: 32px;
-}
-.profileAbout__content {
-  max-width: 56rem;
+  line-height: 1.6;
 }
 
 .profileAbout__content h2 {
@@ -20,4 +16,16 @@
 .profileAbout__content p {
   font-size: 16px;
   margin-top: 16px 0px 0px;
+}
+
+@media screen and (min-width: 860px) {
+  .profileAbout__container {
+    gap: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .profileAbout__container {
+
+    max-width: 1024px;
+  }
 }
