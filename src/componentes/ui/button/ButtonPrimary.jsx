@@ -15,6 +15,7 @@ export default function ButtonPrimary({
       <div className={styles.buttonPrimary__content}>
         <div>{icon}</div>
         <div>{children}</div>
+   
       </div>
     </button>
   );

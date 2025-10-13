@@ -1,5 +1,6 @@
 import animalsData from "@/data/animals";
 import styles from "./page.module.css";
+
 import AnimalPhotos from "@/componentes/comp-pages/animal-profile/photos/AnimalPhotos";
 import ProfileHeader from "@/componentes/comp-pages/animal-profile/profile/ProfileHeader";
 import ProfileHealth from "@/componentes/comp-pages/animal-profile/profile/ProfileHealth";

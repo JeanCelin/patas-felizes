@@ -9,7 +9,6 @@ export default function Donate() {
       <MakeDifference />
       <DonationHelp />
       <OtherDonations />
-   
       <Donation />
     </div>
   );

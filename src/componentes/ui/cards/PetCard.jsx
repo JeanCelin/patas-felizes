@@ -36,7 +36,7 @@ console.log(pet);
           <p className={styles.petCard__text}>{pet.about.smallDescription}</p>
         </div>
         <div className={styles.petCard__button}>
-          <Link href={`/adopt/${pet.category}/${pet.slug}`}>
+          <Link href={`/adopt/category/${pet.category}/${pet.slug}`}>
             <ButtonPrimary>Adote-me</ButtonPrimary>
           </Link>
         </div>
