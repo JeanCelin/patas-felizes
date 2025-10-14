@@ -4,7 +4,7 @@ import styles from "./Friends.module.css";
 import tag from "@/styles/Tag.module.css";
 import HeartIcon from "@/componentes/icons/HeartIcon";
 import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
-
+import Link from "next/link";
 export default function Friends() {
 
   function getFirstAnimalSlugs(limit = 6) {
@@ -39,7 +39,9 @@ export default function Friends() {
         </div>
 
         <div className={styles.friends__buttonMore}>
+          <Link href={'/adopt/category'}>
           <ButtonSecondary>Ver Todos os Pets Disponíveis</ButtonSecondary>
+          </Link>
         </div>
       </div>
     </section>

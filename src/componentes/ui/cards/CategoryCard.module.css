@@ -1,8 +1,10 @@
 .categoryCard__container {
   padding: 48px 0;
   color: var(--color-text);
-
+  width: 100%;
   display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 648px));
   gap: 24px;
 }
 
@@ -81,4 +83,10 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .categoryCard__container {
+    grid-template-columns: repeat(2, minmax(250px, 520px));
+  }
 }

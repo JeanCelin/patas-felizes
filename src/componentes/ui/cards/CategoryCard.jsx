@@ -3,7 +3,7 @@ import styles from "./CategoryCard.module.css";
 import categoriesData from "@/data/categories";
 import animalsData from "@/data/animals";
 import ButtonPrimary from "../button/ButtonPrimary";
-import ArrowRightIcon from "@/componentes/icons/ArrowRightIcon";
+
 
 export default function CategoryCard() {
   // Contagem simples por categoria
