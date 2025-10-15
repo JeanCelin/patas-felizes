@@ -39,7 +39,7 @@ export default function Friends() {
         </div>
 
         <div className={styles.friends__buttonMore}>
-          <Link href={'/adopt/category'} style={{textDecoration: "none"}}>
+          <Link href={'/category'} style={{textDecoration: "none"}}>
           <ButtonSecondary>Ver Todos os Pets Disponíveis</ButtonSecondary>
           </Link>
         </div>

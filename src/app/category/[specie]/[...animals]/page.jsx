@@ -30,8 +30,9 @@ export default async function AnimalProfile({ params }) {
             <ButtonSecondary children={"Voltar"} icon={<ArrowLeftIcon />} />
           </Link>
         </div>
-        <AnimalPhotos images={animalData.images || "/placeholder.svg"} />
-
+        <div className={styles.animalProfile__photos}>
+          <AnimalPhotos images={animalData.images || "/placeholder.svg"} />
+        </div>
         <section className={styles.profileContainer}>
           <ProfileHeader
             name={animalData.name}

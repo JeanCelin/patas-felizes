@@ -4,43 +4,40 @@ import ButtonPrimary from "../button/ButtonPrimary";
 import Link from "next/link";
 import animalsData from "@/data/animals";
 
-export default function PetCard({
-  slug
-}) {
-
+export default function PetCard({ slug }) {
   console.log(slug);
 
- let pet =  animalsData.find((animal) => animal.slug === slug);
-console.log(pet);
-
-
+  let pet = animalsData.find((animal) => animal.slug === slug);
+  console.log(pet);
 
   return (
     <div className={styles.petCard}>
-      <div className={styles.petCard__image}>
-        <Image
-          src={pet.images[0].src|| "/placeholder.svg"} 
-          fill
-          alt={pet.images[0].alt}
-          loading="lazy"
-          className={styles.image}
-          sizes="(min-width: 1024px) 33.33vw, (min-width: 768px) 50vw, 100vw"
-        />
-      </div>
-      <section className={styles.petCard__friend}>
-        <h3 className={styles.petCard__name}>{pet.name}</h3>
-        <p className={styles.petCard__info}>
-          {pet.breed} • {pet.age} {pet.age == 1 ? "ano" : "anos"} • {pet.sex}
-        </p>
-        <div className={styles.petCard__text__container}>
-          <p className={styles.petCard__text}>{pet.about.smallDescription}</p>
+      <Link
+        href={`/category/${pet.category}/${pet.slug}`}
+        style={{ textDecoration: "none" }}>
+        <div className={styles.petCard__image}>
+          <Image
+            src={pet.images[0].src || "/placeholder.svg"}
+            fill
+            alt={pet.images[0].alt}
+            loading="lazy"
+            className={styles.image}
+            sizes="(min-width: 1024px) 33.33vw, (min-width: 768px) 50vw, 100vw"
+          />
         </div>
-        <div className={styles.petCard__button}>
-          <Link href={`/category/${pet.category}/${pet.slug}`}>
+        <section className={styles.petCard__friend}>
+          <h3 className={styles.petCard__name}>{pet.name}</h3>
+          <p className={styles.petCard__info}>
+            {pet.breed} • {pet.age} {pet.age == 1 ? "ano" : "anos"} • {pet.sex}
+          </p>
+          <div className={styles.petCard__text__container}>
+            <p className={styles.petCard__text}>{pet.about.smallDescription}</p>
+          </div>
+          <div className={styles.petCard__button}>
             <ButtonPrimary>Adote-me</ButtonPrimary>
-          </Link>
-        </div>
-      </section>
+          </div>
+        </section>
+      </Link>
     </div>
   );
 }

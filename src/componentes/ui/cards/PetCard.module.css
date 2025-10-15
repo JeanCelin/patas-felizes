@@ -12,6 +12,7 @@
 }
 
 .petCard:hover {
+  cursor: pointer;
   transform: translateY(-8px); /* o card "sobe" levemente */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* sombra mais profunda */
 }

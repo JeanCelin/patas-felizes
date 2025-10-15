@@ -10,6 +10,7 @@
   color: var(--color-text);
   max-width: 1200px;
 }
+
 .profileContainer {
   display: grid;
   gap: 24px;
