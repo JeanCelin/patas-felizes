@@ -11,14 +11,14 @@ const category = [
     id: "cats",
     title: "Gatos",
     text: "Descubra o companheiro felino perfeito",
-    iconUrl: "/placeholder.svg",
+    iconUrl: "/icons/cat-icon.png",
     alt: "Icone de um gato",
   },
   {
     id: "others",
     title: "Outros",
     text: "Coelhos, aves e outros pets especiais",
-    iconUrl: "/placeholder.svg",
+    iconUrl: "/icons/others-icon.png",
     alt: "Icone de um coelho",
   },
 ];

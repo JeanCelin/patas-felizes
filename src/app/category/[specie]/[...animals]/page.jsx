@@ -12,11 +12,10 @@ import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
 import Link from "next/link";
 import ArrowLeftIcon from "@/componentes/icons/ArrowLeftIcon";
 
-
 export default async function AnimalProfile({ params }) {
   const { animals } = await params;
   console.log(animals);
-  console.log(animalsData)
+  console.log(animalsData);
   let slug = animals[0];
   console.log(slug);
   let animalData = animalsData.find((animal) => animal.slug === slug);
@@ -26,7 +25,13 @@ export default async function AnimalProfile({ params }) {
   return (
     <>
       <section className={styles.animalProfile}>
+        <div className={styles.buttonBack__container}>
+          <Link href={`/category/${animalData.category}`}>
+            <ButtonSecondary children={"Voltar"} icon={<ArrowLeftIcon />} />
+          </Link>
+        </div>
         <AnimalPhotos images={animalData.images || "/placeholder.svg"} />
+
         <section className={styles.profileContainer}>
           <ProfileHeader
             name={animalData.name}
@@ -64,14 +69,6 @@ export default async function AnimalProfile({ params }) {
       </section>
       <section className={styles.profileAdoptForm}>
         <AdoptForm align={"center"} textAlign={"center"} />
-        <div className={styles.buttonBack__container}>
-          <Link href={"/adopt"}>
-            <ButtonSecondary
-              children={"Voltar para Adoções"}
-              icon={<ArrowLeftIcon />}
-            />
-          </Link>
-        </div>
       </section>
     </>
   );

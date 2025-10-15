@@ -1,9 +1,11 @@
 .animalProfile {
+  position: relative;
   display: grid;
   grid-template-columns: 100%;
 
   width: 100%;
-  padding: 16px;
+  margin-top: 72px;
+  padding: 0 16px 48px 16px;
   gap: 16px;
   color: var(--color-text);
   max-width: 1200px;
@@ -11,6 +13,11 @@
 .profileContainer {
   display: grid;
   gap: 24px;
+}
+.animalGalery__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .adoptionFee__container {
@@ -47,6 +54,7 @@
   background-color: var(--color2);
   width: 100%;
   display: flex;
+  padding: 16px;
 }
 .profileAdoptForm {
   padding: 16px;
@@ -54,8 +62,13 @@
   margin: auto;
 }
 .buttonBack__container {
-  max-width: 250px;
-  margin-top: 24px;
+  max-width: 100px;
+  margin-top: 16px;
+  position: absolute;
+
+  z-index: 1;
+  left: 16px;
+  top: -72px;
 }
 .buttonBack__container a {
   text-decoration: none;
@@ -76,7 +89,11 @@
     grid-template-columns: 1fr 1fr;
     align-items: start;
     justify-self: center;
-    padding: 96px 24px;
+    margin-top: 96px;
+    padding: 0 24px 36px 24px;
+  }
+  .buttonBack__container {
+    left: 24px;
   }
   .profileAbout {
     padding: 36px 24px;
@@ -92,13 +109,16 @@
   .profileAbout {
     padding: 48px 96px;
     justify-content: center;
-
-
   }
 }
 @media screen and (min-width: 1280px) {
+  .animalProfile {
+    padding: 0 36px 96px 36px;
+  }
+  .buttonBack__container {
+    left: 36px;
+  }
   .profileAbout {
     padding: 48px 96px;
- 
   }
 }

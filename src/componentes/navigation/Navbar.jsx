@@ -7,9 +7,7 @@ import icon from "../../../public/android-chrome-192x192.png";
 import styles from "./Navbar.module.css";
 import ButtonPrimary from "../ui/button/ButtonPrimary";
 import ButtonBurger from "../ui/button/ButtonBurger";
-import CloseIcon from "../icons/X";
 import Navlinks from "./NavLinks";
-import ButtonSecondary from "../ui/button/ButtonSecondary";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

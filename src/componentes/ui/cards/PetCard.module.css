@@ -1,15 +1,23 @@
 .petCard {
   width: 100%;
+  
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* 🎨 sombra suave */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   background-color: white;
   overflow: hidden;
-  transition: box-shadow 0.3s ease;
+  transition: 
+    box-shadow 0.3s ease,
+    transform 0.3s ease; /* adiciona suavidade no movimento */
   margin: 24px 0;
 }
 
+.petCard:hover {
+  transform: translateY(-8px); /* o card "sobe" levemente */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* sombra mais profunda */
+}
+
 .petCard__image {
-  position: relative; /* necessário para Image com fill */
+  position: relative;
   width: 100%;
   aspect-ratio: 1/1;
   margin: auto;
@@ -23,6 +31,13 @@
   object-fit: cover;
   color: transparent;
   border-radius: 8px´8px 0 0;
+}
+.petCard__image img {
+  transition: transform 0.4s ease;
+}
+
+.petCard:hover .petCard__image img {
+  transform: scale(1.05);
 }
 
 .petCard__friend {

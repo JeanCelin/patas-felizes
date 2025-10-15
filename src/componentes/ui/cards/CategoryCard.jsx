@@ -33,7 +33,7 @@ console.log(category)
                 <p>animais disponíveis</p>
               </div>
             </div>
-            <Link href={`/adopt/category/${category.id}`} style={{textDecoration: "none"}}>
+            <Link href={`/category/${category.id}`} style={{textDecoration: "none"}}>
               <ButtonPrimary width="100%">Ver {category.title}</ButtonPrimary>
             </Link>
           </li>
