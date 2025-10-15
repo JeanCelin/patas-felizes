@@ -12,17 +12,21 @@ import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
 import Link from "next/link";
 import ArrowLeftIcon from "@/componentes/icons/ArrowLeftIcon";
 
+
 export default async function AnimalProfile({ params }) {
   const { animals } = await params;
   console.log(animals);
-  let slug = animals[1];
+  console.log(animalsData)
+  let slug = animals[0];
   console.log(slug);
   let animalData = animalsData.find((animal) => animal.slug === slug);
+
   console.log(animalData);
+
   return (
     <>
       <section className={styles.animalProfile}>
-        <AnimalPhotos images={animalData.images} />
+        <AnimalPhotos images={animalData.images || "/placeholder.svg"} />
         <section className={styles.profileContainer}>
           <ProfileHeader
             name={animalData.name}

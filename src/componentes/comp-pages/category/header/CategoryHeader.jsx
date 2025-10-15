@@ -10,9 +10,9 @@ export default function CategoryHeader () {
               <span>Explore por Categoria</span>
             </div>
             <div>
-              <h1 className={styles.categoryHeader__header__title}>
+              <h2 className={styles.categoryHeader__header__title}>
                 Categoria de Animais
-              </h1>
+              </h2>
               <p className={styles.categoryHeader__header__description}>
                 Navegue por nossas categorias para encontrar o tipo de animal que melhor se adapta ao seu estilo de vida e família.
               </p>

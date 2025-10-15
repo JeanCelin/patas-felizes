@@ -1,0 +1,48 @@
+.specie__container {
+  display: grid;
+  width: 100%;
+
+  color: var(--color-text);
+}
+
+.specie__header {
+  padding: 48px 16px;
+  background-color: var(--color2);
+  display: grid;
+
+  justify-items: center;
+  gap: 16px;
+  text-align: center;
+  width: 100%;
+}
+.specie__title {
+  color: var(--color4);
+}
+.specie__header__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  
+
+}
+.specie__cards__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 48px 16px;
+}
+
+@media screen and (min-width: 640px) {
+}
+
+@media screen and (min-width: 768px) {
+  .specie__cards__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .specie__cards__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

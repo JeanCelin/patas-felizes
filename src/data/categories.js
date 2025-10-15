@@ -15,7 +15,7 @@ const category = [
     alt: "Icone de um gato",
   },
   {
-    id: "othes",
+    id: "others",
     title: "Outros",
     text: "Coelhos, aves e outros pets especiais",
     iconUrl: "/placeholder.svg",
