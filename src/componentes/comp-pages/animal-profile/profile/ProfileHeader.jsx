@@ -14,6 +14,12 @@ export default function ProfileHeader({
   weight,
   location,
 }) {
+  const checkAge = (age) => {
+    if (age > 1) return <p>{`${age} anos`}</p>;
+    if (age == 1) return <p>{`${age} ano`}</p>;
+    if (age < 1) return <p>{`${age * 10} meses`}</p>;
+  };
+
   return (
     <section className={styles.profileHeader}>
       <div className={styles.profileHeader__info}>
@@ -29,7 +35,7 @@ export default function ProfileHeader({
       <div className={styles.profile__info__container}>
         <div className={styles.profile__info__item}>
           <CalendarIcon color={"var(--color1)"} />
-          <p>{age > 1 ? `${age} anos` : `${age} ano`}</p>
+          {checkAge(age)}
         </div>
         <div className={styles.profile__info__item}>
           <RulerIcon color={"var(--color1)"} />
