@@ -10,6 +10,9 @@ export default function PetCard({ slug }) {
   let pet = animalsData.find((animal) => animal.slug === slug);
   console.log(pet);
 
+  if(slug === undefined || null) return
+  
+
   return (
     <div className={styles.petCard}>
       <Link
@@ -19,7 +22,7 @@ export default function PetCard({ slug }) {
           <Image
             src={pet.images[0].src || "/placeholder.svg"}
             fill
-            alt={pet.images[0].alt}
+            alt={pet.images[0].alt || "A descrição não foi adicionada, lamentamos o invonveniente."}
             loading="lazy"
             className={styles.image}
             sizes="(min-width: 1024px) 33.33vw, (min-width: 768px) 50vw, 100vw"

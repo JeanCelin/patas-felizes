@@ -13,6 +13,8 @@ export default function Friends() {
   
   const slugs = getFirstAnimalSlugs();
 
+  console.log(slugs)
+
   return (
     <section className={styles.friends}>
       <div className={styles.friends__wrapper}>
@@ -32,7 +34,7 @@ export default function Friends() {
 
         <div className={styles.friends__cards}>
           {slugs.length > 0 ? (
-            slugs.map((slug) => <PetCard key={slug} slug={slug} />)
+            slugs.map((slug, index) => <PetCard key={index} slug={slug} />)
           ) : (
             <p>Nenhum animal disponível no momento.</p>
           )}

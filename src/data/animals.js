@@ -1,6 +1,6 @@
 const animals = [
   {
-    id: "01",
+    id: 1,
     slug: "susi",
     category: "dogs",
     name: "Susi",
@@ -56,7 +56,7 @@ const animals = [
     },
   },
   {
-    id: "02",
+    id: 2,
     slug: "mia",
     category: "cats",
     name: "Mia",
@@ -112,7 +112,7 @@ const animals = [
     },
   },
   {
-    id: "03",
+    id: 3,
     slug: "lira",
     category: "dogs",
     name: "Lira",
@@ -168,7 +168,7 @@ const animals = [
     },
   },
   {
-    id: "04",
+    id: 4,
     slug: "luna",
     category: "dogs",
     name: "Luna",
@@ -223,7 +223,7 @@ const animals = [
     },
   },
   {
-    id: "05",
+    id: 5,
     slug: "brutos",
     category: "dogs",
     name: "Brutos",
@@ -262,7 +262,7 @@ const animals = [
     },
   },
   {
-    id: "06",
+    id: 6,
     slug: "thor",
     category: "dogs",
     name: "Thor",
