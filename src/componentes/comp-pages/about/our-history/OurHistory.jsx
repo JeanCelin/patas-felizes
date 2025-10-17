@@ -7,7 +7,7 @@ import placeholder from "/public/placeholder.svg";
 
 export default function OurHistory() {
   return (
-    <div >
+    <div>
       <section className={styles.ourHistory}>
         <div className={styles.ourHistory__wrapper}>
           <header className={styles.ourHistory__header}>
@@ -31,7 +31,13 @@ export default function OurHistory() {
         <div className={styles.ourHistory__wrapper}>
           <div className={styles.ourHistory__content}>
             <div className={styles.ourHistory__content__image}>
-              <Image src={placeholder} fill alt="placeholder" />
+              <Image
+                src={"/founders.png" || placeholder}
+                fill
+                sizes="(min-width: 1024px) 457px, 90vw"
+                alt="placeholder"
+                className={styles.zoomOut}
+              />
             </div>
             <article>
               <h3 className={styles.ourHistory__content__title}>

@@ -13,6 +13,7 @@ export default function AnimalPhotos({ images }) {
           src={main.src || "/placeholder.svg"}
           alt={main.alt || "A descrição não foi adicionada, lamentamos o invonveniente."}
           fill
+          sizes="(min-width: 1230px) 551px, (min-width: 860px) 45vw, 90vw"
         />
       </div>
 
@@ -22,6 +23,7 @@ export default function AnimalPhotos({ images }) {
             src={img.src || "/placeholder.svg"}
             alt={img.alt || "A descrição não foi adicionada, lamentamos o invonveniente."}
             fill
+            sizes="(min-width: 1230px) 180px, (min-width: 860px) 15vw, 27vw"
           />
         </div>
       ))}

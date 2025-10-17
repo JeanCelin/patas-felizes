@@ -3,7 +3,6 @@
   background-color: var(--color2);
   padding: 48px 16px;
   width: 100%;
-
 }
 .ourHistory__wrapper {
   width: 100%;
@@ -35,7 +34,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .ourHistory__content {
@@ -53,6 +51,7 @@
   border-radius: 8px;
   object-fit: cover;
 }
+
 .ourHistory__content__title {
   padding-top: 16px;
   font-size: 24px;
@@ -84,19 +83,17 @@
   }
   .ourHistory__history {
     padding: 96px 24px;
-  
   }
-  
 }
 
 @media screen and (min-width: 1024px) {
-  .ourHistory{
-    padding: 128px 24px
+  .ourHistory {
+    padding: 128px 24px;
   }
   .ourHistory__header__description {
     font-size: 16px;
   }
-  .ourHistory__content{
+  .ourHistory__content {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
@@ -105,7 +102,6 @@
   }
   .ourHistory__history {
     padding: 128px 24px;
-  
   }
 }
 

@@ -25,7 +25,7 @@ export default function PetCard({ slug }) {
             alt={pet.images[0].alt || "A descrição não foi adicionada, lamentamos o invonveniente."}
             loading="lazy"
             className={styles.image}
-            sizes="(min-width: 1024px) 33.33vw, (min-width: 768px) 50vw, 100vw"
+            sizes="(min-width: 1024px) 315px, (min-width: 768px) 46vw , 90vw"
           />
         </div>
         <section className={styles.petCard__friend}>

@@ -1,33 +1,11 @@
-import { Geist, Geist_Mono, Unkempt, Quicksand, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/componentes/navigation/Navbar";
 import Footer from "@/componentes/navigation/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-});
-
-const unkempt = Unkempt({
-  variable: "--font-unkempt",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
-const quicksand = Quicksand({
-  variable: "--font-quicksand",
-  subsets: ["latin"],
-  weight: ["400", "700"],
 });
 
 export const metadata = {
@@ -39,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${unkempt.variable} ${quicksand.variable} ${inter.variable}`}>
+        className={`${inter.variable}`}>
         <Navbar />
         <div style={{ paddingTop: "65px" }}>{children}</div>
         <Footer />

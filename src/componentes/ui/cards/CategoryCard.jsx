@@ -24,9 +24,10 @@ export default function CategoryCard() {
                     src={category.iconUrl || "/placeholder.svg"}
                     alt={category.alt}
                     loading="lazy"
-                    fill
+                    width={96}
+                    height={96}
                     className={styles.image}
-                    sizes="50px"
+                    
                   />
                 </div>
                 <h2>{category.title}</h2>

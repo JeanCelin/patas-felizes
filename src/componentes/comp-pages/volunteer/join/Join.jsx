@@ -29,7 +29,7 @@ export default function Join() {
         <div className={styles.join__wrapper}>
           <div className={styles.join__content}>
             <div className={styles.join__content__image}>
-              <Image src={placeholder} fill alt="placeholder" />
+              <Image src={'/volunteer-banner.png'} sizes="(min-width: 1024px) 472px, 90vw" fill alt="placeholder" priority/>
             </div>
             <article>
               <h3 className={styles.join__content__title}>Por Que Ser Voluntário?</h3>
