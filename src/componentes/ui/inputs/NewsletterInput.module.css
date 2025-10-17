@@ -4,7 +4,7 @@
   border: 1px solid hsl(var(--border));
   border-radius: 0.5rem;
   background-color: white;
-  color: #111827; /* cor escura para o texto */
+  color: #111827; 
   font-size: 1rem;
   outline: none;
   
@@ -14,7 +14,7 @@
 }
 
 .newsletterInput::placeholder {
-  color: #6b7280; /* cinza bonito */
+  color: #6b7280; 
   font-size: 14px;
 }
 

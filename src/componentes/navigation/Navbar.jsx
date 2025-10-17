@@ -1,13 +1,15 @@
 "use client";
+import Image from "next/image";
 
 import { useState } from "react";
 
-import Image from "next/image";
-import icon from "../../../public/android-chrome-192x192.png";
 import styles from "./Navbar.module.css";
+
+import icon from "../../../public/ICONS/android-chrome-192x192.png";
 import ButtonPrimary from "../ui/button/ButtonPrimary";
 import ButtonBurger from "../ui/button/ButtonBurger";
 import Navlinks from "./NavLinks";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,12 +28,14 @@ export default function Navbar() {
         <div className={styles.navbar__links__list}>
           <Navlinks direction="row" />
         </div>
-        <ButtonPrimary children={"Doar Agora"} maxWidth="fit-content" />
+        <Link style={{ textDecoration: "none" }} href="/donate/#donation">
+          <ButtonPrimary children={"Doar Agora"} maxWidth="fit-content" />
+        </Link>
 
         <div
           className={styles.navbar__btn__burger}
           onClick={() => setIsOpen(!isOpen)}>
-          <ButtonBurger isOpen={isOpen}/>
+          <ButtonBurger isOpen={isOpen} />
         </div>
       </div>
 
@@ -40,11 +44,13 @@ export default function Navbar() {
           <div onClick={handleClose}>
             <Navlinks direction="column" />
           </div>
-          <div
-            className={styles.navbar__mobile__btn}
-            onClick={() => setIsOpen(false)}>
-            <ButtonPrimary children="Doar Agora" />
-          </div>
+          <Link style={{ textDecoration: "none" }} href="/donate/#donation">
+            <div
+              className={styles.navbar__mobile__btn}
+              onClick={() => setIsOpen(false)}>
+              <ButtonPrimary children="Doar Agora" />
+            </div>
+          </Link>
         </div>
       )}
     </nav>

@@ -4,13 +4,9 @@ import Image from "next/image";
 import burgerIcon from "../../../../public/menu_burger.png";
 import CloseIcon from "../../icons/X";
 export default function ButtonBurger({ isOpen }) {
-  // Function to handle the click event of the button
-  const handleClick = () => {
-    console.log("Button clicked");
-  };
-  
+ 
   return (
-    <button className={ isOpen === true ? styles.buttonBurger__clicked : styles.burger} onClick={handleClick}>
+    <button className={ isOpen === true ? styles.buttonBurger__clicked : styles.burger} >
       {isOpen ? (
         <CloseIcon width={20} height={20} />
       ) : (

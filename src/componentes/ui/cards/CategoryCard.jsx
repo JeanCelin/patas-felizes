@@ -1,9 +1,12 @@
+import Link from "next/link";
 import Image from "next/image";
+
+import { getCategoryCounts } from "@/utils/categoryCountUtils";
+
 import styles from "./CategoryCard.module.css";
+
 import categoriesData from "@/data/categories";
 import ButtonPrimary from "../button/ButtonPrimary";
-import { getCategoryCounts } from "@/utils/categoryCountUtils";
-import Link from "next/link";
 
 export default function CategoryCard() {
   const counts = getCategoryCounts();
@@ -12,7 +15,6 @@ export default function CategoryCard() {
     <ul className={styles.categoryCard__container}>
       {categoriesData.map((category, index) => {
         const count = counts[category.id] || 0;
-        console.log(category);
         return (
           <li key={index} className={styles.categoryCard__card}>
             <Link

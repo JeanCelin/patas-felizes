@@ -5,11 +5,7 @@ import Link from "next/link";
 import animalsData from "@/data/animals";
 
 export default function PetCard({ slug }) {
-  console.log(slug);
-
   let pet = animalsData.find((animal) => animal.slug === slug);
-  console.log(pet);
-
   if(slug === undefined || null) return
   
 

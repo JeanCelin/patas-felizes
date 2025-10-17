@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import styles from "./Footer.module.css";
+
 import PawIcon from "../icons/PawIcon";
 import MapPinIcon from "../icons/MapPinIcon";
 import PhoneIcon from "../icons/PhoneIcon";
