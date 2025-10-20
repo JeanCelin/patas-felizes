@@ -9,10 +9,12 @@
   position: relative;
   grid-area: 1 / 1 / 2 / 4;
   aspect-ratio: 4/3;
+  cursor: pointer;
 }
 .photoSecondary {
   position: relative;
   aspect-ratio: 1/1;
+  cursor: pointer;
 }
 
 .photoMain img,
@@ -21,4 +23,61 @@
   position: absolute;
   inset: 0;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.photoMain:hover img,
+.photoSecondary:hover img {
+  transform: scale(1.05);
+}
+
+.photoOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.895);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.photoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 90vh;
+}
+
+.photoExpanded {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.photoCloseBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid hsl(var(--border));
+  border-radius: 50%;
+  position: absolute;
+  padding: 8px;
+  z-index: 1001;
+  top: 3vh;
+  right: 3vw;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.photoCloseBtn:hover {
+  background: rgba(255, 255, 255, 0.25);
 }
