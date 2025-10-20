@@ -17,7 +17,7 @@ export default function Footer() {
         <section className={styles.footer__social}>
           <div className={styles.footer__social__logo}>
             <PawIcon size="24" color="var(--color1)" />
-            <span className={styles.footer__logoName}>Patas Carentes</span>
+            <span className={styles.footer__logoName}>Patas Felizes</span>
           </div>
           <p className={styles.footer__text}>
             Dedicada ao resgate, reabilitação e adoção de animais abandonados
@@ -113,7 +113,7 @@ export default function Footer() {
         </section>
       </div>
       <div className={styles.footer__copyrights}>
-        <p>&copy; 2025 Patas Carentes. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Patas Felizes. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

@@ -18,10 +18,10 @@ export default function AboutSection() {
             </span>
           </div>
           <h2 className={styles.about__title}>
-            Sobre a Patas Carentes
+            Sobre a Patas Felizes
           </h2>
           <p className={styles.about__header__text}>
-            Fundada em 2015, a Patas Carentes começou com um pequeno grupo de
+            Fundada em 2015, a Patas Felizes começou com um pequeno grupo de
             voluntários que não podiam ignorar o crescente número de animais
             abandonados em nossa comunidade. O que começou como alguns abrigos
             temporários cresceu e se tornou uma organização de resgate
@@ -32,7 +32,7 @@ export default function AboutSection() {
           <div className={styles.about__image}>
             <Image
               src={volunteers}
-              alt="Uma foto dos voluntários da Patas Carentes"
+              alt="Uma foto dos voluntários da Patas Felizes"
               fill
               loading="lazy"
               className={styles.image}

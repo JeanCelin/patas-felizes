@@ -117,7 +117,7 @@ export default function VolunteerForm() {
               id="reason"
               name="reason"
               required
-              placeholder="Conte-nos um pouco sobre você e por que deseja ser voluntário na Patas Carentes"
+              placeholder="Conte-nos um pouco sobre você e por que deseja ser voluntário na Patas Felizes"
               className={styles.volunteerForm__form__textarea}
             />
           </div>

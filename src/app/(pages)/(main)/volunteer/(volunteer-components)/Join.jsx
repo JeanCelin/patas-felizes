@@ -34,7 +34,7 @@ export default function Join() {
             <article>
               <h3 className={styles.join__content__title}>Por Que Ser Voluntário?</h3>
               <p className={styles.join__content__description}>
-              Ser voluntário na Patas Carentes é uma experiência transformadora. Você não apenas ajuda animais necessitados, mas também desenvolve habilidades valiosas, faz amizades duradouras e experimenta a satisfação de fazer a diferença na vida de um ser vivo.
+              Ser voluntário na Patas Felizes é uma experiência transformadora. Você não apenas ajuda animais necessitados, mas também desenvolve habilidades valiosas, faz amizades duradouras e experimenta a satisfação de fazer a diferença na vida de um ser vivo.
               </p>
               <p className={styles.join__content__description}>
               Nossos voluntários são o coração da nossa organização. Sem eles, não poderíamos realizar o trabalho vital de resgate, reabilitação e adoção que fazemos diariamente.

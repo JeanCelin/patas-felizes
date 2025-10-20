@@ -30,7 +30,7 @@ export default function Team() {
               photo={womanPhoto}
               name="Ana Oliveira"
               profile="Fundadora e Diretora"
-              description="Veterinária com mais de 15 anos de experiência, Ana fundou a Patas Carentes após anos trabalhando com animais de rua."
+              description="Veterinária com mais de 15 anos de experiência, Ana fundou a Patas Felizes após anos trabalhando com animais de rua."
             />
           </li>
           <li>

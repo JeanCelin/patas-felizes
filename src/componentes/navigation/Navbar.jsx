@@ -21,10 +21,12 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbar__wrapper}>
-        <div className={styles.navbar__logo}>
-          <Image src={icon} alt="Logo" width={25} height={25} priority />
-          <p className={styles.navbar__title}>Patas Carentes</p>
-        </div>
+        <Link href={"/"}>
+          <div className={styles.navbar__logo}>
+            <Image src={icon} alt="Logo" width={25} height={25} priority />
+            <p className={styles.navbar__title}>Patas Felizes</p>
+          </div>
+        </Link>
         <div className={styles.navbar__links__list}>
           <Navlinks direction="row" />
         </div>

@@ -22,21 +22,21 @@ export default function Feedback() {
           <FeedbackCard
             name="Maria Silva"
             profile="Adotante"
-            feedback="&ldquo;Adotar a Luna da Patas Carentes foi a melhor decisão que já tomei. A equipe foi muito prestativa durante todo o processo, e a Luna trouxe muita alegria para nossa casa.&rdquo;"
+            feedback="&ldquo;Adotar a Luna da Patas Felizes foi a melhor decisão que já tomei. A equipe foi muito prestativa durante todo o processo, e a Luna trouxe muita alegria para nossa casa.&rdquo;"
             photo="/perfil/perfil-woman2.png"
             alt="Foto de Maria Silva"
           />
           <FeedbackCard
             name="João Pereira"
             profile="Voluntário"
-            feedback="&ldquo;Ser voluntário na Patas Carentes tem sido incrivelmente gratificante. Ver os animais se transformarem de assustados e doentes para saudáveis e felizes é uma experiência incrível.&rdquo;"
+            feedback="&ldquo;Ser voluntário na Patas Felizes tem sido incrivelmente gratificante. Ver os animais se transformarem de assustados e doentes para saudáveis e felizes é uma experiência incrível.&rdquo;"
             photo="/perfil/perfil-man.png"
             alt="Foto de João Pereira"
           />
           <FeedbackCard
             name="Ana Santos"
             profile="Doadora Mensal"
-            feedback="&ldquo;Apoio a Patas Carentes há dois anos. A transparência deles e o impacto que fazem com recursos limitados é verdadeiramente inspirador.&rdquo;"
+            feedback="&ldquo;Apoio a Patas Felizes há dois anos. A transparência deles e o impacto que fazem com recursos limitados é verdadeiramente inspirador.&rdquo;"
             photo="/perfil/perfil-woman.jpeg"
             alt="Foto de Ana Santos"
           />

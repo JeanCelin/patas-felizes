@@ -18,7 +18,7 @@ export default function OurHistory() {
             </div>
             <div>
               <h1 className={styles.ourHistory__header__title}>
-                Sobre a Patas Carentes
+                Sobre a Patas Felizes
               </h1>
               <p className={styles.ourHistory__header__description}>
                 Conheça nossa jornada, nossa equipe e o impacto que estamos
@@ -45,7 +45,7 @@ export default function OurHistory() {
                 Nossa História
               </h3>
               <p className={styles.ourHistory__content__description}>
-                A Patas Carentes nasceu em 2015, quando um grupo de amigos
+                A Patas Felizes nasceu em 2015, quando um grupo de amigos
                 apaixonados por animais se uniu após encontrar vários cães e
                 gatos abandonados em um terreno baldio na periferia da cidade. O
                 que começou como um esforço para resgatar esses animais
@@ -59,7 +59,7 @@ export default function OurHistory() {
                 educação comunitária.
               </p>
               <p className={styles.ourHistory__content__description}>
-                Hoje, a Patas Carentes é reconhecida como uma das principais
+                Hoje, a Patas Felizes é reconhecida como uma das principais
                 organizações de resgate animal da região, com uma equipe
                 dedicada de funcionários e voluntários que trabalham
                 incansavelmente para dar uma segunda chance aos animais

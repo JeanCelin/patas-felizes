@@ -43,7 +43,7 @@ export default function Donation() {
             </div>
 
             <p className={styles.donation__note}>
-              Sua doação é dedutível de impostos. Patas Carentes é uma
+              Sua doação é dedutível de impostos. Patas Felizes é uma
               organização sem fins lucrativos registrada.
             </p>
           </div>

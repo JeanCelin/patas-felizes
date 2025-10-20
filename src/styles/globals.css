@@ -43,3 +43,10 @@ svg {
   fill: white;
   
 }
+a {
+  text-decoration: none; /* opcional, remove sublinhado */
+}
+a:visited {
+  color: var(--color4); /* ou qualquer cor fixa */
+  
+}

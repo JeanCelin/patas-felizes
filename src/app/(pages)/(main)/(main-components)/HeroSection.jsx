@@ -23,7 +23,7 @@ export default function HeroSection() {
               Ajude a Dar Uma Segunda Chance
             </h1>
             <p className={styles.hero__text}>
-              Patas Carentes é dedicada ao resgate, reabilitação e adoção de
+              Patas Felizes é dedicada ao resgate, reabilitação e adoção de
               animais abandonados. Todo animal merece amor, cuidado e um lar
               para sempre.
             </p>
