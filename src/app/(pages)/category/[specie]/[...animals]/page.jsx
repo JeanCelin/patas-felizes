@@ -14,6 +14,15 @@ import AdoptForm from "@/app/(pages)/adopt/(adopt-components)/AdoptForm";
 import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
 import ArrowLeftIcon from "@/componentes/icons/ArrowLeftIcon";
 
+export async function generateMetadata({ params }) {
+  const { animals } = await params;
+  return {
+    title: "Adote" + ` ${animals}`.toUpperCase(),
+    description: `Adote ${animals} e dê uma segunda chance de recomeço.`,
+    keywords: ["adoção de cães", "adoção de gatos", "ONG", "pets", "raça", "melhor amigo"],
+  };
+}
+
 export default async function AnimalProfile({ params }) {
   const { animals } = await params;
   let slug = animals[0];

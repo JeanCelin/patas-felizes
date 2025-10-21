@@ -6,6 +6,20 @@ import HowWork from "@/app/(pages)/adopt/(adopt-components)/HowWork";
 import Friends from "@/componentes/friends/Friends";
 import AdoptReq from "@/app/(pages)/adopt/(adopt-components)/AdoptReq";
 
+export const metadata = {
+  title: "Adoção de Pets",
+  description:
+    "Veja os pets disponíveis para adoção. Conheça o passo a passo para uma adoção responsável na Patas Felizes",
+  keywords: [
+    "cachorros",
+    "gatos",
+    "formulário",
+    "adoção",
+    "requisitos"
+  ],
+};
+
+
 export default function doar() {
   return (
     <section className={styles.adopt}>

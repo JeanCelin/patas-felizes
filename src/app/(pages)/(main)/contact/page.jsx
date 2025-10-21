@@ -6,6 +6,12 @@ import ContactInfo from "@/app/(pages)/(main)/contact/(contact-components)/Conta
 import Fac from "@/app/(pages)/(main)/contact/(contact-components)/Fac";
 import ContactLocation from "@/app/(pages)/(main)/contact/(contact-components)/ContactLocation";
 
+export const metadata = {
+  title: "Entre em Contato",
+  description:
+    "Tire suas dúvidas, saiba como adotar seu pet hoje. Entre em contato com a ONG Patas Felizes e agende uma visita.",
+  keywords: ["dúvidas", "contato", "enviar mensagem", "perguntas frequentes"],
+};
 
 export default function contact() {
   return (

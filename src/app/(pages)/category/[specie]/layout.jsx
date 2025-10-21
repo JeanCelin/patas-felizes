@@ -12,7 +12,6 @@ import tag from "@/styles/Tag.module.css";
 import ButtonPrimary from "@/componentes/ui/button/ButtonPrimary";
 import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
 
-
 export default async function SpecieLayout({ children, params }) {
   const { specie } = await params;
   const category = categoriesData.find((item) => item.id === specie);

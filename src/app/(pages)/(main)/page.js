@@ -6,6 +6,22 @@ import Feedback from "@/app/(pages)/(main)/(main-components)/Feedback";
 import Donation from "@/componentes/donation/Donation";
 import Friends from "@/componentes/friends/Friends";
 
+export const metadata = {
+  title: "Adoção de Animais",
+  description:
+    "A Patas Felizes é uma ONG de resgate e adoção de animais localizada em Castelo, Espírito Santo. Encontre um novo amigo, nossos cachorros e gatos  então à espera de um lar, faça uma doação ou torne-se voluntário e mude uma vida.",
+  keywords: [
+    "adoção",
+    "ONG",
+    "animais",
+    "cães",
+    "cachorros",
+    "gatos",
+    "doação",
+    "voluntário",
+  ],
+};
+
 export default function Home() {
   return (
     <main className={styles.home}>

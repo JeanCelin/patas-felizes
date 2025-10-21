@@ -6,6 +6,19 @@ import VolunteerForm from "@/app/(pages)/(main)/volunteer/(volunteer-components)
 import styles from "./page.module.css";
 import NextSteps from "@/app/(pages)/(main)/volunteer/(volunteer-components)/NextSteps";
 
+export const metadata = {
+  title: "Seja um Voluntário",
+  description:
+    "Seja um voluntário da ONG Patas Felizes, ajude a transformar vidas. Participe no resgate ou nos cuidados de nossos animais.",
+  keywords: [
+    "voluntariar",
+    "ajudar",
+    "equipe",
+    "resgatar",
+    "faça parte"
+  ],
+};
+
 export default function Volunteer() {
   return (
     <>
