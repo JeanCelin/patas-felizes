@@ -2,6 +2,7 @@ import styles from "./FeedbackCard.module.css";
 import Image from "next/image";
 import PropTypes from "prop-types";
 
+// Utiliza as propriedades recebidas para criar o card do feedback na página principal do site
 export default function FeedbackCard({ name, profile, feedback, photo, alt }) {
   return (
     <article className={styles.feedbackCard}>
@@ -29,20 +30,3 @@ export default function FeedbackCard({ name, profile, feedback, photo, alt }) {
   );
 }
 
-// ✅ Valores padrão (fallbacks)
-FeedbackCard.defaultProps = {
-  name: "Usuário Anônimo",
-  profile: "Participante",
-  feedback: "Nenhum feedback fornecido.",
-  photo: "/placeholder.svg",
-  alt: "Foto do usuário",
-};
-
-// ✅ Validação das props
-FeedbackCard.propTypes = {
-  name: PropTypes.string.isRequired,
-  profile: PropTypes.string.isRequired,
-  feedback: PropTypes.string.isRequired,
-  photo: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-};

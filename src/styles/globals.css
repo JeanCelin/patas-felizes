@@ -44,9 +44,5 @@ svg {
   
 }
 a {
-  text-decoration: none; /* opcional, remove sublinhado */
-}
-a:visited {
-  color: var(--color4); /* ou qualquer cor fixa */
-  
+  text-decoration: none; /* remove sublinhado nos links */
 }

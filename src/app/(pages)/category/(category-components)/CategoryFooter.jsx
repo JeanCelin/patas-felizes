@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import styles from "./CategoryFooter.module.css";
 
-import ButtonPrimary from "@/componentes/ui/button/ButtonPrimary";
+import ButtonPrimary from "@/components/ui/button/ButtonPrimary";
 
 export default function CategoryFooter() {
   return (
@@ -14,10 +14,12 @@ export default function CategoryFooter() {
               Não Sabe Qual Escolher?
             </h1>
             <p className={styles.categoryFooter__header__description}>
-              Cada animal tem sua própria personalidade e necessidades. Nossa equipe está aqui para ajudá-lo a encontrar o companheiro perfeito para você e sua família.
+              Cada animal tem sua própria personalidade e necessidades. Nossa
+              equipe está aqui para ajudá-lo a encontrar o companheiro perfeito
+              para você e sua família.
             </p>
             <div className={styles.categoryFooter__button}>
-              <Link href={'/contact'} style={{ textDecoration: "none" }}>
+              <Link href={"/contact"} style={{ textDecoration: "none" }}>
                 <ButtonPrimary children="Fale Conosco" />
               </Link>
             </div>

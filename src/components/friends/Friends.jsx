@@ -5,12 +5,11 @@ import tag from "@/styles/Tag.module.css";
 
 import animals from "@/data/animals";
 
-import PetCard from "@/componentes/ui/cards/PetCard";
-import HeartIcon from "@/componentes/icons/HeartIcon";
-import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
+import PetCard from "@/components/ui/cards/PetCard";
+import HeartIcon from "@/components/icons/HeartIcon";
+import ButtonSecondary from "@/components/ui/button/ButtonSecondary";
 
 export default function Friends() {
-
   function getFirstAnimalSlugs(limit = 6) {
     return animals.slice(0, limit).map((animal) => animal.slug);
   }
@@ -43,8 +42,8 @@ export default function Friends() {
         </div>
 
         <div className={styles.friends__buttonMore}>
-          <Link href={'/category'} style={{textDecoration: "none"}}>
-          <ButtonSecondary>Ver Todos os Pets Disponíveis</ButtonSecondary>
+          <Link href={"/category"} style={{ textDecoration: "none" }}>
+            <ButtonSecondary>Ver Todos os Pets Disponíveis</ButtonSecondary>
           </Link>
         </div>
       </div>

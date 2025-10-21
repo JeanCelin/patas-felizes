@@ -1,21 +1,21 @@
 import styles from "./AdoptForm.module.css";
 
-import ButtonPrimary from "@/componentes/ui/button/ButtonPrimary";
+import ButtonPrimary from "@/components/ui/button/ButtonPrimary";
 
 export default function AdoptForm({ align, textAlign }) {
   return (
     <section className={styles.adoptForm}>
       <header
         className={styles.adoptForm__header}
-        style={{ alignItems:  align  }}>
+        style={{ alignItems: align }}>
         <h2
           className={styles.adoptForm__header__title}
-          style={{ textAlign:  textAlign  }}>
+          style={{ textAlign: textAlign }}>
           Formulário de Adoção
         </h2>
         <p
           className={styles.adoptForm__header__text}
-          style={{ textAlign:  textAlign  }}>
+          style={{ textAlign: textAlign }}>
           Preencha o formulário abaixo para iniciar o processo de adoção.
           Entraremos em contato em até 48 horas.
         </p>

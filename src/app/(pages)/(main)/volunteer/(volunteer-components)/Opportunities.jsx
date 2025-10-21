@@ -1,14 +1,14 @@
 import styles from "./Opportunities.module.css";
 import tag from "@/styles/Tag.module.css";
 
-import HeartIcon from "@/componentes/icons/HeartIcon";
-import Card from "@/componentes/ui/cards/HelpCard";
-import PawIcon from "@/componentes/icons/PawIcon";
-import HomeIcon from "@/componentes/icons/HomeIcon";
-import BriefcaseIcon from "@/componentes/icons/Briefcase";
-import CameraIcon from "@/componentes/icons/Camera";
-import GraduationCapIcon from "@/componentes/icons/GraduationCapIcon";
-import CalendarIcon from "@/componentes/icons/CalendarIcon";
+import HeartIcon from "@/components/icons/HeartIcon";
+import Card from "@/components/ui/cards/HelpCard";
+import PawIcon from "@/components/icons/PawIcon";
+import HomeIcon from "@/components/icons/HomeIcon";
+import BriefcaseIcon from "@/components/icons/Briefcase";
+import CameraIcon from "@/components/icons/Camera";
+import GraduationCapIcon from "@/components/icons/GraduationCapIcon";
+import CalendarIcon from "@/components/icons/CalendarIcon";
 
 export default function Opportunities() {
   return (

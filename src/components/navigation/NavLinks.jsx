@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "./NavLinks.module.css";
 
 export default function Navlinks({ direction }) {
+  
   styles.navbar__list;
   return (
     <ul

@@ -1,12 +1,12 @@
 import styles from "./DonationHelp.module.css";
 
-import Card from "@/componentes/ui/cards/HelpCard";
-import HeartIcon from "@/componentes/icons/HeartIcon";
-import ShoppingBagIcon from "@/componentes/icons/ShoppingBagIcon";
-import GiftIcon from "@/componentes/icons/GiftIcon";
-import CalendarIcon from "@/componentes/icons/CalendarIcon";
-import PawIcon from "@/componentes/icons/PawIcon";
-import FileTextIcon from "@/componentes/icons/FileTextIcon";
+import Card from "@/components/ui/cards/HelpCard";
+import HeartIcon from "@/components/icons/HeartIcon";
+import ShoppingBagIcon from "@/components/icons/ShoppingBagIcon";
+import GiftIcon from "@/components/icons/GiftIcon";
+import CalendarIcon from "@/components/icons/CalendarIcon";
+import PawIcon from "@/components/icons/PawIcon";
+import FileTextIcon from "@/components/icons/FileTextIcon";
 
 export default function DonationHelp() {
   return (

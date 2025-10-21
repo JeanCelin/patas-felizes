@@ -2,6 +2,8 @@ import Image from "next/image";
 import placeholder from "/public/placeholder.svg";
 import styles from "./VoluntaryCard.module.css";
 
+
+// Card que exibe os voluntário na página "sobre", usa as props para criar o card.
 export default function VoluntaryCard({ photo, name, profile, description }) {
   return (
     <article className={styles.voluntaryCard}>

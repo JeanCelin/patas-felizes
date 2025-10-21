@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./Join.module.css";
 import tag from "@/styles/Tag.module.css";
 
-import HeartIcon from "@/componentes/icons/HeartIcon";
+import HeartIcon from "@/components/icons/HeartIcon";
 
 export default function Join() {
   return (
@@ -29,18 +29,34 @@ export default function Join() {
         <div className={styles.join__wrapper}>
           <div className={styles.join__content}>
             <div className={styles.join__content__image}>
-              <Image src={'/volunteer-banner.png'} sizes="(min-width: 1024px) 472px, 90vw" fill alt="placeholder" priority/>
+              <Image
+                src={"/volunteer-banner.png"}
+                sizes="(min-width: 1024px) 472px, 90vw"
+                fill
+                alt="placeholder"
+                priority
+              />
             </div>
             <article>
-              <h3 className={styles.join__content__title}>Por Que Ser Voluntário?</h3>
+              <h3 className={styles.join__content__title}>
+                Por Que Ser Voluntário?
+              </h3>
               <p className={styles.join__content__description}>
-              Ser voluntário na Patas Felizes é uma experiência transformadora. Você não apenas ajuda animais necessitados, mas também desenvolve habilidades valiosas, faz amizades duradouras e experimenta a satisfação de fazer a diferença na vida de um ser vivo.
+                Ser voluntário na Patas Felizes é uma experiência
+                transformadora. Você não apenas ajuda animais necessitados, mas
+                também desenvolve habilidades valiosas, faz amizades duradouras
+                e experimenta a satisfação de fazer a diferença na vida de um
+                ser vivo.
               </p>
               <p className={styles.join__content__description}>
-              Nossos voluntários são o coração da nossa organização. Sem eles, não poderíamos realizar o trabalho vital de resgate, reabilitação e adoção que fazemos diariamente.
+                Nossos voluntários são o coração da nossa organização. Sem eles,
+                não poderíamos realizar o trabalho vital de resgate,
+                reabilitação e adoção que fazemos diariamente.
               </p>
               <p className={styles.join__content__description}>
-              Independentemente de quanto tempo você pode dedicar ou quais habilidades você possui, temos uma função que se adequará às suas circunstâncias e interesses.
+                Independentemente de quanto tempo você pode dedicar ou quais
+                habilidades você possui, temos uma função que se adequará às
+                suas circunstâncias e interesses.
               </p>
             </article>
           </div>

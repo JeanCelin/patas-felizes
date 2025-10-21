@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./AboutSection.module.css";
 import tag from "@/styles/Tag.module.css";
 
-import PawIcon from "@/componentes/icons/PawIcon";
+import PawIcon from "@/components/icons/PawIcon";
 import volunteers from "/public/volunteers.png";
 
 export default function AboutSection() {
@@ -13,13 +13,9 @@ export default function AboutSection() {
         <header className={styles.about__header}>
           <div className={tag.tag}>
             <PawIcon />
-            <span>
-              Nossa História
-            </span>
+            <span>Nossa História</span>
           </div>
-          <h2 className={styles.about__title}>
-            Sobre a Patas Felizes
-          </h2>
+          <h2 className={styles.about__title}>Sobre a Patas Felizes</h2>
           <p className={styles.about__header__text}>
             Fundada em 2015, a Patas Felizes começou com um pequeno grupo de
             voluntários que não podiam ignorar o crescente número de animais
@@ -38,7 +34,6 @@ export default function AboutSection() {
               className={styles.image}
               sizes="(min-width: 1024px) 480px, 100vw"
               placeholder="blur"
-
             />
           </div>
           <article>

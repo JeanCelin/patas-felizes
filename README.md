@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Patas Felizes 🐾
 
-## Getting Started
+Patas Felizes é um site de uma ONG fictícia de adoção de animais, desenvolvido com **Next.js, React e CSS Modules**.  
+O projeto tem como objetivo **praticar e consolidar conceitos de desenvolvimento web responsivo**, seguindo a abordagem **Mobile-First**, e aplicar funcionalidades modernas do **Next.js** em um contexto realista.
 
-First, run the development server:
+## Tecnologias
+
+- JavaScript (ES6+)
+- React
+- Next.js (App Router)
+- CSS Modules
+- Lucide React
+
+## Funcionalidades
+
+- Utiliza os dados no arquivo data.js para listar os animais e separar por categorias automaticamente
+- Página de detalhes de cada animal
+- Menu mobile responsivo com comportamento expansível para melhor navegação
+- Responsivo e Mobile-First
+- SEO Básico com Open Graph e Twitter Cards
+
+
+## Estrutura
+- 'app' - contem as páginas do projeto, o favicon, a página not-found principal e o layout principal
+- '(pages)' - contem as rotas das páginas do projeto juntamente com seus módulos '("page"-componentes)'
+- 'components' - contem os componentes reutilizáveis do projeto 
+- 'data' - local onde os dados dos animais e das categorias estão armazenados
+- 'data/animals.js - dados do animais para geração dinâmica do site.
+- 'data/categories.js - dados das categorias de animais, utilizado para criar novas categorias ou apagar as existentes.
+- 'styles' - estilos reaproveitáveis e estilo global.
+- 'utils' - funções reutilizáveis.
+
+## Como rodar localmente
+
+1. Clone o repositório:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/seu-usuario/patas-felizes.git 
 ```
+2. Instale as dependências:
+```bash
+npm install
+```
+3. Rode o projeto: 
+```bash
+npm run dev
+```
+4. Acesse em http://localhost3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contato
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+[Visite meu portfólio](https://github.com/JeanCelin)
+[Meu LinkedIn](https://www.linkedin.com/in/jean-celin/)
+[Meu Instagram](https://www.instagram.com/jeancelin_/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+

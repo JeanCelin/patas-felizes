@@ -1,8 +1,8 @@
 import styles from "./Feedback.module.css";
 import tag from "@/styles/Tag.module.css";
 
-import HeartIcon from "@/componentes/icons/HeartIcon";
-import FeedbackCard from "@/componentes/ui/cards/FeedbackCard";
+import HeartIcon from "@/components/icons/HeartIcon";
+import FeedbackCard from "@/components/ui/cards/FeedbackCard";
 
 export default function Feedback() {
   return (

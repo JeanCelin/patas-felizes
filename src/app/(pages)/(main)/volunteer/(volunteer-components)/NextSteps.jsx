@@ -1,6 +1,6 @@
 import styles from "./NextSteps.module.css";
 
-import HeartIcon from "@/componentes/icons/HeartIcon";
+import HeartIcon from "@/components/icons/HeartIcon";
 
 export default function NextSteps() {
   return (

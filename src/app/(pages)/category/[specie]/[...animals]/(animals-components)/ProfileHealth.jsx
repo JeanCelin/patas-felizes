@@ -1,15 +1,14 @@
 import styles from "./ProfileHealth.module.css";
 
-import CircleCheckBigIcon from "@/componentes/icons/CircleCheckBigIcon";
-import AlertCircleIcon from "@/componentes/icons/AlertCircleIcon";
+import CircleCheckBigIcon from "@/components/icons/CircleCheckBigIcon";
+import AlertCircleIcon from "@/components/icons/AlertCircleIcon";
 
 export default function ProfileHealth({ health }) {
-
   const healthItems = [
     { key: "vaccinated", label: "Vacinado" },
     { key: "neutered", label: "Castrado" },
     { key: "microchipped", label: "Microchipado" },
-    { key: "healthy", label: "Saudável" }, 
+    { key: "healthy", label: "Saudável" },
   ];
 
   return (
@@ -17,7 +16,7 @@ export default function ProfileHealth({ health }) {
       <h2>Status de Saúde</h2>
       <div className={styles.profile__info__container}>
         {healthItems.map(({ key, label }) => {
-          const ok = health[key]; 
+          const ok = health[key];
           const Icon = ok ? CircleCheckBigIcon : AlertCircleIcon;
 
           return (

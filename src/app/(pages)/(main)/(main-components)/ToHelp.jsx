@@ -1,13 +1,12 @@
 import styles from "./ToHelp.module.css";
 import tag from "@/styles/Tag.module.css";
 
-
-import HandHeartIcon from "@/componentes/icons/HandHeartIcon";
-import Card from "@/componentes/ui/cards/HelpCard";
-import DollarSignIcon from "@/componentes/icons/DollarSignIcon";
-import UsersIcon from "@/componentes/icons/UsersIcon";
-import HomeIcon from "@/componentes/icons/HomeIcon";
-import HeartIcon from "@/componentes/icons/HeartIcon";
+import HandHeartIcon from "@/components/icons/HandHeartIcon";
+import Card from "@/components/ui/cards/HelpCard";
+import DollarSignIcon from "@/components/icons/DollarSignIcon";
+import UsersIcon from "@/components/icons/UsersIcon";
+import HomeIcon from "@/components/icons/HomeIcon";
+import HeartIcon from "@/components/icons/HeartIcon";
 
 export default function ToHelp() {
   return (

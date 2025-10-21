@@ -1,10 +1,9 @@
-
 import styles from "./ProfileHeader.module.css";
 
-import CalendarIcon from "@/componentes/icons/CalendarIcon";
-import RulerIcon from "@/componentes/icons/RulerIcon";
-import WeightIcon from "@/componentes/icons/WeightIcon";
-import MapPinIcon from "@/componentes/icons/MapPinIcon";
+import CalendarIcon from "@/components/icons/CalendarIcon";
+import RulerIcon from "@/components/icons/RulerIcon";
+import WeightIcon from "@/components/icons/WeightIcon";
+import MapPinIcon from "@/components/icons/MapPinIcon";
 
 export default function ProfileHeader({
   name,

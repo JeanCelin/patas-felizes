@@ -1,7 +1,7 @@
 import styles from "./ContactHero.module.css";
 import tag from "@/styles/Tag.module.css";
 
-import MessageSquareIcon from "@/componentes/icons/MessageSquare";
+import MessageSquareIcon from "@/components/icons/MessageSquare";
 
 export default function ContactHero() {
   return (
@@ -14,9 +14,12 @@ export default function ContactHero() {
               <span>Fale Conosco</span>
             </div>
             <div>
-              <h1 className={styles.contactHero__header__title}>Entre em Contato</h1>
+              <h1 className={styles.contactHero__header__title}>
+                Entre em Contato
+              </h1>
               <p className={styles.contactHero__header__description}>
-                Estamos aqui para responder suas dúvidas e ouvir suas sugestões. Entre em contato conosco.
+                Estamos aqui para responder suas dúvidas e ouvir suas sugestões.
+                Entre em contato conosco.
               </p>
             </div>
           </header>

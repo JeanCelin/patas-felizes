@@ -1,8 +1,8 @@
 import styles from "./Team.module.css";
 import tag from "@/styles/Tag.module.css";
 
-import UsersIcon from "@/componentes/icons/UsersIcon";
-import VoluntaryCard from "@/componentes/ui/cards/VoluntaryCard";
+import UsersIcon from "@/components/icons/UsersIcon";
+import VoluntaryCard from "@/components/ui/cards/VoluntaryCard";
 import womanPhoto from "/public/perfil/perfil-woman.jpeg";
 import womanPhoto3 from "/public/perfil/perfil-woman3.png";
 import manPhoto from "/public/perfil/perfil-man.png";

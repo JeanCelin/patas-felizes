@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./OurHistory.module.css";
 import tag from "@/styles/Tag.module.css";
 
-import PawIcon from "@/componentes/icons/PawIcon";
+import PawIcon from "@/components/icons/PawIcon";
 import placeholder from "/public/placeholder.svg";
 
 export default function OurHistory() {

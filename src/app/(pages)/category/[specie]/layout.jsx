@@ -9,8 +9,8 @@ import { getCategoryCounts } from "@/utils/categoryCountUtils";
 import styles from "./page.module.css";
 import tag from "@/styles/Tag.module.css";
 
-import ButtonPrimary from "@/componentes/ui/button/ButtonPrimary";
-import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
+import ButtonPrimary from "@/components/ui/button/ButtonPrimary";
+import ButtonSecondary from "@/components/ui/button/ButtonSecondary";
 
 export default async function SpecieLayout({ children, params }) {
   const { specie } = await params;
@@ -20,7 +20,6 @@ export default async function SpecieLayout({ children, params }) {
 
   return (
     <section className={styles.specie__container}>
-  
       <header className={styles.specie__header}>
         <Image
           src={category.iconUrl || "/placeholder.svg"}
@@ -28,9 +27,7 @@ export default async function SpecieLayout({ children, params }) {
           width={100}
           height={100}
         />
-        <h2 className={styles.specie__title}>
-          {category.title} para Adoção
-        </h2>
+        <h2 className={styles.specie__title}>{category.title} para Adoção</h2>
         <p>Encontre seu melhor amigo</p>
         <p className={tag.tag}>{count} animais disponíveis</p>
 

@@ -3,8 +3,8 @@ import Link from "next/link";
 import styles from "./MakeDifferrence.module.css";
 import tag from "@/styles/Tag.module.css";
 
-import HeartIcon from "@/componentes/icons/HeartIcon";
-import ButtonPrimary from "@/componentes/ui/button/ButtonPrimary";
+import HeartIcon from "@/components/icons/HeartIcon";
+import ButtonPrimary from "@/components/ui/button/ButtonPrimary";
 
 export default function MakeDifference() {
   return (

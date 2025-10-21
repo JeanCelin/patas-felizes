@@ -3,8 +3,8 @@ import { useState } from "react";
 
 import styles from "./Donation.module.css";
 
-import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
-import PrimaryInput from "@/componentes/ui/inputs/PrimaryInput";
+import ButtonSecondary from "@/components/ui/button/ButtonSecondary";
+import PrimaryInput from "@/components/ui/inputs/PrimaryInput";
 
 export default function Donation() {
   const [value, setValue] = useState("");

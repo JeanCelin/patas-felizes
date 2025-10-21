@@ -2,10 +2,10 @@ import Image from "next/image";
 
 import styles from "./ContactInfo.module.css";
 
-import MapPinIcon from "@/componentes/icons/MapPinIcon";
-import PhoneIcon from "@/componentes/icons/PhoneIcon";
-import MailIcon from "@/componentes/icons/MailIcon";
-import ClockIcon from "@/componentes/icons/ClockIcon";
+import MapPinIcon from "@/components/icons/MapPinIcon";
+import PhoneIcon from "@/components/icons/PhoneIcon";
+import MailIcon from "@/components/icons/MailIcon";
+import ClockIcon from "@/components/icons/ClockIcon";
 
 export default function ContactInfo() {
   return (

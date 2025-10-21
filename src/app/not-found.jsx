@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./not-found.module.css";
-import ButtonPrimary from "@/componentes/ui/button/ButtonPrimary";
+import ButtonPrimary from "@/components/ui/button/ButtonPrimary";
 
 export default function NotFound() {
   return (

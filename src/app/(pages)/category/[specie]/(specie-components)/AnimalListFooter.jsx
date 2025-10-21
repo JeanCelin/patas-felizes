@@ -1,4 +1,4 @@
-import ButtonPrimary from "@/componentes/ui/button/ButtonPrimary";
+import ButtonPrimary from "@/components/ui/button/ButtonPrimary";
 import styles from "./AnimalListFooter.module.css";
 import Link from "next/link";
 
@@ -19,7 +19,7 @@ export default function AnimalListFooter() {
           </div>
         </section>
         <div className={styles.animalList__button}>
-          <Link href={"/contact"} style={{textDecoration: "none"}}>
+          <Link href={"/contact"} style={{ textDecoration: "none" }}>
             <ButtonPrimary children="Fale Conosco" />
           </Link>
         </div>

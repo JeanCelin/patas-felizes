@@ -1,7 +1,7 @@
 import styles from "./AdoptReq.module.css";
 
-import AlertCircleIcon from "@/componentes/icons/AlertCircleIcon";
-import CircleCheckBigIcon from "@/componentes/icons/CircleCheckBigIcon";
+import AlertCircleIcon from "@/components/icons/AlertCircleIcon";
+import CircleCheckBigIcon from "@/components/icons/CircleCheckBigIcon";
 export default function AdoptReq() {
   return (
     <article className={styles.adoptReq}>
@@ -17,23 +17,33 @@ export default function AdoptReq() {
       <ul className={styles.adoptReq__reqList}>
         <li className={styles.adoptReq__reqList__item}>
           <CircleCheckBigIcon size="20" color="var(--color1)" />
-          <p className={styles.adoptReq__reqList__item__text}>Ser maior de 18 anos e apresentar documento de identidade</p>
+          <p className={styles.adoptReq__reqList__item__text}>
+            Ser maior de 18 anos e apresentar documento de identidade
+          </p>
         </li>
         <li className={styles.adoptReq__reqList__item}>
           <CircleCheckBigIcon size="20" color="var(--color1)" />
-          <p className={styles.adoptReq__reqList__item__text}>Comprovante de residência recente</p>
+          <p className={styles.adoptReq__reqList__item__text}>
+            Comprovante de residência recente
+          </p>
         </li>
         <li className={styles.adoptReq__reqList__item}>
           <CircleCheckBigIcon size="20" color="var(--color1)" />
-          <p className={styles.adoptReq__reqList__item__text}>Todos os moradores da casa devem estar de acordo com a adoção</p>
+          <p className={styles.adoptReq__reqList__item__text}>
+            Todos os moradores da casa devem estar de acordo com a adoção
+          </p>
         </li>
         <li className={styles.adoptReq__reqList__item}>
           <CircleCheckBigIcon size="20" color="var(--color1)" />
-          <p className={styles.adoptReq__reqList__item__text}>Ter condições financeiras para arcar com as despesas do animal</p>
+          <p className={styles.adoptReq__reqList__item__text}>
+            Ter condições financeiras para arcar com as despesas do animal
+          </p>
         </li>
         <li className={styles.adoptReq__reqList__item}>
           <CircleCheckBigIcon size="20" color="var(--color1)" />
-          <p className={styles.adoptReq__reqList__item__text}>Disponibilidade para entrevista e possível visita domiciliar</p>
+          <p className={styles.adoptReq__reqList__item__text}>
+            Disponibilidade para entrevista e possível visita domiciliar
+          </p>
         </li>
         <li className={styles.adoptReq__reqList__item}>
           <CircleCheckBigIcon size="20" color="var(--color1)" />
@@ -44,7 +54,7 @@ export default function AdoptReq() {
         </li>
       </ul>
       <aside className={styles.adoptReq__aside}>
-          <AlertCircleIcon  color="#d97706"/>
+        <AlertCircleIcon color="#d97706" />
         <div className={styles.adoptReq__aside__content}>
           <span>Importante</span>
           <p>

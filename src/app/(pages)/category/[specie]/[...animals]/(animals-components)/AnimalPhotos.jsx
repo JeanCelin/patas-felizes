@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import styles from "./AnimalPhotos.module.css";
-import CloseIcon from "@/componentes/icons/X";
+import CloseIcon from "@/components/icons/X";
 
 export default function AnimalPhotos({ images }) {
   if (!images || images.length === 0) return null;
@@ -20,8 +20,7 @@ export default function AnimalPhotos({ images }) {
       <div
         key={main.id}
         className={styles.photoMain}
-        onClick={() => handleClick(main)}
-      >
+        onClick={() => handleClick(main)}>
         <Image
           src={main.src || "/placeholder.svg"}
           alt={
@@ -34,12 +33,11 @@ export default function AnimalPhotos({ images }) {
       </div>
 
       {/* 🔹 Outras imagens secundárias */}
-      {rest.slice(0, 4).map((img) => (
+      {rest.slice(0, 4).map((img, index) => (
         <div
-          key={img.id}
+          key={index}
           className={styles.photoSecondary}
-          onClick={() => handleClick(img)}
-        >
+          onClick={() => handleClick(img)}>
           <Image
             src={img.src || "/placeholder.svg"}
             alt={

@@ -8,11 +8,11 @@ import { getCategoryCounts } from "@/utils/categoryCountUtils";
 
 import styles from "./page.module.css";
 
-import PetCard from "@/componentes/ui/cards/PetCard";
+import PetCard from "@/components/ui/cards/PetCard";
 import AnimalListFooter from "@/app/(pages)/category/[specie]/(specie-components)/AnimalListFooter";
-import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
+import ButtonSecondary from "@/components/ui/button/ButtonSecondary";
 
-  const specieMap = {
+const specieMap = {
   dogs: {
     label: "Cães",
     description: "Adote um cachorro e transforme uma vida.",

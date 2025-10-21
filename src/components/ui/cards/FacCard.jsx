@@ -1,5 +1,7 @@
 import styles from './FacCard.module.css';
 
+//Cria o card de perguntas frequentes usando o title e text que são passados no momento de chamada da função
+
 export default function FacCard({ title, text }) {
   return (
     <div className={styles.facCard}>

@@ -8,11 +8,17 @@ import styles from "./CategoryCard.module.css";
 import categoriesData from "@/data/categories";
 import ButtonPrimary from "../button/ButtonPrimary";
 
+
+
 export default function CategoryCard() {
+  // Obetem o valor total de animais dentro de cada categoria
   const counts = getCategoryCounts();
 
   return (
     <ul className={styles.categoryCard__container}>
+
+
+    {/* Utiliza os dados em categoriesData.js para criar os cards de cada categoria.  */}
       {categoriesData.map((category, index) => {
         const count = counts[category.id] || 0;
         return (

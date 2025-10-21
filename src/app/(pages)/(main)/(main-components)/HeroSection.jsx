@@ -4,11 +4,9 @@ import Link from "next/link";
 import styles from "./HeroSection.module.css";
 import tag from "@/styles/Tag.module.css";
 
-import ButtonPrimary from "@/componentes/ui/button/ButtonPrimary";
-import ButtonSecondary from "@/componentes/ui/button/ButtonSecondary";
+import ButtonPrimary from "@/components/ui/button/ButtonPrimary";
+import ButtonSecondary from "@/components/ui/button/ButtonSecondary";
 import heroImage from "/public/hero-img.png";
-
-
 
 export default function HeroSection() {
   return (

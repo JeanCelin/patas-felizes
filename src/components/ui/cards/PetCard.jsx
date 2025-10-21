@@ -4,8 +4,13 @@ import ButtonPrimary from "../button/ButtonPrimary";
 import Link from "next/link";
 import animalsData from "@/data/animals";
 
+//Card de apresentação dos animais, utiliza o slug para identificar o animal no banco de dados e puxar as informações do animal especificado.
+
 export default function PetCard({ slug }) {
+  //Encontra o animal no banco de dados pelo slug
   let pet = animalsData.find((animal) => animal.slug === slug);
+  
+  //Retorna nada se o animal não tiver o slug correspondente
   if(slug === undefined || null) return
   
 

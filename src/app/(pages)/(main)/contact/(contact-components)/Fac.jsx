@@ -1,6 +1,6 @@
 import styles from "./Fac.module.css";
 
-import FacCard from "@/componentes/ui/cards/FacCard";
+import FacCard from "@/components/ui/cards/FacCard";
 
 export default function Fac() {
   return (

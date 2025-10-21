@@ -1,12 +1,11 @@
 import styles from "./Commitment.module.css";
 
-
-import CalendarIcon from "@/componentes/icons/CalendarIcon";
-import UsersIcon from "@/componentes/icons/UsersIcon";
-import HeartIcon from "@/componentes/icons/HeartIcon";
-import GraduationCapIcon from "@/componentes/icons/GraduationCapIcon";
-import CircleCheckBigIcon from "@/componentes/icons/CircleCheckBigIcon";
-import ClockIcon from "@/componentes/icons/ClockIcon";
+import CalendarIcon from "@/components/icons/CalendarIcon";
+import UsersIcon from "@/components/icons/UsersIcon";
+import HeartIcon from "@/components/icons/HeartIcon";
+import GraduationCapIcon from "@/components/icons/GraduationCapIcon";
+import CircleCheckBigIcon from "@/components/icons/CircleCheckBigIcon";
+import ClockIcon from "@/components/icons/ClockIcon";
 
 export default function Commitment() {
   return (
@@ -65,7 +64,8 @@ export default function Commitment() {
             <div className={styles.commitment__item__content}>
               <h3 className={styles.commitment__title}>Compaixão</h3>
               <p className={styles.commitment__text}>
-              Trate todos os animais com gentileza, paciência e respeito, independentemente de sua condição.
+                Trate todos os animais com gentileza, paciência e respeito,
+                independentemente de sua condição.
               </p>
             </div>
           </section>
@@ -76,7 +76,8 @@ export default function Commitment() {
             <div className={styles.commitment__item__content}>
               <h3 className={styles.commitment__title}>Aprendizado</h3>
               <p className={styles.commitment__text}>
-              Esteja disposto a aprender e seguir os protocolos de cuidados com os animais e segurança.
+                Esteja disposto a aprender e seguir os protocolos de cuidados
+                com os animais e segurança.
               </p>
             </div>
           </section>
@@ -87,11 +88,11 @@ export default function Commitment() {
             <div className={styles.commitment__item__content}>
               <h3 className={styles.commitment__title}>Confiabilidade</h3>
               <p className={styles.commitment__text}>
-              Cumpra seus compromissos e avise com antecedência se não puder comparecer.
+                Cumpra seus compromissos e avise com antecedência se não puder
+                comparecer.
               </p>
             </div>
           </section>
-
         </section>
       </div>
     </article>

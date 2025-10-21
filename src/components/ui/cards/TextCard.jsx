@@ -1,5 +1,7 @@
 import styles from "./TextCard.module.css";
 import ButtonPrimary from "../button/ButtonPrimary";
+
+// Card para uso geral, contem um título, texto e um botão (usado por exemplo na página doar na sessão "outras formas de doar")
 export default function TextCard({ title, text, btnText }) {
   return (
     <section className={styles.textCard}>

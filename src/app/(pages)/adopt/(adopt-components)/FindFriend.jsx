@@ -1,7 +1,7 @@
 import styles from "./FindFriend.module.css";
 import tag from "@/styles/Tag.module.css";
 
-import HeartIcon from "@/componentes/icons/HeartIcon";
+import HeartIcon from "@/components/icons/HeartIcon";
 
 export default function FindFriend() {
   return (

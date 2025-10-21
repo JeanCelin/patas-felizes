@@ -3,8 +3,8 @@ import HeroSection from "@/app/(pages)/(main)/(main-components)/HeroSection";
 import AboutSection from "@/app/(pages)/(main)/(main-components)/AboutSection";
 import ToHelp from "@/app/(pages)/(main)/(main-components)/ToHelp";
 import Feedback from "@/app/(pages)/(main)/(main-components)/Feedback";
-import Donation from "@/componentes/donation/Donation";
-import Friends from "@/componentes/friends/Friends";
+import Donation from "@/components/donation/Donation";
+import Friends from "@/components/friends/Friends";
 
 export const metadata = {
   title: "Adoção de Animais",

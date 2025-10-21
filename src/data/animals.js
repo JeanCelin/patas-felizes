@@ -1,68 +1,81 @@
+// Dados dos animais que serão exibidos no site;
+// Caso queira adicionar mais animais no site, mantenha o padrão de dados e siga as instruções dos comentários.
+// Se a imagem não for adicionada será carregado a imagem "/placeholder.svg".
+
 // meses precisam ser escritos como "0." seguido do mes, exemplo: 10 meses = 0.10; 11 meses = 0.11
 
 const animals = [
   {
-    id: 1,
-    slug: "suzy",
-    category: "dogs",
-    name: "Suzy",
-    sex: "Fêmea",
-    breed: "Vira-lata",
-    age: 2,
-    weight: 12,
-    size: "Pequeno",
-    location: "Abrigo Principal",
-    status: true,
-    adoptionFee: 80,
+    id: 1, // id único
+    slug: "suzy", //nome que aparecerá na rota, sugerido mesmo nome do animal
+    category: "dogs", //categoria do animal: "dogs", "cats" ou "others"
+    name: "Suzy", // Nome do animal
+    sex: "Fêmea", // Sexo do animal
+    breed: "Vira-lata", // Raça
+    age: 2, // Idade em anos.  Meses precisam ser escritos como "0." seguido do mes, exemplo: 10 meses = 0.10; 11 meses = 0.11
+    weight: 12, // Peso
+    size: "Pequeno", // Tamanho:  Pequeno, Médio, Grande.
+    location: "Abrigo Principal", // Local
+    status: true, // true = disponível para adoção; false = Indisponível
+    adoptionFee: 80, // taxa de adoção, valor em Reais
     images: [
       {
-        id: "i01",
+        // Foto principal  do card e na página de perfil do animal
         src: "/dogs/suzy/suzy-main.jpg",
         alt: "Suzy",
       },
       {
-        id: "i02",
+        // Foto 1/3 na página do perfil do animal
         src: "/dogs/suzy/suzy1.jpg",
         alt: "Suzy, uma vira-lata fofa",
       },
       {
-        id: "i03",
+        // Foto 2/3 na página do perfil do animal
         src: "/dogs/suzy/suzy2.jpg",
         alt: "Suzy, uma vira-lata fofa",
       },
       {
-        id: "i04",
+        // Foto 3/3 na página do perfil do animal
         src: "/dogs/suzy/suzy3.jpg",
         alt: "Suzy, uma vira-lata fofa",
       },
-    ],
+    ], // Informações do perfil do animal
     health: {
-      vaccinated: true,
-      microchipped: true,
-      neutered: true,
-      healthy: true,
+      //Informações de saúde true ou false
+      vaccinated: true, // Vacinado
+      microchipped: true, // Microchipado
+      neutered: true, // Castrado
+      healthy: true, // Saudável
     },
     compatibility: {
-      children: true,
-      otherDogs: true,
-      cats: false,
+      // Compatibilidade com outros seres true ou false
+      children: true, // Crianças
+      otherDogs: true, // Cães
+      cats: false, //Gatos
     },
     about: {
+      // Texto a ser exibido na página de perfil do animal
+      // Descrição no card
       smallDescription:
         "Tímida e encantadora, Suzy é uma cadelinha de pelos macios que adora longas sonecas ao sol.",
 
+      // História
       story:
         "Suzy chegou ao abrigo ainda filhote, após ser resgatada de uma região rural onde vivia sozinha. Mistura de beagle com basset, ela herdou o olhar curioso e o corpo baixinho característicos dessas raças. No começo, era muito assustada e passava boa parte do tempo escondida, observando tudo de longe. Com paciência e carinho da equipe, ela começou a se abrir — hoje, aceita afagos e até abana o rabo quando reconhece alguém de confiança.",
 
+      //Personalidade
       personality:
         "Suzy é calma e reservada, mas muito doce quando se sente segura. Gosta de outros cães tranquilos, especialmente aqueles que respeitam seu espaço. Não se dá bem com gatos e costuma evitar ambientes muito agitados, o que inclui casas com crianças pequenas. É o tipo de cachorrinha que vai conquistar você com o olhar sereno e a delicadeza dos seus gestos.",
 
+      // Lar ideal
       idealHome:
         "O lar ideal para Suzy é um ambiente calmo, com tutores pacientes que compreendam seu jeito mais introspectivo. Ela se adapta bem a apartamentos ou casas pequenas, desde que tenha um cantinho confortável para descansar. Um quintal silencioso seria um bônus, especialmente se houver outro cão tranquilo como companhia.",
 
+      /// Necessidades especiais
       specialNeeds:
         "Suzy não possui necessidades médicas especiais, mas precisa de tempo e respeito para se sentir à vontade em novos ambientes. Movimentos bruscos ou barulhos altos a assustam facilmente.",
 
+      // Histórico médico
       medicalHistory:
         "Está vacinada, castrada e microchipada. Fez todos os exames necessários e encontra-se em ótimo estado de saúde. Mantém uma rotina regular de check-ups e cuidados veterinários",
     },
@@ -82,22 +95,18 @@ const animals = [
     adoptionFee: 60,
     images: [
       {
-        id: "i01",
         src: "/cats/mia/mia-main.jpg",
         alt: "Mia, uma gata vira-lata curiosa e carinhosa",
       },
       {
-        id: "i02",
         src: "/cats/mia/mia1.jpg",
         alt: "Mia, uma gata vira-lata curiosa e carinhosa",
       },
       {
-        id: "i03",
         src: "/cats/mia/mia2.jpg",
         alt: "Mia, uma gata vira-lata curiosa e carinhosa",
       },
       {
-        id: "i04",
         src: "/cats/mia/mia3.jpg",
         alt: "Mia, uma gata vira-lata curiosa e carinhosa",
       },
@@ -143,22 +152,18 @@ const animals = [
     adoptionFee: 80,
     images: [
       {
-        id: "i09",
         src: "/dogs/lira/lira-main.jpg",
         alt: "Lira, uma cachorra alegre",
       },
       {
-        id: "i10",
         src: "/dogs/lira/lira1.jpg",
         alt: "Lira, uma cachorra alegre",
       },
       {
-        id: "i11",
         src: "/dogs/lira/lira2.jpg",
         alt: "Lira, uma cachorra alegre",
       },
       {
-        id: "i12",
         src: "/dogs/lira/lira3.jpg",
         alt: "Lira, uma cachorra alegre",
       },
@@ -203,22 +208,18 @@ const animals = [
     adoptionFee: 40,
     images: [
       {
-        id: "i13",
         src: "/dogs/luna/luna-main.jpg",
         alt: "Luna, uma vira-lata encantadora",
       },
       {
-        id: "i14",
         src: "/dogs/luna/luna1.jpg",
         alt: "Luna, uma vira-lata encantadora",
       },
       {
-        id: "i15",
         src: "/dogs/luna/luna2.jpg",
         alt: "Luna, uma vira-lata encantadora",
       },
       {
-        id: "i16",
         src: "/dogs/luna/luna3.jpg",
         alt: "Luna, uma vira-lata encantadora",
       },
@@ -264,22 +265,18 @@ const animals = [
     adoptionFee: 100,
     images: [
       {
-        id: "i17",
         src: "/dogs/brutos/brutos-main.png",
         alt: "Brutos",
       },
       {
-        id: "i18",
         src: "/dogs/brutos/brutos1.png",
         alt: "Brutos",
       },
       {
-        id: "i19",
         src: "/dogs/brutos/brutos2.png",
         alt: "Brutos",
       },
       {
-        id: "i20",
         src: "/dogs/brutos/brutos3.png",
         alt: "Brutos",
       },
@@ -325,22 +322,18 @@ const animals = [
     adoptionFee: 170,
     images: [
       {
-        id: "i21",
         src: "/dogs/koda/koda-main.webp",
         alt: "Thor, um pastor alemão protetor",
       },
       {
-        id: "i22",
         src: "/dogs/koda/koda1.webp",
         alt: "Thor, um pastor alemão protetor",
       },
       {
-        id: "i23",
         src: "/dogs/koda/koda2.webp",
         alt: "Thor, um pastor alemão protetor",
       },
       {
-        id: "i24",
         src: "/dogs/koda/koda3.jpg",
         alt: "Thor, um pastor alemão protetor",
       },
@@ -386,22 +379,18 @@ const animals = [
     adoptionFee: 80,
     images: [
       {
-        id: "i01",
         src: "/dogs/pacoca/pacoca-main.jpg",
         alt: "Suzy",
       },
       {
-        id: "i02",
         src: "/dogs/pacoca/pacoca1.jpg",
         alt: "Suzy, uma vira-lata fofa",
       },
       {
-        id: "i03",
         src: "/dogs/pacoca/pacoca2.jpg",
         alt: "Suzy, uma vira-lata fofa",
       },
       {
-        id: "i04",
         src: "/dogs/pacoca/pacoca3.jpg",
         alt: "Suzy, uma vira-lata fofa",
       },
