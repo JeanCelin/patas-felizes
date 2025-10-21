@@ -24,27 +24,33 @@ export default function Footer() {
             desde 2015.
           </p>
           <div className={styles.footer__social__icons}>
-            <Image
-              src="/icons/facebook.svg"
-              width={20}
-              height={20}
-              alt="Facebook icon"
-              loading="lazy"
-            />
-            <Image
-              src="/icons/instagram.svg"
-              width={20}
-              height={20}
-              alt="Instagram icon"
-              loading="lazy"
-            />
-            <Image
-              src="/icons/x.svg"
-              width={20}
-              height={20}
-              alt="x icon"
-              loading="lazy"
-            />
+            <Link href={"/"}>
+              <Image
+                src="/icons/facebook.svg"
+                width={20}
+                height={20}
+                alt="Facebook icon"
+                loading="lazy"
+              />
+            </Link>
+            <Link href={"/"}>
+              <Image
+                src="/icons/instagram.svg"
+                width={20}
+                height={20}
+                alt="Instagram icon"
+                loading="lazy"
+              />
+            </Link>
+            <Link href={"/"}>
+              <Image
+                src="/icons/x.svg"
+                width={20}
+                height={20}
+                alt="x icon"
+                loading="lazy"
+              />
+            </Link>
           </div>
         </section>
         <section className={styles.footer__fastlinks}>
@@ -113,8 +119,9 @@ export default function Footer() {
         </section>
       </div>
       <div className={styles.footer__copyrights}>
-        <p>&copy; 2025 Patas Felizes. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Criado por <Link href={"https://jeancelin.vercel.app/"}> Jean Celin</Link>. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
 }
+

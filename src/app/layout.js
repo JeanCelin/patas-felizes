@@ -9,6 +9,7 @@ const inter = Inter({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://www.patasfelizes.org"),
   title: {
     template: "%s | ONG Patas Felizes",
     default: "Patas Felizes",
@@ -42,6 +43,13 @@ export const metadata = {
     ],
     locale: "pt_BR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Patas Felizes | Adote um amigo",
+    description:
+      "Adote, ajude ou apadrinhe um animal resgatado pela ONG Patas Felizes.",
+    images: ["patas-felizes-adocao.png"],
   },
 };
 
