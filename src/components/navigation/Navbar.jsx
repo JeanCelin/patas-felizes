@@ -5,7 +5,7 @@ import { useState } from "react";
 
 import styles from "./Navbar.module.css";
 
-import icon from "../../../public/ICONS/android-chrome-192x192.png";
+import icon from "../../../public/icons/android-chrome-192x192.png";
 import ButtonPrimary from "../ui/button/ButtonPrimary";
 import ButtonBurger from "../ui/button/ButtonBurger";
 import Navlinks from "./NavLinks";
