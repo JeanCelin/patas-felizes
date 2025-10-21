@@ -49,9 +49,10 @@ npm run dev
 
 ## Contato
 
-[Visite meu portfólio](https://github.com/JeanCelin)
-[Meu LinkedIn](https://www.linkedin.com/in/jean-celin/)
-[Meu Instagram](https://www.instagram.com/jeancelin_/)
+🌐 **Portfólio:** [jeancelin.vercel.app](https://jeancelin.vercel.app/pt-BR)  
+💼 **GitHub:** [github.com/JeanCelin](https://github.com/JeanCelin)  
+🔗 **LinkedIn:** [Jean Celin](https://www.linkedin.com/in/jean-celin/)  
+📸 **Instagram:** [@jeancelin_](https://www.instagram.com/jeancelin_/)
 
 
 
