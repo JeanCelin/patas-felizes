@@ -420,7 +420,66 @@ const animals = [
 
       medicalHistory: `Paçoca já recebeu as primeiras vacinas e foi vermifugado. Ainda é muito jovem para castração, mas o procedimento será realizado quando atingir a idade adequada. Está com excelente saúde e cheio de energia para brincar e crescer feliz.`,
     },
+    
+  },{
+  id: 8,
+  slug: "bob",
+  category: "cats",
+  name: "Bob",
+  sex: "Macho",
+  breed: "Vira-lata",
+  age: 12,
+  weight: 10,
+  size: "Grande",
+  location: "Abrigo Central",
+  status: false,
+  adoptionFee: 60,
+  images: [
+    {
+      src: "/cats/bob/bob-main.jpg",
+      alt: "Bob",
+    },
+    {
+      src: "/cats/bob/bob1.jpg",
+      alt: "Bob, um gato grande e preguiçoso",
+    },
+    {
+      src: "/cats/bob/bob2.jpg",
+      alt: "Bob, um gato gorducho deitado em uma almofada",
+    },
+    {
+      src: "/cats/bob/bob3.jpg",
+      alt: "Bob, um gato de olhar tranquilo e sábio",
+    },
+  ],
+  health: {
+    vaccinated: true,
+    microchipped: true,
+    neutered: true,
+    healthy: true,
   },
+  compatibility: {
+    children: true,
+    otherDogs: true,
+    cats: true,
+  },
+  about: {
+    smallDescription:
+      "Bob é um gato gorducho e experiente que vive como um verdadeiro rei do conforto, sempre em busca do próximo petisco e do melhor lugar para dormir.",
+
+    story: `Bob foi encontrado dormindo dentro de uma padaria, tranquilamente deitado ao lado do forno quente — e ninguém sabe ao certo há quanto tempo ele vivia ali. Os padeiros dizem que ele simplesmente apareceu um dia, ficou e virou parte da equipe. Todo mundo o alimentava com pedaços de pão e presunto, o que explica sua respeitável silhueta de 10 quilos. Quando o local fechou para reforma, o abrigo foi acionado e Bob passou a viver entre almofadas e tigelas cheias, aproveitando a vida boa com seu jeito sossegado e irresistível.`,
+
+    personality: `Bob é dono de um humor peculiar e de um apetite sem limites. Ele adora observar o movimento do abrigo do alto de uma prateleira e sempre chega primeiro quando escuta o som da ração. Apesar de preguiçoso, é muito afetuoso e gosta de companhia humana — especialmente se o tutor souber fazer cafuné entre as orelhas.`, 
+
+    idealHome: `O lar ideal para Bob é aquele com pessoas tranquilas, que valorizem a calma e a boa companhia. Ele não exige muito: um canto macio, comida no horário certo e alguém disposto a conversar com ele (mesmo que ele só responda com um miado preguiçoso).`, 
+
+    specialNeeds: `Por conta do peso e da idade, Bob precisa de uma dieta equilibrada e brincadeiras leves para se manter ativo. É importante manter o acompanhamento veterinário regular e garantir que ele continue dormindo mais do que trabalhando — do jeito que ele gosta.`, 
+
+    medicalHistory: `Bob está vacinado, castrado e microchipado. Realiza consultas periódicas para controle de peso e saúde digestiva, mas está em boas condições e cheio de energia (pelo menos até a hora da próxima soneca).`
+  },
+},
+
+  
 ];
 
 export default animals;

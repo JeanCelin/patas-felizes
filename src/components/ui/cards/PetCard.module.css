@@ -59,7 +59,7 @@
 }
 .petCard__text__container{
   height: 80px;
-  overflow:hidden;
+  overflow-y:scroll;
   padding-top: 8px;
 }
 
